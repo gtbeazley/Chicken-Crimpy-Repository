@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-DejaBrew-2493.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\DejaBrew.cpp.obj"
+"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\DejaBrewCharacter.cpp.obj"
+"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\DejaBrewGameMode.cpp.obj"
+"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\DejaBrew.init.gen.cpp.obj"
+"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\DejaBrewCharacter.gen.cpp.obj"
+"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\DejaBrewGameMode.gen.cpp.obj"
+"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\PCLaunch.rc.res"
+/OUT:"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-2493.lib"

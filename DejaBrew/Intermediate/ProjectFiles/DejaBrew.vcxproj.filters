@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\DejaBrew.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{71228691-751F-4AD5-913A-66F630CCD2B3}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\DejaBrew.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\DejaBrewEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{C75A4291-1AE0-42D5-A1FD-FB9357E44A52}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\DejaBrew">
+			<UniqueIdentifier>{84450759-1292-4C00-AF10-AFF53F87883C}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\DejaBrew\DejaBrew.Build.cs">
+			<Filter>Source\DejaBrew</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\DejaBrew\DejaBrew.cpp">
+			<Filter>Source\DejaBrew</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DejaBrew\DejaBrew.h">
+			<Filter>Source\DejaBrew</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DejaBrew\DejaBrewCharacter.cpp">
+			<Filter>Source\DejaBrew</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DejaBrew\DejaBrewCharacter.h">
+			<Filter>Source\DejaBrew</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DejaBrew\DejaBrewGameMode.cpp">
+			<Filter>Source\DejaBrew</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DejaBrew\DejaBrewGameMode.h">
+			<Filter>Source\DejaBrew</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
