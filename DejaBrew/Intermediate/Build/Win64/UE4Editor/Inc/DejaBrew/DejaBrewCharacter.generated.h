@@ -57,11 +57,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADejaBrewCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADejaBrewCharacter)
 
 
-#define DejaBrew_Source_DejaBrew_DejaBrewCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__SideViewCameraComponent() { return STRUCT_OFFSET(ADejaBrewCharacter, SideViewCameraComponent); } \
-	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ADejaBrewCharacter, CameraBoom); }
-
-
+#define DejaBrew_Source_DejaBrew_DejaBrewCharacter_h_12_PRIVATE_PROPERTY_OFFSET
 #define DejaBrew_Source_DejaBrew_DejaBrewCharacter_h_9_PROLOG
 #define DejaBrew_Source_DejaBrew_DejaBrewCharacter_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

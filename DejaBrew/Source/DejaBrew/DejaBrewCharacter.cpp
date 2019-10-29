@@ -6,9 +6,13 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "ConstructorHelpers.h"
+#include "UserWidget.h"
 
 ADejaBrewCharacter::ADejaBrewCharacter()
 {
+	//static ConstructorHelpers::FObjectFinder<TSubclassOf<UUserWidget>>
+
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
@@ -22,10 +26,11 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->bAbsoluteRotation = true; // Rotation of the character should not affect rotation of boom
 	CameraBoom->bDoCollisionTest = false;
-	CameraBoom->TargetArmLength = 500.f;
-	CameraBoom->SocketOffset = FVector(0.f,0.f,75.f);
+	CameraBoom->TargetArmLength = 1200.f;
+	CameraBoom->SocketOffset = FVector(0.f,0.f,125.f);
 	CameraBoom->RelativeRotation = FRotator(0.f,180.f,0.f);
-
+	 
+	
 	// Create a camera and attach to boom
 	SideViewCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("SideViewCamera"));
 	SideViewCameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
@@ -54,9 +59,13 @@ void ADejaBrewCharacter::SetupPlayerInputComponent(class UInputComponent* Player
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ADejaBrewCharacter::MoveRight);
+	PlayerInputComponent->BindAxis("MoveLeft", this, &ADejaBrewCharacter::MoveRight);
 
-	PlayerInputComponent->BindTouch(IE_Pressed, this, &ADejaBrewCharacter::TouchStarted);
-	PlayerInputComponent->BindTouch(IE_Released, this, &ADejaBrewCharacter::TouchStopped);
+}
+
+void ADejaBrewCharacter::Tick(float a_dt)
+{
+	Super::Tick(a_dt); 
 }
 
 void ADejaBrewCharacter::MoveRight(float Value)
@@ -65,14 +74,7 @@ void ADejaBrewCharacter::MoveRight(float Value)
 	AddMovementInput(FVector(0.f,-1.f,0.f), Value);
 }
 
-void ADejaBrewCharacter::TouchStarted(const ETouchIndex::Type FingerIndex, const FVector Location)
+void ADejaBrewCharacter::MoveLeft(float val)
 {
-	// jump on any touch
-	Jump();
-}
-
-void ADejaBrewCharacter::TouchStopped(const ETouchIndex::Type FingerIndex, const FVector Location)
-{
-	StopJumping();
 }
 

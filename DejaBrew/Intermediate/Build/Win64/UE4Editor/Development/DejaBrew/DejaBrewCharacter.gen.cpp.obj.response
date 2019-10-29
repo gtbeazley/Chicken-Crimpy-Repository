@@ -23,10 +23,32 @@
 /wd4838
 /we4668
 /I .
-/I C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew
-/I C:\Users\s181813\Desktop\DejaBrew\Source
-/I C:\Users\s181813\Desktop\DejaBrew\Source\DejaBrew
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Slate
 /I Runtime
+/I Runtime\Slate\Public
+/I Runtime\Slate
+/I Runtime\Slate\Public\Framework
+/I Runtime\Slate\Public\Framework\Application
+/I Runtime\Slate\Public\Framework\Commands
+/I Runtime\Slate\Public\Framework\Docking
+/I Runtime\Slate\Public\Framework\Layout
+/I Runtime\Slate\Public\Framework\MetaData
+/I Runtime\Slate\Public\Framework\MultiBox
+/I Runtime\Slate\Public\Framework\Notifications
+/I Runtime\Slate\Public\Framework\Styling
+/I Runtime\Slate\Public\Framework\Text
+/I Runtime\Slate\Public\Framework\Views
+/I Runtime\Slate\Public\Widgets
+/I Runtime\Slate\Public\Widgets\Colors
+/I Runtime\Slate\Public\Widgets\Docking
+/I Runtime\Slate\Public\Widgets\Images
+/I Runtime\Slate\Public\Widgets\Input
+/I Runtime\Slate\Public\Widgets\LayerManager
+/I Runtime\Slate\Public\Widgets\Layout
+/I Runtime\Slate\Public\Widgets\Navigation
+/I Runtime\Slate\Public\Widgets\Notifications
+/I Runtime\Slate\Public\Widgets\Text
+/I Runtime\Slate\Public\Widgets\Views
 /I Runtime\Core\Public
 /I Runtime\Core
 /I Runtime\Core\Public\Algo
@@ -66,25 +88,6 @@
 /I Runtime\CoreUObject\Public\Serialization\Formatters
 /I Runtime\CoreUObject\Public\Templates
 /I Runtime\CoreUObject\Public\UObject
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
-/I Runtime\Engine\Classes
-/I Runtime\Engine\Public
-/I Runtime\Engine
-/I Runtime\Engine\Public\AI
-/I Runtime\Engine\Public\AI\Navigation
-/I Runtime\Engine\Public\Animation
-/I Runtime\Engine\Public\Curves
-/I Runtime\Engine\Public\EdGraph
-/I Runtime\Engine\Public\Internationalization
-/I Runtime\Engine\Public\Net
-/I Runtime\Engine\Public\PacketHandlers
-/I Runtime\Engine\Public\Performance
-/I Runtime\Engine\Public\Physics
-/I Runtime\Engine\Public\ProfilingDebugging
-/I Runtime\Engine\Public\Rendering
-/I Runtime\Engine\Public\Slate
-/I Runtime\Engine\Public\Tests
-/I Runtime\Engine\Public\VisualLogger
 /I Runtime\ApplicationCore\Public
 /I Runtime\ApplicationCore
 /I Runtime\ApplicationCore\Public\GenericPlatform
@@ -92,6 +95,13 @@
 /I Runtime\ApplicationCore\Public\Windows
 /I Runtime\RHI\Public
 /I Runtime\RHI
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\InputCore
+/I Runtime\InputCore\Classes
+/I Runtime\InputCore\Public
+/I Runtime\InputCore
+/I Runtime\InputCore\Public\GenericPlatform
+/I Runtime\InputCore\Public\HAL
+/I Runtime\InputCore\Public\Windows
 /I Runtime\Json\Public
 /I Runtime\Json
 /I Runtime\Json\Public\Dom
@@ -114,40 +124,51 @@
 /I Runtime\SlateCore\Public\Textures
 /I Runtime\SlateCore\Public\Types
 /I Runtime\SlateCore\Public\Widgets
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\InputCore
-/I Runtime\InputCore\Classes
-/I Runtime\InputCore\Public
-/I Runtime\InputCore
-/I Runtime\InputCore\Public\GenericPlatform
-/I Runtime\InputCore\Public\HAL
-/I Runtime\InputCore\Public\Windows
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Slate
-/I Runtime\Slate\Public
-/I Runtime\Slate
-/I Runtime\Slate\Public\Framework
-/I Runtime\Slate\Public\Framework\Application
-/I Runtime\Slate\Public\Framework\Commands
-/I Runtime\Slate\Public\Framework\Docking
-/I Runtime\Slate\Public\Framework\Layout
-/I Runtime\Slate\Public\Framework\MetaData
-/I Runtime\Slate\Public\Framework\MultiBox
-/I Runtime\Slate\Public\Framework\Notifications
-/I Runtime\Slate\Public\Framework\Styling
-/I Runtime\Slate\Public\Framework\Text
-/I Runtime\Slate\Public\Framework\Views
-/I Runtime\Slate\Public\Widgets
-/I Runtime\Slate\Public\Widgets\Colors
-/I Runtime\Slate\Public\Widgets\Docking
-/I Runtime\Slate\Public\Widgets\Images
-/I Runtime\Slate\Public\Widgets\Input
-/I Runtime\Slate\Public\Widgets\LayerManager
-/I Runtime\Slate\Public\Widgets\Layout
-/I Runtime\Slate\Public\Widgets\Navigation
-/I Runtime\Slate\Public\Widgets\Notifications
-/I Runtime\Slate\Public\Widgets\Text
-/I Runtime\Slate\Public\Widgets\Views
 /I Runtime\ImageWrapper\Public
 /I Runtime\ImageWrapper
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\UMG
+/I Runtime\UMG\Public
+/I Runtime\UMG
+/I Runtime\UMG\Public\Animation
+/I Runtime\UMG\Public\Binding
+/I Runtime\UMG\Public\Blueprint
+/I Runtime\UMG\Public\Components
+/I Runtime\UMG\Public\Slate
+/I Runtime\Online
+/I Runtime\Online\HTTP\Public
+/I Runtime\Online\HTTP
+/I Runtime\Online\HTTP\Public\GenericPlatform
+/I Runtime\Online\HTTP\Public\Interfaces
+/I Runtime\Online\HTTP\Public\Windows
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene
+/I Runtime\MovieScene\Public
+/I Runtime\MovieScene
+/I Runtime\MovieScene\Public\Channels
+/I Runtime\MovieScene\Public\Compilation
+/I Runtime\MovieScene\Public\Evaluation
+/I Runtime\MovieScene\Public\Evaluation\Blending
+/I Runtime\MovieScene\Public\Generators
+/I Runtime\MovieScene\Public\Sections
+/I Runtime\MovieScene\Public\Tracks
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
+/I Runtime\Engine\Classes
+/I Runtime\Engine\Public
+/I Runtime\Engine
+/I Runtime\Engine\Public\AI
+/I Runtime\Engine\Public\AI\Navigation
+/I Runtime\Engine\Public\Animation
+/I Runtime\Engine\Public\Curves
+/I Runtime\Engine\Public\EdGraph
+/I Runtime\Engine\Public\Internationalization
+/I Runtime\Engine\Public\Net
+/I Runtime\Engine\Public\PacketHandlers
+/I Runtime\Engine\Public\Performance
+/I Runtime\Engine\Public\Physics
+/I Runtime\Engine\Public\ProfilingDebugging
+/I Runtime\Engine\Public\Rendering
+/I Runtime\Engine\Public\Slate
+/I Runtime\Engine\Public\Tests
+/I Runtime\Engine\Public\VisualLogger
 /I Runtime\Messaging\Public
 /I Runtime\Messaging
 /I Runtime\MessagingCommon\Public
@@ -240,12 +261,6 @@
 /I Editor\BlueprintGraph\Classes
 /I Editor\BlueprintGraph\Public
 /I Editor\BlueprintGraph
-/I Runtime\Online
-/I Runtime\Online\HTTP\Public
-/I Runtime\Online\HTTP
-/I Runtime\Online\HTTP\Public\GenericPlatform
-/I Runtime\Online\HTTP\Public\Interfaces
-/I Runtime\Online\HTTP\Public\Windows
 /I Runtime\UnrealAudio\Public
 /I Runtime\UnrealAudio
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\FunctionalTesting
@@ -307,40 +322,6 @@
 /I Runtime\NetworkFileSystem
 /I Runtime\Sockets\Public
 /I Runtime\Sockets
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\UMG
-/I Runtime\UMG\Public
-/I Runtime\UMG
-/I Runtime\UMG\Public\Animation
-/I Runtime\UMG\Public\Binding
-/I Runtime\UMG\Public\Blueprint
-/I Runtime\UMG\Public\Components
-/I Runtime\UMG\Public\Slate
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene
-/I Runtime\MovieScene\Public
-/I Runtime\MovieScene
-/I Runtime\MovieScene\Public\Channels
-/I Runtime\MovieScene\Public\Compilation
-/I Runtime\MovieScene\Public\Evaluation
-/I Runtime\MovieScene\Public\Evaluation\Blending
-/I Runtime\MovieScene\Public\Generators
-/I Runtime\MovieScene\Public\Sections
-/I Runtime\MovieScene\Public\Tracks
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\TimeManagement
-/I Runtime\TimeManagement\Public
-/I Runtime\TimeManagement
-/I Runtime\TimeManagement\Public\Widgets
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieSceneTracks
-/I Runtime\MovieSceneTracks\Public
-/I Runtime\MovieSceneTracks
-/I Runtime\MovieSceneTracks\Public\Evaluation
-/I Runtime\MovieSceneTracks\Public\Sections
-/I Runtime\MovieSceneTracks\Public\Tracks
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\AnimationCore
-/I Runtime\AnimationCore\Public
-/I Runtime\AnimationCore
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\PropertyPath
-/I Runtime\PropertyPath\Public
-/I Runtime\PropertyPath
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem
 /I Runtime\NavigationSystem\Public
 /I Runtime\NavigationSystem
@@ -403,18 +384,37 @@
 /I ThirdParty
 /I ThirdParty\libSampleRate\Public
 /I ThirdParty\libSampleRate
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\AnimationCore
+/I Runtime\AnimationCore\Public
+/I Runtime\AnimationCore
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\TimeManagement
+/I Runtime\TimeManagement\Public
+/I Runtime\TimeManagement
+/I Runtime\TimeManagement\Public\Widgets
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieSceneTracks
+/I Runtime\MovieSceneTracks\Public
+/I Runtime\MovieSceneTracks
+/I Runtime\MovieSceneTracks\Public\Evaluation
+/I Runtime\MovieSceneTracks\Public\Sections
+/I Runtime\MovieSceneTracks\Public\Tracks
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\PropertyPath
+/I Runtime\PropertyPath\Public
+/I Runtime\PropertyPath
+/I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew
+/I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source
+/I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source\DejaBrew
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew\DejaBrewCharacter.gen.cpp"
-/FI"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\Definitions.DejaBrew.h"
-/Fo"C:\Users\s181813\Desktop\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\DejaBrewCharacter.gen.cpp.obj"
+/FI"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew\DejaBrewCharacter.gen.cpp"
+/FI"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\Definitions.DejaBrew.h"
+/Fo"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\DejaBrewCharacter.gen.cpp.obj"
 /TP
 /GR-
 /W4
