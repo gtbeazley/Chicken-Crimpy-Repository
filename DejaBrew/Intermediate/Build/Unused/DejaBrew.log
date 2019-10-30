@@ -1,7 +1,15 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Creating makefile for hot reloading DejaBrewEditor (ini files are newer than UBTMakefile)
   Compiling game modules for hot reload
-  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Target is up to date
+  Parsing headers for DejaBrewEditor
+    Running UnrealHeaderTool "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\DejaBrew.uproject" "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\DejaBrewEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for DejaBrewEditor in 7.8145148 seconds
+  Building 5 actions with 8 processes...
+    [1/5] DejaBrewGameMode.cpp
+    [2/5] DejaBrewCharacter.gen.cpp
+    [3/5] DejaBrewCharacter.cpp
+    [4/5] UE4Editor-DejaBrew-7390.lib
+       Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-7390.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-7390.exp
+    [5/5] UE4Editor-DejaBrew-7390.dll
+       Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-7390.suppressed.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-7390.suppressed.exp
   Deploying DejaBrewEditor Win64 Development...
-  Total build time: 4.26 seconds (NoActionsToExecute executor: 0.00 seconds)
+  Total build time: 11.39 seconds (Parallel executor: 2.50 seconds)

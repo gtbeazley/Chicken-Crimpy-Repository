@@ -7,7 +7,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "ConstructorHelpers.h"
-#include "UserWidget.h"
+#include "Components/WidgetComponent.h"
 
 ADejaBrewCharacter::ADejaBrewCharacter()
 {
@@ -32,9 +32,21 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	 
 	
 	// Create a camera and attach to boom
-	SideViewCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("SideViewCamera"));
-	SideViewCameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
-	SideViewCameraComponent->bUsePawnControlRotation = false; // We don't want the controller rotating the camera
+	SideViewCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("SideViewCamera"));
+	SideViewCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
+	SideViewCamera->bUsePawnControlRotation = false; // We don't want the controller rotating the camera
+
+	//Setting up the widgets
+	CrosshairBoundWidget = CreateDefaultSubobject<UWidgetComponent>("CrosshairBoundWidget");
+	static ConstructorHelpers::FClassFinder<UUserWidget> ClassFinder4Widget(TEXT("/Game/SideScrollerCPP/Blueprints/Widgets/CrosshairBoundsWidget_BP"));
+	CrosshairBoundWidget->SetWidgetClass(ClassFinder4Widget.Class);
+	CrosshairBoundWidget->SetDrawSize(FVector2D(1000, 1000));
+
+	CrosshairWidget = CreateDefaultSubobject<UWidgetComponent>("CrosshairWidget");
+	static ConstructorHelpers::FClassFinder<UUserWidget> ClassFinderCrosshairWidget(TEXT("/Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP"));
+	CrosshairWidget->SetWidgetClass(ClassFinderCrosshairWidget.Class);
+	CrosshairWidget->SetDrawSize(FVector2D(1000, 1000));
+	CrosshairWidget->SetupAttachment(CrosshairBoundWidget);
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Face in the direction we are moving..
@@ -55,26 +67,85 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 
 void ADejaBrewCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
-	// set up gameplay key bindings
+	// set up action bindings
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
-	PlayerInputComponent->BindAxis("MoveRight", this, &ADejaBrewCharacter::MoveRight);
-	PlayerInputComponent->BindAxis("MoveLeft", this, &ADejaBrewCharacter::MoveRight);
+	PlayerInputComponent->BindAction("Pause", IE_Pressed, this, &ADejaBrewCharacter::Pause);
+	PlayerInputComponent->BindAction("Shoot", IE_Pressed, this, &ADejaBrewCharacter::Shoot);
 
+	//set up axis bindings
+	PlayerInputComponent->BindAxis("MoveRight", this, &ADejaBrewCharacter::MoveRight);
+	PlayerInputComponent->BindAxis("MoveLeft", this, &ADejaBrewCharacter::MoveLeft);
+	PlayerInputComponent->BindAxis("CamerPanUp", this, &ADejaBrewCharacter::PanCameraUp);
+	PlayerInputComponent->BindAxis("CamerPanDown", this, &ADejaBrewCharacter::PanCameraUp);
+	PlayerInputComponent->BindAxis("CamerPanLeft", this, &ADejaBrewCharacter::PanCameraRight);
+	PlayerInputComponent->BindAxis("CamerPanRight", this, &ADejaBrewCharacter::PanCameraRight);
+
+	PlayerInputComponent->BindAxis("CurorPanUp", this, &ADejaBrewCharacter::PanCursorUp);
+	PlayerInputComponent->BindAxis("CurorPanRight", this, &ADejaBrewCharacter::PanCursorRight);
+	
+
+}
+
+void ADejaBrewCharacter::OffSetCrosshair()
+{ 
+	if (SideViewCamera != nullptr)
+	{
+		FVector l_camLoc = SideViewCamera->GetComponentLocation();
+		FVector l_actorLoc = GetActorLocation();
+
+		FVector l_actorDir = l_camLoc - l_actorLoc;
+		float l_actorDirLength = l_actorDir.Size();
+		FRotator l_newCamRot = FRotationMatrix::MakeFromX(l_actorDir).Rotator();
+
+		l_actorDir.Normalize();
+
+		CrosshairBoundWidget->SetWorldLocationAndRotation(l_actorLoc + (l_actorDir * (l_actorDirLength * 0.5)), l_newCamRot);
+	}
 }
 
 void ADejaBrewCharacter::Tick(float a_dt)
 {
 	Super::Tick(a_dt); 
+	OffSetCrosshair(); 
 }
 
-void ADejaBrewCharacter::MoveRight(float Value)
+void ADejaBrewCharacter::MoveRight(float a_val)
 {
 	// add movement in that direction
-	AddMovementInput(FVector(0.f,-1.f,0.f), Value);
+	AddMovementInput(FVector(0.f, 1.f ,0.f), a_val);
 }
 
-void ADejaBrewCharacter::MoveLeft(float val)
+void ADejaBrewCharacter::MoveLeft(float a_val)
+{
+	AddMovementInput(FVector(0, 1, 0), a_val);
+}
+
+void ADejaBrewCharacter::PanCameraUp(float a_val)
+{
+}
+
+void ADejaBrewCharacter::PanCameraRight(float a_val)
+{
+}
+
+void ADejaBrewCharacter::PanCursorRight(float a_val)
+{
+	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, a_val, 0);
+
+	//if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= 238)
+		CrosshairWidget->SetWorldLocation(l_newLoc);
+}
+
+void ADejaBrewCharacter::PanCursorUp(float a_val)
+{
+}
+
+void ADejaBrewCharacter::Pause()
+{
+}
+
+void ADejaBrewCharacter::Shoot()
 {
 }
 
