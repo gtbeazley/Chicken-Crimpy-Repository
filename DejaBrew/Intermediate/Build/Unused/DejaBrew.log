@@ -1,15 +1,4 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Compiling game modules for hot reload
-  Parsing headers for DejaBrewEditor
-    Running UnrealHeaderTool "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\DejaBrew.uproject" "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\DejaBrewEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for DejaBrewEditor in 7.8145148 seconds
-  Building 5 actions with 8 processes...
-    [1/5] DejaBrewGameMode.cpp
-    [2/5] DejaBrewCharacter.gen.cpp
-    [3/5] DejaBrewCharacter.cpp
-    [4/5] UE4Editor-DejaBrew-7390.lib
-       Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-7390.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-7390.exp
-    [5/5] UE4Editor-DejaBrew-7390.dll
-       Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-7390.suppressed.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-7390.suppressed.exp
+  Target is up to date
   Deploying DejaBrewEditor Win64 Development...
-  Total build time: 11.39 seconds (Parallel executor: 2.50 seconds)
+  Total build time: 2.34 seconds (NoActionsToExecute executor: 0.00 seconds)

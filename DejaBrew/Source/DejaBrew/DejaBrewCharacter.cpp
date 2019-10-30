@@ -47,6 +47,7 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	CrosshairWidget->SetWidgetClass(ClassFinderCrosshairWidget.Class);
 	CrosshairWidget->SetDrawSize(FVector2D(1000, 1000));
 	CrosshairWidget->SetupAttachment(CrosshairBoundWidget);
+	CrosshairWidget->SetManuallyRedraw(false);
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Face in the direction we are moving..
