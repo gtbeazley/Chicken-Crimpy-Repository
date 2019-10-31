@@ -19,7 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrew_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/DejaBrew",
 				PKG_CompiledIn | 0x00000000,
-				0x34288594,
+				0xA5255B99,
 				0xFC6134EF,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)

@@ -1,4 +1,18 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Target is up to date
+  Creating makefile for hot reloading DejaBrewEditor (ini files are newer than UBTMakefile)
+  Compiling game modules for hot reload
+  Using Visual Studio 2017 14.22.27905 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Parsing headers for DejaBrewEditor
+    Running UnrealHeaderTool "C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\DejaBrew.uproject" "C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\DejaBrewEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for DejaBrewEditor in 10.045552 seconds
+  Building 6 actions with 8 processes...
+    [1/6] DejaBrew.init.gen.cpp
+    [2/6] DejaBrewCharacter.gen.cpp
+    [3/6] DejaBrewGameMode.cpp
+    [4/6] DejaBrewCharacter.cpp
+    [5/6] UE4Editor-DejaBrew-3539.lib
+       Creating library C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-3539.lib and object C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-3539.exp
+    [6/6] UE4Editor-DejaBrew-3539.dll
+       Creating library C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-3539.suppressed.lib and object C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-3539.suppressed.exp
   Deploying DejaBrewEditor Win64 Development...
-  Total build time: 2.34 seconds (NoActionsToExecute executor: 0.00 seconds)
+  Total build time: 19.72 seconds (Parallel executor: 2.82 seconds)

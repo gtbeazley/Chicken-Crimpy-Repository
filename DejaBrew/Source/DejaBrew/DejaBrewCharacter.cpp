@@ -77,13 +77,13 @@ void ADejaBrewCharacter::SetupPlayerInputComponent(class UInputComponent* Player
 	//set up axis bindings
 	PlayerInputComponent->BindAxis("MoveRight", this, &ADejaBrewCharacter::MoveRight);
 	PlayerInputComponent->BindAxis("MoveLeft", this, &ADejaBrewCharacter::MoveLeft);
-	PlayerInputComponent->BindAxis("CamerPanUp", this, &ADejaBrewCharacter::PanCameraUp);
-	PlayerInputComponent->BindAxis("CamerPanDown", this, &ADejaBrewCharacter::PanCameraUp);
-	PlayerInputComponent->BindAxis("CamerPanLeft", this, &ADejaBrewCharacter::PanCameraRight);
-	PlayerInputComponent->BindAxis("CamerPanRight", this, &ADejaBrewCharacter::PanCameraRight);
+	PlayerInputComponent->BindAxis("CameraPanUp", this, &ADejaBrewCharacter::PanCameraUp);
+	PlayerInputComponent->BindAxis("CameraPanDown", this, &ADejaBrewCharacter::PanCameraUp);
+	PlayerInputComponent->BindAxis("CameraPanLeft", this, &ADejaBrewCharacter::PanCameraRight);
+	PlayerInputComponent->BindAxis("CameraPanRight", this, &ADejaBrewCharacter::PanCameraRight);
 
-	PlayerInputComponent->BindAxis("CurorPanUp", this, &ADejaBrewCharacter::PanCursorUp);
-	PlayerInputComponent->BindAxis("CurorPanRight", this, &ADejaBrewCharacter::PanCursorRight);
+	PlayerInputComponent->BindAxis("CursorPanUp", this, &ADejaBrewCharacter::PanCursorUp);
+	PlayerInputComponent->BindAxis("CursorPanRight", this, &ADejaBrewCharacter::PanCursorRight);
 	
 
 }
@@ -132,14 +132,18 @@ void ADejaBrewCharacter::PanCameraRight(float a_val)
 
 void ADejaBrewCharacter::PanCursorRight(float a_val)
 {
-	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, a_val, 0);
+	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, -a_val * m_mouseSpeed, 0);
 
-	//if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= 238)
+	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= 238)
 		CrosshairWidget->SetWorldLocation(l_newLoc);
 }
 
 void ADejaBrewCharacter::PanCursorUp(float a_val)
 {
+	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, 0, a_val * m_mouseSpeed);
+
+	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= 238)
+		CrosshairWidget->SetWorldLocation(l_newLoc);
 }
 
 void ADejaBrewCharacter::Pause()

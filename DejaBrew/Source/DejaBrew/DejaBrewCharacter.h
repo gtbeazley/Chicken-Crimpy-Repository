@@ -12,12 +12,14 @@ class ADejaBrewCharacter : public ACharacter
 	GENERATED_BODY()
 
 public:
+
+protected:
 	/** Side view camera */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class UCameraComponent* SideViewCamera;
 
-	/** Camera boom positioning the camera beside the character */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	/** Camera boom positioning the camera bebside the character */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraBoom;
 	 
 	/** The bounds that the cross can not pass */
@@ -28,7 +30,9 @@ public:
 	UPROPERTY(EditAnywhere)
 		UWidgetComponent* CrosshairWidget;
 
-protected:
+	UPROPERTY(EditAnywhere)
+		float m_mouseSpeed = 1;
+
 	/**Tick event called every frame
 	@param a_dt time from the start of the last frame*/
 	void Tick(float a_dt) override;
