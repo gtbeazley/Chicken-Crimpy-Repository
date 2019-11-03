@@ -31,11 +31,19 @@ protected:
 		UWidgetComponent* CrosshairWidget;
 
 	UPROPERTY(EditAnywhere)
-		float m_mouseSpeed = 1;
+		float m_mouseSpeed = 5;
+
+	UPROPERTY(EditAnywhere)
+		float m_sprintSpeed = 1.5;
+
+	UPROPERTY(EditAnywhere)
+		float m_moveSpeed = 1;
 
 	/**Tick event called every frame
 	@param a_dt time from the start of the last frame*/
 	void Tick(float a_dt) override;
+
+	void BeginPlay() override;
 
 	//ACTION INPUT FUNCTIONS
 	/** Called for activating the pause state*/
@@ -43,6 +51,12 @@ protected:
 
 	/** Called for shooting the compression charge gun*/
 	void Shoot();
+
+	/** Adds to the max speed the character can move*/
+	void Sprint();
+
+	/** Slows down the max speed of the characters max speed */
+	void StopSprinting();
 
 	//AXIS IMPUT FUNCTIONS
 	/** Called for side scroller characters right movement*/

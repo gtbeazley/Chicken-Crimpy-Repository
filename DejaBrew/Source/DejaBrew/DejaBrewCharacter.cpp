@@ -8,6 +8,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "ConstructorHelpers.h"
 #include "Components/WidgetComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 ADejaBrewCharacter::ADejaBrewCharacter()
 {
@@ -56,10 +57,10 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	GetCharacterMovement()->AirControl = 0.80f;
 	GetCharacterMovement()->JumpZVelocity = 1000.f;
 	GetCharacterMovement()->GroundFriction = 3.f;
-	GetCharacterMovement()->MaxWalkSpeed = 600.f;
 	GetCharacterMovement()->MaxFlySpeed = 600.f;
+	GetCharacterMovement()->MaxWalkSpeed = m_moveSpeed * 600.0f;
 
-	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
+ 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
 
@@ -71,6 +72,8 @@ void ADejaBrewCharacter::SetupPlayerInputComponent(class UInputComponent* Player
 	// set up action bindings
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &ADejaBrewCharacter::Sprint);
+	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &ADejaBrewCharacter::StopSprinting);
 	PlayerInputComponent->BindAction("Pause", IE_Pressed, this, &ADejaBrewCharacter::Pause);
 	PlayerInputComponent->BindAction("Shoot", IE_Pressed, this, &ADejaBrewCharacter::Shoot);
 
@@ -109,17 +112,23 @@ void ADejaBrewCharacter::Tick(float a_dt)
 {
 	Super::Tick(a_dt); 
 	OffSetCrosshair(); 
+
+}
+
+void ADejaBrewCharacter::BeginPlay()
+{
+	Super::BeginPlay();
 }
 
 void ADejaBrewCharacter::MoveRight(float a_val)
 {
 	// add movement in that direction
-	AddMovementInput(FVector(0.f, 1.f ,0.f), a_val);
+	AddMovementInput(FVector(0.f, 1.f ,0.f), a_val * m_moveSpeed);
 }
 
 void ADejaBrewCharacter::MoveLeft(float a_val)
 {
-	AddMovementInput(FVector(0, 1, 0), a_val);
+	AddMovementInput(FVector(0, 1, 0), a_val * m_moveSpeed);
 }
 
 void ADejaBrewCharacter::PanCameraUp(float a_val)
@@ -134,7 +143,7 @@ void ADejaBrewCharacter::PanCursorRight(float a_val)
 {
 	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, -a_val * m_mouseSpeed, 0);
 
-	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= 238)
+	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= 140)
 		CrosshairWidget->SetWorldLocation(l_newLoc);
 }
 
@@ -142,7 +151,7 @@ void ADejaBrewCharacter::PanCursorUp(float a_val)
 {
 	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, 0, a_val * m_mouseSpeed);
 
-	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= 238)
+	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= 140)
 		CrosshairWidget->SetWorldLocation(l_newLoc);
 }
 
@@ -152,5 +161,16 @@ void ADejaBrewCharacter::Pause()
 
 void ADejaBrewCharacter::Shoot()
 {
+}
+
+void ADejaBrewCharacter::Sprint()
+{
+	if(CanJump())
+		GetCharacterMovement()->MaxWalkSpeed = m_sprintSpeed * 600.0f;
+}
+
+void ADejaBrewCharacter::StopSprinting()
+{
+	GetCharacterMovement()->MaxWalkSpeed = m_moveSpeed * 600.0f;
 }
 

@@ -62,7 +62,9 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADejaBrewCharacter); \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ADejaBrewCharacter, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__CrosshairBoundWidget() { return STRUCT_OFFSET(ADejaBrewCharacter, CrosshairBoundWidget); } \
 	FORCEINLINE static uint32 __PPO__CrosshairWidget() { return STRUCT_OFFSET(ADejaBrewCharacter, CrosshairWidget); } \
-	FORCEINLINE static uint32 __PPO__m_mouseSpeed() { return STRUCT_OFFSET(ADejaBrewCharacter, m_mouseSpeed); }
+	FORCEINLINE static uint32 __PPO__m_mouseSpeed() { return STRUCT_OFFSET(ADejaBrewCharacter, m_mouseSpeed); } \
+	FORCEINLINE static uint32 __PPO__m_sprintSpeed() { return STRUCT_OFFSET(ADejaBrewCharacter, m_sprintSpeed); } \
+	FORCEINLINE static uint32 __PPO__m_moveSpeed() { return STRUCT_OFFSET(ADejaBrewCharacter, m_moveSpeed); }
 
 
 #define DejaBrew_Source_DejaBrew_DejaBrewCharacter_h_9_PROLOG
