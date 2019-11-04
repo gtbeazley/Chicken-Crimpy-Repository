@@ -111,7 +111,12 @@ void ADejaBrewCharacter::OffSetCrosshair()
 void ADejaBrewCharacter::Tick(float a_dt)
 {
 	Super::Tick(a_dt); 
+//	if (m_compressionBlastCharge <= 0)
+//		bCanShoot = false;
+//	else
+//		bCanShoot = true;
 	OffSetCrosshair(); 
+	UpdateCompressionCharge();
 
 }
 
@@ -143,7 +148,7 @@ void ADejaBrewCharacter::PanCursorRight(float a_val)
 {
 	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, -a_val * m_mouseSpeed, 0);
 
-	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= 140)
+	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= m_maxCursorDistance)
 		CrosshairWidget->SetWorldLocation(l_newLoc);
 }
 
@@ -151,7 +156,7 @@ void ADejaBrewCharacter::PanCursorUp(float a_val)
 {
 	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, 0, a_val * m_mouseSpeed);
 
-	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= 140)
+	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= m_maxCursorDistance)
 		CrosshairWidget->SetWorldLocation(l_newLoc);
 }
 
@@ -169,7 +174,7 @@ void ADejaBrewCharacter::Shoot()
 	l_cursorDir.Normalize();
 	
 	CompressionBlastMoveCharacter(l_cursorDir, l_crosshairLength);
-	//DepleteCharge();
+	DepleteCharge((l_crosshairLength / m_maxCursorDistance) * 100);
 
 }
 
@@ -190,4 +195,29 @@ void ADejaBrewCharacter::CompressionBlastMoveCharacter(FVector a_dir, float a_le
 		LaunchCharacter( (a_dir * (a_length * -10)) * .25, false, false);
 	else
 		LaunchCharacter(a_dir * (a_length * -10), true, true);
+}
+
+void ADejaBrewCharacter::DepleteCharge(float a_percentTominus)
+{
+	//if (m_compressionBlastCharge - a_percentTominus < 0)
+	//	m_compressionBlastCharge = 0;
+	//else
+	//	m_compressionBlastCharge = m_compressionBlastCharge - a_percentTominus;
+	m_timeLeftForCharging = m_timeTillChargeLimit;
+}
+
+
+void ADejaBrewCharacter::UpdateCompressionCharge()
+{
+	//if (m_compressionBlastCharge < 200)
+	//{
+	//	if (m_timeTillChargeLimit <= 0)
+	//		m_compressionBlastCharge += m_chargeSpeed;
+	//	else
+	//		m_timeLeftForCharging--;
+	//	if (!bIsCharging)
+	//		bIsCharging = true;
+	//}
+	//else
+	//	bIsCharging = false;
 }

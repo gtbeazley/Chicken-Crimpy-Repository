@@ -1,30 +1,22 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Creating makefile for DejaBrewEditor (no existing makefile)
-  Performing full C++ include scan (no include cache file)
+  Creating makefile for DejaBrewEditor (ini files are newer than UBTMakefile)
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Parsing headers for DejaBrewEditor
-    Running UnrealHeaderTool "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\DejaBrew.uproject" "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\DejaBrewEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for DejaBrewEditor in 9.5172568 seconds
-  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-1078.dll".
-  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-1802.dll".
-  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-3945.dll".
-  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-3964.dll".
-  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-5429.dll".
-  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-8014.dll".
-  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-922.dll".
-  Building 11 actions with 8 processes...
-    [1/11] SharedPCH.Engine.cpp
-    [2/11] DejaBrew.init.gen.cpp
-    [3/11] DejaBrewGameMode.gen.cpp
-    [4/11] DejaBrewGameMode.cpp
-    [5/11] DejaBrewCharacter.gen.cpp
-    [6/11] CrosshairBoundWidget_cpp.cpp
-    [7/11] CrosshairBoundWidget_cpp.gen.cpp
-    [8/11] DejaBrewCharacter.cpp
-    [9/11] DejaBrew.cpp
-    [10/11] UE4Editor-DejaBrew.lib
+  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-2007.dll".
+  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-2007.pdb".
+  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-2302.dll".
+  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-2302.pdb".
+  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-2312.dll".
+  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-2312.pdb".
+  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-2611.dll".
+  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-2611.pdb".
+  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-6406.dll".
+  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-6406.pdb".
+  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-8081.dll".
+  Deleting old hot reload file: "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-8081.pdb".
+  Building 2 actions with 8 processes...
+    [1/2] UE4Editor-DejaBrew.lib
        Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew.exp
-    [11/11] UE4Editor-DejaBrew.dll
+    [2/2] UE4Editor-DejaBrew.dll
        Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew.suppressed.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew.suppressed.exp
   Deploying DejaBrewEditor Win64 Development...
-  Total build time: 88.86 seconds (Parallel executor: 44.45 seconds)
+  Total build time: 5.17 seconds (Parallel executor: 1.06 seconds)

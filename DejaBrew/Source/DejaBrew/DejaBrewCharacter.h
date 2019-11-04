@@ -22,6 +22,8 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraBoom;
 	 
+
+
 	/** The bounds that the cross can not pass */
 	UPROPERTY(EditAnywhere)
 	class UWidgetComponent* CrosshairBoundWidget;
@@ -31,6 +33,12 @@ protected:
 		UWidgetComponent* CrosshairWidget;
 
 	UPROPERTY(EditAnywhere)
+		bool bIsCharging = false;
+
+	UPROPERTY(EditAnywhere)
+		bool bCanShoot = false;
+
+	UPROPERTY(EditAnywhere)
 		float m_mouseSpeed = 5;
 
 	UPROPERTY(EditAnywhere)
@@ -38,6 +46,22 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 		float m_moveSpeed = 1;
+
+	UPROPERTY(EditAnywhere)
+		float m_maxCursorDistance = 140;
+
+
+	UPROPERTY(EditAnywhere)
+		float m_timeLeftForCharging = 0;
+
+	UPROPERTY(EditAnywhere)
+		float m_timeTillChargeLimit = 96;
+	
+	UPROPERTY(EditAnywhere)
+		float m_chargeSpeed = 3;
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = 0, ClampMax = 200))
+	//	float m_compressionBlastCharge = 200;
 
 	/**Tick event called every frame
 	@param a_dt time from the start of the last frame*/
@@ -90,7 +114,11 @@ protected:
 	@param a_length ..measured by this length */
 	void CompressionBlastMoveCharacter(FVector a_dir, float a_length);
 
-	
+	/**Decrements the compression blasts percentage*/
+	void DepleteCharge(float a_percentTominus);
+
+	/** Updates the Compression Blasts Charge and time till it charges */
+	void UpdateCompressionCharge();
 public:
 	ADejaBrewCharacter();
 
