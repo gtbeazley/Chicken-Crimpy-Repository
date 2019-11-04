@@ -161,6 +161,16 @@ void ADejaBrewCharacter::Pause()
 
 void ADejaBrewCharacter::Shoot()
 {
+	FVector l_crosshairLoc = CrosshairWidget->GetComponentLocation(), 
+		l_boundsLoc = CrosshairBoundWidget->GetComponentLocation(),
+		l_cursorDir = l_crosshairLoc - l_boundsLoc;
+	float l_crosshairLength = l_cursorDir.Size();
+
+	l_cursorDir.Normalize();
+	
+	CompressionBlastMoveCharacter(l_cursorDir, l_crosshairLength);
+	//DepleteCharge();
+
 }
 
 void ADejaBrewCharacter::Sprint()
@@ -174,3 +184,10 @@ void ADejaBrewCharacter::StopSprinting()
 	GetCharacterMovement()->MaxWalkSpeed = m_moveSpeed * 600.0f;
 }
 
+void ADejaBrewCharacter::CompressionBlastMoveCharacter(FVector a_dir, float a_length)
+{
+	if (CanJump())
+		LaunchCharacter( (a_dir * (a_length * -10)) * .25, false, false);
+	else
+		LaunchCharacter(a_dir * (a_length * -10), true, true);
+}

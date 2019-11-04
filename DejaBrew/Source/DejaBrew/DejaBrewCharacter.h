@@ -84,6 +84,13 @@ protected:
 
 	/** Setting the offset of the Crosshair Widget (and its children) */
 	void OffSetCrosshair();
+
+	/** Sends the character..
+	@param a_dir ..in this direction..
+	@param a_length ..measured by this length */
+	void CompressionBlastMoveCharacter(FVector a_dir, float a_length);
+
+	
 public:
 	ADejaBrewCharacter();
 
