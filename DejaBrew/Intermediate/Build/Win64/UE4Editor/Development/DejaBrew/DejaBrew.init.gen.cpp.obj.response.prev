@@ -126,30 +126,9 @@
 /I Runtime\SlateCore\Public\Widgets
 /I Runtime\ImageWrapper\Public
 /I Runtime\ImageWrapper
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\UMG
-/I Runtime\UMG\Public
-/I Runtime\UMG
-/I Runtime\UMG\Public\Animation
-/I Runtime\UMG\Public\Binding
-/I Runtime\UMG\Public\Blueprint
-/I Runtime\UMG\Public\Components
-/I Runtime\UMG\Public\Slate
-/I Runtime\Online
-/I Runtime\Online\HTTP\Public
-/I Runtime\Online\HTTP
-/I Runtime\Online\HTTP\Public\GenericPlatform
-/I Runtime\Online\HTTP\Public\Interfaces
-/I Runtime\Online\HTTP\Public\Windows
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene
-/I Runtime\MovieScene\Public
-/I Runtime\MovieScene
-/I Runtime\MovieScene\Public\Channels
-/I Runtime\MovieScene\Public\Compilation
-/I Runtime\MovieScene\Public\Evaluation
-/I Runtime\MovieScene\Public\Evaluation\Blending
-/I Runtime\MovieScene\Public\Generators
-/I Runtime\MovieScene\Public\Sections
-/I Runtime\MovieScene\Public\Tracks
+/I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew
+/I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source
+/I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source\DejaBrew
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
@@ -261,6 +240,12 @@
 /I Editor\BlueprintGraph\Classes
 /I Editor\BlueprintGraph\Public
 /I Editor\BlueprintGraph
+/I Runtime\Online
+/I Runtime\Online\HTTP\Public
+/I Runtime\Online\HTTP
+/I Runtime\Online\HTTP\Public\GenericPlatform
+/I Runtime\Online\HTTP\Public\Interfaces
+/I Runtime\Online\HTTP\Public\Windows
 /I Runtime\UnrealAudio\Public
 /I Runtime\UnrealAudio
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\FunctionalTesting
@@ -322,6 +307,40 @@
 /I Runtime\NetworkFileSystem
 /I Runtime\Sockets\Public
 /I Runtime\Sockets
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\UMG
+/I Runtime\UMG\Public
+/I Runtime\UMG
+/I Runtime\UMG\Public\Animation
+/I Runtime\UMG\Public\Binding
+/I Runtime\UMG\Public\Blueprint
+/I Runtime\UMG\Public\Components
+/I Runtime\UMG\Public\Slate
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene
+/I Runtime\MovieScene\Public
+/I Runtime\MovieScene
+/I Runtime\MovieScene\Public\Channels
+/I Runtime\MovieScene\Public\Compilation
+/I Runtime\MovieScene\Public\Evaluation
+/I Runtime\MovieScene\Public\Evaluation\Blending
+/I Runtime\MovieScene\Public\Generators
+/I Runtime\MovieScene\Public\Sections
+/I Runtime\MovieScene\Public\Tracks
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\TimeManagement
+/I Runtime\TimeManagement\Public
+/I Runtime\TimeManagement
+/I Runtime\TimeManagement\Public\Widgets
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieSceneTracks
+/I Runtime\MovieSceneTracks\Public
+/I Runtime\MovieSceneTracks
+/I Runtime\MovieSceneTracks\Public\Evaluation
+/I Runtime\MovieSceneTracks\Public\Sections
+/I Runtime\MovieSceneTracks\Public\Tracks
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\AnimationCore
+/I Runtime\AnimationCore\Public
+/I Runtime\AnimationCore
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\PropertyPath
+/I Runtime\PropertyPath\Public
+/I Runtime\PropertyPath
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem
 /I Runtime\NavigationSystem\Public
 /I Runtime\NavigationSystem
@@ -384,36 +403,18 @@
 /I ThirdParty
 /I ThirdParty\libSampleRate\Public
 /I ThirdParty\libSampleRate
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\AnimationCore
-/I Runtime\AnimationCore\Public
-/I Runtime\AnimationCore
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\TimeManagement
-/I Runtime\TimeManagement\Public
-/I Runtime\TimeManagement
-/I Runtime\TimeManagement\Public\Widgets
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieSceneTracks
-/I Runtime\MovieSceneTracks\Public
-/I Runtime\MovieSceneTracks
-/I Runtime\MovieSceneTracks\Public\Evaluation
-/I Runtime\MovieSceneTracks\Public\Sections
-/I Runtime\MovieSceneTracks\Public\Tracks
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\PropertyPath
-/I Runtime\PropertyPath\Public
-/I Runtime\PropertyPath
-/I C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew
-/I C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source
-/I C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source\DejaBrew
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew\DejaBrew.init.gen.cpp"
-/FI"C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\Definitions.DejaBrew.h"
-/Fo"C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\DejaBrew.init.gen.cpp.obj"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
+/FI"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew\DejaBrew.init.gen.cpp"
+/FI"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\Definitions.DejaBrew.h"
+/Fo"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\DejaBrew.init.gen.cpp.obj"
 /TP
 /GR-
 /W4

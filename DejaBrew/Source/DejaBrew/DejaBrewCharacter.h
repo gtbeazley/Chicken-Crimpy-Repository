@@ -31,12 +31,6 @@ protected:
 		UWidgetComponent* CrosshairWidget;
 
 	UPROPERTY(EditAnywhere)
-		bool m_canShoot = true;
-
-	UPROPERTY(EditAnywhere)
-		bool m_isCharging = false;
-
-	UPROPERTY(EditAnywhere)
 		float m_mouseSpeed = 5;
 
 	UPROPERTY(EditAnywhere)
@@ -44,21 +38,6 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 		float m_moveSpeed = 1;
-
-	UPROPERTY(EditAnywhere)
-		float m_rechargeSpeed = 3;
-
-	UPROPERTY(EditAnywhere)
-		float m_chargingTimeInFrames = 96;
-
-	UPROPERTY(EditAnywhere)
-		float m_maxCursorDistance = 140;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(ClampMin = 0.0, ClampMax = 200))
-		float m_compressionCharge = 140;
-
-	UPROPERTY(EditAnywhere)
-		float m_timeLeftTillCharge = 0;
 
 	/**Tick event called every frame
 	@param a_dt time from the start of the last frame*/
@@ -105,22 +84,6 @@ protected:
 
 	/** Setting the offset of the Crosshair Widget (and its children) */
 	void OffSetCrosshair();
-
-	/** Function to launch the player in the direction opposite of the Compression blast. If the player is on the ground, the charge will 75% weaker.
-	@parra a_blastDir direction the blast was shot and the characters opposite launch direction
-	@parra a_blastLength length between the cursor and the character
-	*/
-	void CompressionBlastMoveCharacter(FVector a_blastDir, float a_blastLength);
-
-	/** Deplete the charge for the compression blast 
-	@parra a_percentage is the percentage to deplete the charge by
-	*note: Full charge is 200%
-	*/
-	void DepleteCharge(float a_perecentage);
-
-	/** Check to see if the compression blast is charging then increment the charge. */
-	void UpdateCompressionCharge();
-
 public:
 	ADejaBrewCharacter();
 

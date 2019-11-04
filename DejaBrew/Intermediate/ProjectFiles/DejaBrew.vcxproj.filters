@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\DejaBrew.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{B3782EFE-6539-4A39-A354-6E784F8269AE}</UniqueIdentifier>
+			<UniqueIdentifier>{D2461479-4654-41BE-A953-E1CAF2301FEE}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\DejaBrew.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{7FBCA44B-40AB-4286-8E08-B71ADB38424F}</UniqueIdentifier>
+			<UniqueIdentifier>{A207F56E-38F0-4F8F-8216-54EF9C61A2B1}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -31,7 +31,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\DejaBrew">
-			<UniqueIdentifier>{05DB1102-4F3A-4F6F-B75C-7C0E42CB5CBD}</UniqueIdentifier>
+			<UniqueIdentifier>{E668979F-037B-4B1A-BB64-C13BFC988EA3}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\DejaBrew\CrosshairBoundWidget_cpp.cpp">
 			<Filter>Source\DejaBrew</Filter>

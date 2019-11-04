@@ -4,14 +4,14 @@
 	<ItemGroup>
 		<None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_4.20\Engine\Source\Programs\UnrealHeaderTool\UnrealHeaderTool.Target.cs" />
 		<Filter Include="Config">
-			<UniqueIdentifier>{29FD7882-40F2-4D2A-8FC1-2DFF92FA837B}</UniqueIdentifier>
+			<UniqueIdentifier>{2E419B50-50AC-4E80-89F7-CC9D2DD5870A}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_4.20\Engine\Programs\UnrealHeaderTool\Config\DefaultEngine.ini">
 			<Filter>Config</Filter>
 		</None >
 		<None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_4.20\Engine\Source\Programs\UnrealHeaderTool\UnrealHeaderTool.Build.cs" />
 		<Filter Include="Private">
-			<UniqueIdentifier>{411CE74D-C00B-4358-A45B-A652D0FB838F}</UniqueIdentifier>
+			<UniqueIdentifier>{F3A2B799-1D5A-42D3-8857-A2C4F2F1499F}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_4.20\Engine\Source\Programs\UnrealHeaderTool\Private\BaseParser.cpp">
 			<Filter>Private</Filter>
@@ -122,7 +122,7 @@
 			<Filter>Private</Filter>
 		</ClInclude >
 		<Filter Include="Private\Specifiers">
-			<UniqueIdentifier>{88540AA9-5C05-43B3-AAD5-D57E8D2A78A8}</UniqueIdentifier>
+			<UniqueIdentifier>{E17DD82B-4E45-4602-AA40-F6317B5B241B}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_4.20\Engine\Source\Programs\UnrealHeaderTool\Private\Specifiers\CheckedMetadataSpecifiers.def">
 			<Filter>Private\Specifiers</Filter>
@@ -158,13 +158,13 @@
 			<Filter>Private\Specifiers</Filter>
 		</ClInclude >
 		<Filter Include="Public">
-			<UniqueIdentifier>{1FB9B2F5-1EEC-4CFB-9E0B-66866CE605E0}</UniqueIdentifier>
+			<UniqueIdentifier>{9B6733CC-6322-4870-AAE4-089A34FDF470}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_4.20\Engine\Source\Programs\UnrealHeaderTool\Public\IScriptGeneratorPluginInterface.h">
 			<Filter>Public</Filter>
 		</ClInclude >
 		<Filter Include="Resources">
-			<UniqueIdentifier>{030441D1-06C8-4CFB-AFC2-FAC1238758AB}</UniqueIdentifier>
+			<UniqueIdentifier>{5B926387-6C68-440D-85DD-C9F8F530BA02}</UniqueIdentifier>
 		</Filter>
 		<ResourceCompile Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_4.20\Engine\Source\Programs\UnrealHeaderTool\Resources\PCLaunch.rc">
 			<Filter>Resources</Filter>
@@ -176,7 +176,7 @@
 			<Filter>Resources</Filter>
 		</None >
 		<Filter Include="Resources\UHTDebugging">
-			<UniqueIdentifier>{BA3735DE-7F8C-477F-A737-CFDF554994C6}</UniqueIdentifier>
+			<UniqueIdentifier>{18B8FBF9-4DF3-4930-B5A1-C3DA83B556AA}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\..\..\..\..\..\..\Program Files\Epic Games\UE_4.20\Engine\Source\Programs\UnrealHeaderTool\Resources\UHTDebugging\EnumOnlyHeader.h">
 			<Filter>Resources\UHTDebugging</Filter>

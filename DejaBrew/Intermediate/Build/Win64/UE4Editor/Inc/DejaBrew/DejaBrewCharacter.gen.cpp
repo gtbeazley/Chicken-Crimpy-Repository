@@ -35,26 +35,6 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_timeLeftTillCharge_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_m_timeLeftTillCharge;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_compressionCharge_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_m_compressionCharge;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_maxCursorDistance_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_m_maxCursorDistance;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_chargingTimeInFrames_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_m_chargingTimeInFrames;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_rechargeSpeed_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_m_rechargeSpeed;
-#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_moveSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_m_moveSpeed;
@@ -66,16 +46,6 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_mouseSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_m_mouseSpeed;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_isCharging_MetaData[];
-#endif
-		static void NewProp_m_isCharging_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_m_isCharging;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_m_canShoot_MetaData[];
-#endif
-		static void NewProp_m_canShoot_SetBit(void* Obj);
-		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_m_canShoot;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CrosshairWidget_MetaData[];
 #endif
@@ -108,43 +78,6 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_timeLeftTillCharge_MetaData[] = {
-		{ "Category", "DejaBrewCharacter" },
-		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_timeLeftTillCharge = { UE4CodeGen_Private::EPropertyClass::Float, "m_timeLeftTillCharge", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, m_timeLeftTillCharge), METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_timeLeftTillCharge_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_timeLeftTillCharge_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_compressionCharge_MetaData[] = {
-		{ "Category", "DejaBrewCharacter" },
-		{ "ClampMax", "200" },
-		{ "ClampMin", "0.000000" },
-		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_compressionCharge = { UE4CodeGen_Private::EPropertyClass::Float, "m_compressionCharge", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000005, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, m_compressionCharge), METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_compressionCharge_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_compressionCharge_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_maxCursorDistance_MetaData[] = {
-		{ "Category", "DejaBrewCharacter" },
-		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_maxCursorDistance = { UE4CodeGen_Private::EPropertyClass::Float, "m_maxCursorDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, m_maxCursorDistance), METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_maxCursorDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_maxCursorDistance_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_chargingTimeInFrames_MetaData[] = {
-		{ "Category", "DejaBrewCharacter" },
-		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_chargingTimeInFrames = { UE4CodeGen_Private::EPropertyClass::Float, "m_chargingTimeInFrames", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, m_chargingTimeInFrames), METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_chargingTimeInFrames_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_chargingTimeInFrames_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_rechargeSpeed_MetaData[] = {
-		{ "Category", "DejaBrewCharacter" },
-		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_rechargeSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "m_rechargeSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, m_rechargeSpeed), METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_rechargeSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_rechargeSpeed_MetaData)) };
-#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_moveSpeed_MetaData[] = {
 		{ "Category", "DejaBrewCharacter" },
 		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
@@ -165,28 +98,6 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_mouseSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "m_mouseSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, m_mouseSpeed), METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_mouseSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_mouseSpeed_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_isCharging_MetaData[] = {
-		{ "Category", "DejaBrewCharacter" },
-		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
-	};
-#endif
-	void Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_isCharging_SetBit(void* Obj)
-	{
-		((ADejaBrewCharacter*)Obj)->m_isCharging = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_isCharging = { UE4CodeGen_Private::EPropertyClass::Bool, "m_isCharging", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(ADejaBrewCharacter), &Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_isCharging_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_isCharging_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_isCharging_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_canShoot_MetaData[] = {
-		{ "Category", "DejaBrewCharacter" },
-		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
-	};
-#endif
-	void Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_canShoot_SetBit(void* Obj)
-	{
-		((ADejaBrewCharacter*)Obj)->m_canShoot = 1;
-	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_canShoot = { UE4CodeGen_Private::EPropertyClass::Bool, "m_canShoot", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(ADejaBrewCharacter), &Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_canShoot_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_canShoot_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_canShoot_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairWidget_MetaData[] = {
 		{ "Category", "DejaBrewCharacter" },
@@ -225,16 +136,9 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_SideViewCamera = { UE4CodeGen_Private::EPropertyClass::Object, "SideViewCamera", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x002008000008000d, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, SideViewCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_SideViewCamera_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_SideViewCamera_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADejaBrewCharacter_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_timeLeftTillCharge,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_compressionCharge,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_maxCursorDistance,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_chargingTimeInFrames,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_rechargeSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_moveSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_sprintSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_mouseSpeed,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_isCharging,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_canShoot,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairBoundWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CameraBoom,
@@ -263,7 +167,7 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADejaBrewCharacter, 4219568447);
+	IMPLEMENT_CLASS(ADejaBrewCharacter, 3427294479);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ADejaBrewCharacter(Z_Construct_UClass_ADejaBrewCharacter, &ADejaBrewCharacter::StaticClass, TEXT("/Script/DejaBrew"), TEXT("ADejaBrewCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ADejaBrewCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
