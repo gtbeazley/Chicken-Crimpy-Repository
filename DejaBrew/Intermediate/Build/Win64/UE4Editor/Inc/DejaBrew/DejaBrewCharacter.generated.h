@@ -13,8 +13,62 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define DEJABREW_DejaBrewCharacter_generated_h
 
-#define DejaBrew_Source_DejaBrew_DejaBrewCharacter_h_12_RPC_WRAPPERS
-#define DejaBrew_Source_DejaBrew_DejaBrewCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define DejaBrew_Source_DejaBrew_DejaBrewCharacter_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSetMouseSpeed) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_a_newMouseSpeed); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetMouseSpeed(Z_Param_a_newMouseSpeed); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMouseSpeed) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetMouseSpeed(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCurrentCompressionCharge) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetCurrentCompressionCharge(); \
+		P_NATIVE_END; \
+	}
+
+
+#define DejaBrew_Source_DejaBrew_DejaBrewCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSetMouseSpeed) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_a_newMouseSpeed); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SetMouseSpeed(Z_Param_a_newMouseSpeed); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetMouseSpeed) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetMouseSpeed(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execGetCurrentCompressionCharge) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		*(float*)Z_Param__Result=P_THIS->GetCurrentCompressionCharge(); \
+		P_NATIVE_END; \
+	}
+
+
 #define DejaBrew_Source_DejaBrew_DejaBrewCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADejaBrewCharacter(); \
@@ -70,7 +124,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADejaBrewCharacter); \
 	FORCEINLINE static uint32 __PPO__m_maxCursorDistance() { return STRUCT_OFFSET(ADejaBrewCharacter, m_maxCursorDistance); } \
 	FORCEINLINE static uint32 __PPO__m_timeLeftForCharging() { return STRUCT_OFFSET(ADejaBrewCharacter, m_timeLeftForCharging); } \
 	FORCEINLINE static uint32 __PPO__m_timeTillChargeLimit() { return STRUCT_OFFSET(ADejaBrewCharacter, m_timeTillChargeLimit); } \
-	FORCEINLINE static uint32 __PPO__m_chargeSpeed() { return STRUCT_OFFSET(ADejaBrewCharacter, m_chargeSpeed); }
+	FORCEINLINE static uint32 __PPO__m_chargeSpeed() { return STRUCT_OFFSET(ADejaBrewCharacter, m_chargeSpeed); } \
+	FORCEINLINE static uint32 __PPO__m_chargeChangeImpact() { return STRUCT_OFFSET(ADejaBrewCharacter, m_chargeChangeImpact); } \
+	FORCEINLINE static uint32 __PPO__m_initialCompressionCharge() { return STRUCT_OFFSET(ADejaBrewCharacter, m_initialCompressionCharge); } \
+	FORCEINLINE static uint32 __PPO__m_compressionCharge() { return STRUCT_OFFSET(ADejaBrewCharacter, m_compressionCharge); }
 
 
 #define DejaBrew_Source_DejaBrew_DejaBrewCharacter_h_9_PROLOG

@@ -21,10 +21,8 @@ protected:
 	/** Camera boom positioning the camera bebside the character */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraBoom;
-	 
 
-
-	/** The bounds that the cross can not pass */
+	/** The bounds that the cross can not pass, only a widget */
 	UPROPERTY(EditAnywhere)
 	class UWidgetComponent* CrosshairBoundWidget;
 
@@ -39,7 +37,7 @@ protected:
 		bool bCanShoot = false;
 
 	UPROPERTY(EditAnywhere)
-		float m_mouseSpeed = 5;
+		float m_mouseSpeed = .5;
 
 	UPROPERTY(EditAnywhere)
 		float m_sprintSpeed = 1.5;
@@ -50,7 +48,6 @@ protected:
 	UPROPERTY(EditAnywhere)
 		float m_maxCursorDistance = 140;
 
-
 	UPROPERTY(EditAnywhere)
 		float m_timeLeftForCharging = 0;
 
@@ -60,8 +57,14 @@ protected:
 	UPROPERTY(EditAnywhere)
 		float m_chargeSpeed = 3;
 
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = 0, ClampMax = 200))
-	//	float m_compressionBlastCharge = 200;
+	UPROPERTY(EditAnywhere)
+		float m_chargeChangeImpact = 5;
+
+	UPROPERTY(EditAnywhere)
+		float m_initialCompressionCharge = 200;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = 0, ClampMax = 200))
+		float m_compressionCharge;
 
 	/**Tick event called every frame
 	@param a_dt time from the start of the last frame*/
@@ -111,8 +114,10 @@ protected:
 
 	/** Sends the character..
 	@param a_dir ..in this direction..
-	@param a_length ..measured by this length */
-	void CompressionBlastMoveCharacter(FVector a_dir, float a_length);
+	@param a_length ..measured by this length 
+	@param a_setForceXY Determines whether to set force on the xy scale..
+	@param a_setForceZ ..and Z scale*/
+	void CompressionBlastMoveCharacter(FVector a_dir, float a_length, bool a_setForceXY = true, bool a_setForceZ = false );
 
 	/**Decrements the compression blasts percentage*/
 	void DepleteCharge(float a_percentTominus);
@@ -126,4 +131,16 @@ public:
 	FORCEINLINE class UCameraComponent* GetSideViewCameraComponent() const { return SideViewCamera; }
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+
+	/** Acceses current Compression Charge*/
+	UFUNCTION(BlueprintPure)
+		float GetCurrentCompressionCharge() { return m_compressionCharge; }
+
+	/** Accesses the current Mouse Speed */
+	UFUNCTION(BlueprintPure)
+		float GetMouseSpeed() { return m_mouseSpeed; }
+
+	/** Sets the speed of the mouse */
+	UFUNCTION(BlueprintCallable)
+		void SetMouseSpeed(float a_newMouseSpeed);
 };

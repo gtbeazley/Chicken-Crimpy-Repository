@@ -1,0 +1,785 @@
+﻿Log file open, 11/09/19 23:28:23
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
+LogWindows: File 'VSPerf140.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: DejaBrew
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.463562
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +10:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MeshEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapEmulator
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Plugin shader directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders found
+LogPluginManager: Mapping shader source directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders to virtual directory /Plugin/OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogStreaming: Display: Took  0.160s to configure plugins.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2h
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.20-CL-4369336
+LogInit: Engine Version: 4.20.3-4369336+++UE4+Release-4.20
+LogInit: Compatible Engine Version: 4.20.0-4212847+++UE4+Release-4.20
+LogInit: Net CL: 4212847
+LogInit: OS: Windows 10 (), CPU: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz, GPU: Intel(R) HD Graphics 630
+LogInit: Compiled (64-bit): Sep 17 2018 12:26:19
+LogInit: Compiled with Visual C++: 19.13.26129.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.20
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: C:/Program Files (x86)/UE_4.20/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 20
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 24
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 34
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 26
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 9
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 12
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
+LogStreaming: Display: Took  0.005s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2019.11.09-12.28.23:849][  0]LogInit: Selected Device Profile: [Windows]
+[2019.11.09-12.28.23:849][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.11.09-12.28.23:873][  0]LogHAL: Display: Platform has ~ 16 GB [17095811072 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.11.09-12.28.23:873][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2019.11.09-12.28.23:873][  0]LogInit: Going up to parent DeviceProfile []
+[2019.11.09-12.28.23:874][  0]LogInit: Computer: MSI
+[2019.11.09-12.28.23:874][  0]LogInit: User: hiit
+[2019.11.09-12.28.23:874][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.11.09-12.28.23:874][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2019.11.09-12.28.23:874][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2019.11.09-12.28.23:874][  0]LogMemory: Platform Memory Stats for Windows
+[2019.11.09-12.28.23:874][  0]LogMemory: Process Physical Memory: 102.51 MB used, 102.52 MB peak
+[2019.11.09-12.28.23:875][  0]LogMemory: Process Virtual Memory: 89.52 MB used, 89.52 MB peak
+[2019.11.09-12.28.23:875][  0]LogMemory: Physical Memory: 9102.04 MB used,  7201.80 MB free, 16303.84 MB total
+[2019.11.09-12.28.23:875][  0]LogMemory: Virtual Memory: 4626.85 MB used,  7201.80 MB free, 134217728.00 MB total
+[2019.11.09-12.28.24:701][  0]LogInit: Using OS detected language (en-US).
+[2019.11.09-12.28.24:701][  0]LogInit: Using OS detected locale (en-AU).
+[2019.11.09-12.28.24:702][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2019.11.09-12.28.25:148][  0]LogStreaming: Display: Took  0.447s to InitEngineTextLocalization.
+[2019.11.09-12.28.25:148][  0]LogInit: Setting process to per monitor DPI aware
+[2019.11.09-12.28.25:297][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.11.09-12.28.25:297][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.11.09-12.28.28:190][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.11.09-12.28.28:190][  0]LogD3D11RHI: D3D11 adapters:
+[2019.11.09-12.28.28:287][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
+[2019.11.09-12.28.28:288][  0]LogD3D11RHI:       4021/0/8151 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2019.11.09-12.28.28:318][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
+[2019.11.09-12.28.28:318][  0]LogD3D11RHI:       128/0/8151 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2019.11.09-12.28.28:326][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.11.09-12.28.28:326][  0]LogD3D11RHI:       0/0/8151 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.11.09-12.28.28:326][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.11.09-12.28.28:368][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.11.09-12.28.28:368][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8d (for the marketing name, search the web for "GPU Device Id")
+[2019.11.09-12.28.28:368][  0]LogWindows: EnumDisplayDevices:
+[2019.11.09-12.28.28:369][  0]LogWindows:    0. 'Intel(R) HD Graphics 630' (P:1 D:1)
+[2019.11.09-12.28.28:369][  0]LogWindows:    1. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2019.11.09-12.28.28:370][  0]LogWindows:    2. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2019.11.09-12.28.28:370][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2019.11.09-12.28.28:370][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
+[2019.11.09-12.28.28:370][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2019.11.09-12.28.28:370][  0]LogD3D11RHI:      Driver Date: Unknown
+[2019.11.09-12.28.28:371][  0]LogRHI: Texture pool is 2814 MB (70% of 4021 MB)
+[2019.11.09-12.28.28:421][  0]LogD3D11RHI: Async texture creation enabled
+[2019.11.09-12.28.28:519][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2019.11.09-12.28.28:520][  0]LogShaderCompilers: Guid format shader working directory is -42 characters bigger than the processId version (../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Intermediate/Shaders/WorkingDirectory/23280/).
+[2019.11.09-12.28.28:521][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/hi_it/AppData/Local/Temp/UnrealShaderWorkingDir/B5D59FAA4E4E7DA1260B888DA98CAA65/'.
+[2019.11.09-12.28.28:863][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2019.11.09-12.28.28:878][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2019.11.09-12.28.28:895][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2019.11.09-12.28.28:912][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2019.11.09-12.28.28:937][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2019.11.09-12.28.28:955][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2019.11.09-12.28.28:972][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2019.11.09-12.28.28:989][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2019.11.09-12.28.28:998][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2019.11.09-12.28.29:093][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:093][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:093][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:094][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:094][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:094][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:094][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:094][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:094][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:094][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:094][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:094][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:095][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:095][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:095][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:095][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:095][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:095][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.09-12.28.29:099][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2019.11.09-12.28.29:181][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.11.09-12.28.29:182][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.11.09-12.28.29:209][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.11.09-12.28.29:209][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.11.09-12.28.29:229][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2019.11.09-12.28.29:255][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2019.11.09-12.28.29:271][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2019.11.09-12.28.29:297][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2019.11.09-12.28.29:311][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.11.09-12.28.29:311][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.11.09-12.28.29:508][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.11.09-12.28.29:508][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.11.09-12.28.29:508][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.11.09-12.28.31:914][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.11.09-12.28.31:994][  0]LogDerivedDataCache: Loaded boot cache 0.08s 80MB C:/Users/hi_it/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2019.11.09-12.28.31:995][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/hi_it/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
+[2019.11.09-12.28.31:995][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.11.09-12.28.31:995][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.11.09-12.28.31:995][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.11.09-12.28.31:995][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.11.09-12.28.32:022][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.11.09-12.28.32:036][  0]LogDerivedDataCache: Using Local data cache path C:/Users/hi_it/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.11.09-12.28.32:037][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.11.09-12.28.32:037][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.11.09-12.28.32:057][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.11.09-12.28.32:059][  0]LogSlate: Using FreeType 2.6.0
+[2019.11.09-12.28.32:077][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.11.09-12.28.32:366][  0]LogAssetRegistry: FAssetRegistry took 0.0303 seconds to start up
+[2019.11.09-12.28.32:761][  0]LogInit: Selected Device Profile: [Windows]
+[2019.11.09-12.28.33:064][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2019.11.09-12.28.33:072][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2019.11.09-12.28.33:072][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.11.09-12.28.33:072][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.11.09-12.28.33:072][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2019.11.09-12.28.33:120][  0]LogNetVersion: DejaBrew 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 719251921)
+[2019.11.09-12.28.34:435][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.137719 seconds
+[2019.11.09-12.28.34:443][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
+[2019.11.09-12.28.34:443][  0]LogUObjectAllocator: 6690864 out of 0 bytes used by permanent object pool.
+[2019.11.09-12.28.34:443][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.11.09-12.28.37:816][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.11.09-12.28.37:833][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.11.09-12.28.38:639][  0]SourceControl: Source control is disabled
+[2019.11.09-12.28.38:639][  0]SourceControl: Source control is disabled
+[2019.11.09-12.28.38:643][  0]SourceControl: Source control is disabled
+[2019.11.09-12.28.38:646][  0]SourceControl: Source control is disabled
+[2019.11.09-12.28.38:933][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.11.09-12.28.39:198][  0]LogOcInput: OculusInput pre-init called
+[2019.11.09-12.28.39:303][  0]LogEngine: Initializing Engine...
+[2019.11.09-12.28.39:305][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.11.09-12.28.39:306][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.11.09-12.28.39:307][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.11.09-12.28.39:307][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.11.09-12.28.39:307][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.11.09-12.28.39:735][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.11.09-12.28.39:759][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.11.09-12.28.39:876][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-12.28.39:969][  0]LogInit: FAudioDevice initialized.
+[2019.11.09-12.28.39:970][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.11.09-12.28.40:146][  0]LogDerivedDataCache: Saved boot cache 0.18s 80MB C:/Users/hi_it/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2019.11.09-12.28.40:161][  0]LogInit: Texture streaming: Enabled
+[2019.11.09-12.28.40:190][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.11.09-12.28.40:204][  0]LogInit: Transaction tracking system initialized
+[2019.11.09-12.28.40:246][  0]BlueprintLog: New page: Editor Load
+[2019.11.09-12.28.40:463][  0]LocalizationService: Localization service is disabled
+[2019.11.09-12.28.41:061][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.11.09-12.28.41:062][  0]LogCook: Display: Mobile HDR setting 1
+[2019.11.09-12.28.41:062][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.11.09-12.28.41:062][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.11.09-12.28.41:062][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.11.09-12.28.41:062][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.11.09-12.28.41:062][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.11.09-12.28.41:217][  0]LogFileCache: Scanning file cache for directory 'C:/Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/' took 0.02s
+[2019.11.09-12.28.41:358][  0]SourceControl: Source control is disabled
+[2019.11.09-12.28.41:364][  0]LightingResults: New page: Lighting Build
+[2019.11.09-12.28.41:367][  0]MapCheck: New page: Map Check
+[2019.11.09-12.28.41:367][  0]LightingResults: New page: Lighting Build
+[2019.11.09-12.28.41:650][  0]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.09-12.28.41:668][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.11.09-12.28.41:690][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.11.09-12.28.41:772][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 81.941ms to complete.
+[2019.11.09-12.28.41:773][  0]LogFileHelpers: Loading map 'SideScrollerExampleMap' took 0.414
+[2019.11.09-12.28.41:948][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.09-12.28.41:956][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.09-12.28.41:965][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.09-12.28.41:974][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.09-12.28.41:991][  0]LogCollectionManager: Loaded 0 collections in 0.002449 seconds
+[2019.11.09-12.28.42:042][  0]LogFileCache: Scanning file cache for directory 'C:/Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/Collections/' took 0.01s
+[2019.11.09-12.28.42:042][  0]LogFileCache: Scanning file cache for directory 'C:/Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/Developers/hiit/Collections/' took 0.01s
+[2019.11.09-12.28.42:042][  0]LogFileCache: Scanning file cache for directory 'C:/Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/Collections/' took 0.01s
+[2019.11.09-12.28.42:043][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.11.09-12.28.42:055][  0]LogContentBrowser: Native class hierarchy populated in 0.0124 seconds. Added 2575 classes and 605 folders.
+[2019.11.09-12.28.42:062][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.11.09-12.28.42:407][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.11.09-12.28.42:415][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2019.11.09-12.28.42:503][  0]LogSlate: Took 0.007718 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.11.09-12.28.42:514][  0]LogSlate: Took 0.007376 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.11.09-12.28.42:528][  0]LogSlate: Took 0.007111 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.11.09-12.28.42:687][  0]LogRenderer: Reallocating scene render targets to support 884x508 Format 10 NumSamples 1 (Frame:1).
+[2019.11.09-12.28.42:907][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2019.11.09-12.28.42:907][  0]LogLoad: (Engine Initialization) Total time: 21.99 seconds
+[2019.11.09-12.28.42:907][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.11.09-12.28.42:963][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.11.09-12.28.43:012][  0]LogSlate: Took 0.005303 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.11.09-12.28.43:045][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/' took 0.10s
+[2019.11.09-12.28.43:059][  1]LogAssetRegistry: Asset discovery search completed in 10.7178 seconds
+[2019.11.09-12.28.43:060][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.11.09-12.28.43:060][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000277 seconds (updated 0 objects)
+[2019.11.09-12.29.00:124][ 14]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.09-12.30.06:632][943]LogSlate: Took 0.000199 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.11.09-12.30.06:642][943]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/SideScrollerCPP/Blueprints/Widgets/PM_OptionsWidget_BP.PM_OptionsWidget_BP
+[2019.11.09-12.30.07:248][943]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 116 classes and 0 folders.
+[2019.11.09-12.30.08:121][943]LogSlate: Took 0.005954 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.11.09-12.30.10:810][ 87]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP
+[2019.11.09-12.30.34:265][361]LogSlate: Took 0.006265 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.11.09-12.31.58:947][394]BlueprintLog: New page: Compile MM_OptionsWidget_BP
+[2019.11.09-12.31.59:751][431]LogSavePackage: Moving '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/MM_OptionsWidget_BP2619B9EF4A095A8C16E115BA424F9669.tmp' to '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.uasset'
+[2019.11.09-12.32.01:190][516]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.09-12.32.01:233][516]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.09-12.32.01:233][516]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.09-12.32.01:249][516]PIE: New page: PIE session: SideScrollerExampleMap (10 Nov 2019 10:32:01 am)
+[2019.11.09-12.32.01:249][516]LogPlayLevel: Creating play world package: /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2019.11.09-12.32.01:272][516]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022198s)
+[2019.11.09-12.32.01:272][516]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.09-12.32.01:273][516]LogPlayLevel: PIE: World Init took: (0.000913s)
+[2019.11.09-12.32.01:273][516]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.023638s)
+[2019.11.09-12.32.01:363][516]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-12.32.01:444][516]LogInit: FAudioDevice initialized.
+[2019.11.09-12.32.01:497][516]LogLoad: Game class is 'DejaBrewGameMode'
+[2019.11.09-12.32.01:501][516]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 60) at 2019.11.09-23.32.01
+[2019.11.09-12.32.01:502][516]LogWorld: Bringing up level for play took: 0.003164
+[2019.11.09-12.32.01:525][516]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 10 classes and 0 folders.
+[2019.11.09-12.32.01:555][516]PIE: Play in editor start time for /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap -0.649
+[2019.11.09-12.32.01:555][516]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.09-12.32.04:162][671]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.09-12.32.04:164][671]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.09-12.32.04:210][671]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.09-12.32.04:210][671]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.09-12.32.04:251][671]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.09-12.32.04:272][672]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2019.11.09-12.32.05:973][774]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.09-12.32.09:450][974]LogSlate: Window 'PM_OptionsWidget_BP' being destroyed
+[2019.11.09-12.32.12:717][170]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.09-12.32.12:750][170]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.09-12.32.12:750][170]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.09-12.32.12:751][170]PIE: New page: PIE session: SideScrollerExampleMap (10 Nov 2019 10:32:12 am)
+[2019.11.09-12.32.12:751][170]LogPlayLevel: Creating play world package: /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2019.11.09-12.32.12:766][170]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014833s)
+[2019.11.09-12.32.12:767][170]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.09-12.32.12:768][170]LogPlayLevel: PIE: World Init took: (0.001297s)
+[2019.11.09-12.32.12:768][170]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.016792s)
+[2019.11.09-12.32.12:844][170]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-12.32.12:921][170]LogInit: FAudioDevice initialized.
+[2019.11.09-12.32.12:958][170]LogLoad: Game class is 'DejaBrewGameMode'
+[2019.11.09-12.32.12:962][170]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 60) at 2019.11.09-23.32.12
+[2019.11.09-12.32.12:962][170]LogWorld: Bringing up level for play took: 0.002561
+[2019.11.09-12.32.13:006][170]PIE: Play in editor start time for /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap 0.802
+[2019.11.09-12.32.13:007][170]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.09-12.32.19:159][539]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.09-12.32.25:028][891]LogNet: Browse: /Game/SideScrollerCPP/Maps/MainMenu
+[2019.11.09-12.32.25:028][891]LogLoad: LoadMap: /Game/SideScrollerCPP/Maps/MainMenu
+[2019.11.09-12.32.25:069][891]LogLinker: Warning: Can't find file '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData'
+[2019.11.09-12.32.25:069][891]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData' while loading ../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Maps/MainMenu.umap.
+[2019.11.09-12.32.25:070][891]LoadErrors: Error: /Game/SideScrollerCPP/Maps/MainMenu : Can't find file for asset. /Game/SideScrollerCPP/Maps/MainMenu_BuiltData
+[2019.11.09-12.32.25:078][891]LogLinker: Warning: Can't find file '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData'
+[2019.11.09-12.32.25:078][891]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData' while loading ../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Maps/MainMenu.umap.
+[2019.11.09-12.32.25:082][891]LogLinker: Warning: Can't find file '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData'
+[2019.11.09-12.32.25:082][891]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData' while loading NULL.
+[2019.11.09-12.32.25:083][891]LogLinker: Warning: Can't find file '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData'
+[2019.11.09-12.32.25:083][891]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData' while loading NULL.
+[2019.11.09-12.32.25:097][891]LogLinker: Warning: Can't find file '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData'
+[2019.11.09-12.32.25:097][891]LoadErrors: Failed to load /Game/SideScrollerCPP/Maps/MainMenu_BuiltData.MainMenu_BuiltData Referenced by PersistentLevel
+[2019.11.09-12.32.25:098][891]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData' while loading NULL.
+[2019.11.09-12.32.25:483][891]LogAIModule: Creating AISystem for world MainMenu
+[2019.11.09-12.32.25:484][891]LogLoad: Game class is 'GameModeBase'
+[2019.11.09-12.32.25:485][891]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 60) at 2019.11.09-23.32.25
+[2019.11.09-12.32.25:486][891]LogWorld: Bringing up level for play took: 0.001161
+[2019.11.09-12.32.25:487][891]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2019.11.09-12.32.25:530][891]LogLoad: Took 0.500526 seconds to LoadMap(/Game/SideScrollerCPP/Maps/MainMenu)
+[2019.11.09-12.32.27:351][  0]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.09-12.32.30:151][168]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.30:351][180]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.30:368][181]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.30:501][189]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.30:568][193]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.30:819][208]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.30:902][213]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.30:951][216]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.31:035][221]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.31:085][224]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.31:101][225]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.31:184][230]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.31:251][234]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.31:285][236]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.31:501][249]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.31:651][258]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.31:735][263]LogScript: Warning: Accessed None trying to read property K2Node_DynamicCast_AsSide_Scroller_Character
+	MM_OptionsWidget_BP_C /Engine/Transient.UnrealEdEngine_0:GameInstance_1.MM_OptionsWidget_BP_C_0
+	Function /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:ExecuteUbergraph_MM_OptionsWidget_BP:07AE
+[2019.11.09-12.32.36:286][536]LogNet: Browse: /Game/SideScrollerCPP/Maps/SideScrollerExampleMap
+[2019.11.09-12.32.36:287][536]LogLoad: LoadMap: /Game/SideScrollerCPP/Maps/SideScrollerExampleMap
+[2019.11.09-12.32.36:321][536]LogPlayLevel: Creating play world package: /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2019.11.09-12.32.36:333][536]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012950s)
+[2019.11.09-12.32.36:334][536]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.09-12.32.36:335][536]LogPlayLevel: PIE: World Init took: (0.001505s)
+[2019.11.09-12.32.36:335][536]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.015215s)
+[2019.11.09-12.32.36:335][536]LogLoad: Game class is 'DejaBrewGameMode'
+[2019.11.09-12.32.36:350][536]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 60) at 2019.11.09-23.32.36
+[2019.11.09-12.32.36:350][536]LogWorld: Bringing up level for play took: 0.013768
+[2019.11.09-12.32.36:386][536]LogLoad: Took 0.100112 seconds to LoadMap(/Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap)
+[2019.11.09-12.32.39:853][744]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.09-12.32.39:854][744]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.09-12.32.39:900][744]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.09-12.32.39:901][744]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.09-12.32.39:937][744]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.09-12.32.39:958][745]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2019.11.09-12.32.42:560][901]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.09-12.34.28:628][252]BlueprintLog: New page: Compile MM_OptionsWidget_BP
+[2019.11.09-12.34.29:363][286]LogSavePackage: Moving '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/MM_OptionsWidget_BPE9D03F1B4C57048A6C392B8CF31502D1.tmp' to '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.uasset'
+[2019.11.09-12.34.30:540][356]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.09-12.34.30:572][356]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.09-12.34.30:573][356]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.09-12.34.30:573][356]PIE: New page: PIE session: SideScrollerExampleMap (10 Nov 2019 10:34:30 am)
+[2019.11.09-12.34.30:573][356]LogPlayLevel: Creating play world package: /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2019.11.09-12.34.30:587][356]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013186s)
+[2019.11.09-12.34.30:588][356]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.09-12.34.30:589][356]LogPlayLevel: PIE: World Init took: (0.001635s)
+[2019.11.09-12.34.30:589][356]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.015454s)
+[2019.11.09-12.34.30:667][356]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-12.34.30:746][356]LogInit: FAudioDevice initialized.
+[2019.11.09-12.34.30:761][356]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.09-12.34.30:923][356]LogLoad: Game class is 'DejaBrewGameMode'
+[2019.11.09-12.34.30:927][356]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 60) at 2019.11.09-23.34.30
+[2019.11.09-12.34.30:927][356]LogWorld: Bringing up level for play took: 0.002555
+[2019.11.09-12.34.30:977][356]PIE: Play in editor start time for /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap 0.773
+[2019.11.09-12.34.30:977][356]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.09-12.34.31:017][356]LogRenderer: Reallocating scene render targets to support 1024x576 Format 10 NumSamples 1 (Frame:1).
+[2019.11.09-12.34.35:208][605]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.09-12.34.35:309][611]LogNet: Browse: /Game/SideScrollerCPP/Maps/MainMenu
+[2019.11.09-12.34.35:309][611]LogLoad: LoadMap: /Game/SideScrollerCPP/Maps/MainMenu
+[2019.11.09-12.34.35:348][611]LogLinker: Warning: Can't find file '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData'
+[2019.11.09-12.34.35:349][611]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData' while loading ../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Maps/MainMenu.umap.
+[2019.11.09-12.34.35:428][611]LogLinker: Warning: Can't find file '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData'
+[2019.11.09-12.34.35:428][611]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData' while loading ../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Maps/MainMenu.umap.
+[2019.11.09-12.34.35:431][611]LogLinker: Warning: Can't find file '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData'
+[2019.11.09-12.34.35:431][611]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData' while loading NULL.
+[2019.11.09-12.34.35:432][611]LogLinker: Warning: Can't find file '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData'
+[2019.11.09-12.34.35:432][611]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData' while loading NULL.
+[2019.11.09-12.34.35:447][611]LogLinker: Warning: Can't find file '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData'
+[2019.11.09-12.34.35:447][611]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerCPP/Maps/MainMenu_BuiltData' while loading NULL.
+[2019.11.09-12.34.35:480][611]LogAIModule: Creating AISystem for world MainMenu
+[2019.11.09-12.34.35:481][611]LogLoad: Game class is 'GameModeBase'
+[2019.11.09-12.34.35:483][611]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 60) at 2019.11.09-23.34.35
+[2019.11.09-12.34.35:483][611]LogWorld: Bringing up level for play took: 0.001256
+[2019.11.09-12.34.35:484][611]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2019.11.09-12.34.35:526][611]LogLoad: Took 0.215494 seconds to LoadMap(/Game/SideScrollerCPP/Maps/MainMenu)
+[2019.11.09-12.34.36:987][699]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.09-12.34.42:505][ 30]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.09-12.34.42:507][ 30]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.09-12.34.42:530][ 30]LogSlate: Window 'DejaBrew Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.11.09-12.34.42:572][ 30]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.09-12.34.42:573][ 30]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.09-12.34.42:629][ 31]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2019.11.09-17.47.57:983][628]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-20.50.55:922][912]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
+[2019.11.09-20.50.59:673][123]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-20.51.22:519][429]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-21.33.58:841][911]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-21.34.21:705][229]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-22.17.15:169][598]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
+[2019.11.09-22.17.19:185][808]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-22.17.41:639][109]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-22.52.36:125][607]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
+[2019.11.09-22.52.40:051][817]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-22.53.02:484][120]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-23.50.29:018][293]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
+[2019.11.09-23.50.33:164][504]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.09-23.50.55:562][805]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.10-00.47.33:872][254]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
+[2019.11.10-00.47.37:953][465]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.10-00.48.00:407][773]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.10-06.48.10:806][755]LogHttp: Warning: 0000012F12701BC0: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2019.11.10-06.48.10:806][755]LogHttp: Warning: 0000012F12701BC0: libcurl info message cache 0 (Connection 254 seems to be dead!)
+[2019.11.10-06.48.10:807][755]LogHttp: Warning: 0000012F12701BC0: libcurl info message cache 1 (Closing connection 254)
+[2019.11.10-06.48.10:807][755]LogHttp: Warning: 0000012F12701BC0: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2019.11.10-06.48.10:807][755]LogHttp: Warning: 0000012F12701BC0: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2019.11.10-06.48.10:807][755]LogHttp: Warning: 0000012F12701BC0: libcurl info message cache 4 (Closing connection 255)
+[2019.11.10-06.48.30:283][810]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.10-06.49.37:985][ 60]LogPackageName: Error: DoesPackageExist: DoesPackageExist FAILED: 'Engine/Tutorial/Installation/InstallingVisualStudioTutorial' is not a standard unreal filename or a long path name. Reason: Path should start with a '/'
+[2019.11.10-06.49.37:985][ 60]LogLinker: Warning: Can't find file 'Engine/Tutorial/Installation/InstallingVisualStudioTutorial'
+[2019.11.10-06.49.37:985][ 60]LogPackageName: Error: DoesPackageExist: DoesPackageExist FAILED: 'Engine/Tutorial/Installation/InstallingVisualStudioTutorial' is not a standard unreal filename or a long path name. Reason: Path should start with a '/'
+[2019.11.10-06.49.37:985][ 60]LogLinker: Warning: Can't find file 'Engine/Tutorial/Installation/InstallingVisualStudioTutorial'
+[2019.11.10-06.49.37:986][ 60]LogUObjectGlobals: Warning: Failed to find object 'Blueprint Engine/Tutorial/Installation/InstallingVisualStudioTutorial.InstallingVisualStudioTutorial'
+[2019.11.10-06.50.08:045][ 37]LogEditorTransaction: Undo Resize Widget
+[2019.11.10-06.50.10:873][113]LogHttp: Warning: 0000012F00D61F80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2019.11.10-06.50.10:873][113]LogHttp: Warning: 0000012F00D61F80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2019.11.10-06.50.10:873][113]LogHttp: Warning: 0000012F00D61F80: libcurl info message cache 1 (Closing connection 256)
+[2019.11.10-06.52.10:908][972]LogHttp: Warning: 0000012F44299F80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2019.11.10-06.52.10:910][972]LogHttp: Warning: 0000012F44299F80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2019.11.10-06.52.10:910][972]LogHttp: Warning: 0000012F44299F80: libcurl info message cache 1 (Closing connection 257)
+[2019.11.10-06.52.10:942][973]BlueprintLog: New page: Compile PM_OptionsWidget_BP
+[2019.11.10-06.52.12:035][  1]LogSavePackage: Moving '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/PM_OptionsWidget_BP159791B34C2664FFEF247EBB6AD087E8.tmp' to '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Blueprints/Widgets/PM_OptionsWidget_BP.uasset'
+[2019.11.10-06.53.14:044][ 19]BlueprintLog: New page: Compile PM_OptionsWidget_BP
+[2019.11.10-06.53.16:030][ 49]LogSavePackage: Moving '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/PM_OptionsWidget_BPDF02C16E43B5F678051E46BD6647231F.tmp' to '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Blueprints/Widgets/PM_OptionsWidget_BP.uasset'
+[2019.11.10-06.53.21:825][284]BlueprintLog: New page: Compile MM_OptionsWidget_BP
+[2019.11.10-06.53.37:263][792]LogSavePackage: Moving '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/MM_OptionsWidget_BP1D88F71547BCB2F5B733A0AEDC03E3A5.tmp' to '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.uasset'
+[2019.11.10-06.53.38:004][817]BlueprintLog: New page: Compile MM_OptionsWidget_BP
+[2019.11.10-06.53.39:540][859]LogSavePackage: Moving '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/MM_OptionsWidget_BP376BBFAF46B4ECDA42630FB351A74D4F.tmp' to '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.uasset'
+[2019.11.10-06.53.42:570][955]BlueprintLog: New page: Compile MM_OptionsWidget_BP
+[2019.11.10-06.53.43:753][990]BlueprintLog: New page: Compile MM_OptionsWidget_BP
+[2019.11.10-06.53.44:703][ 18]BlueprintLog: New page: Compile MM_OptionsWidget_BP
+[2019.11.10-06.54.01:321][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.SKEL_CrosshairWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:322][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:322][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/PauseMenuWidget_BP.PauseMenuWidget_BP:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:322][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/RemapWidget_BP.RemapWidget_BP:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:323][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/PM_OptionsWidget_BP.PM_OptionsWidget_BP:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:323][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:PM_OptionsWidget_BP_C_26.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:323][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:PM_OptionsWidget_BP_C_18.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:324][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/RemapWidget_BP.SKEL_RemapWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:324][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/PauseMenuWidget_BP.PauseMenuWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:324][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MM_OptionsWidget_BP_C_17.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:325][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/RemapWidget_BP.RemapWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:325][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/PlayerHUDWidget_BP.PlayerHUDWidget_BP:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:325][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/PlayerHUDWidget_BP.SKEL_PlayerHUDWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:326][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/PlayerHUDWidget_BP.PlayerHUDWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:326][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:CrosshairWidget_BP_C_0.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:326][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_45.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:326][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_44.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:327][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_43.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:327][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_42.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:327][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_41.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:328][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_40.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:328][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:PM_OptionsWidget_BP_C_10.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:328][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_67.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:329][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_66.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:329][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_65.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:330][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_64.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:330][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_63.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:331][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_62.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:331][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/MainMenuWidget_BP.MainMenuWidget_BP:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:332][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/LevelSelectWidget_BP.LevelSelectWidget_BP:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:332][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:332][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/LevelSelectWidget_BP.SKEL_LevelSelectWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:333][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/MainMenuWidget_BP.SKEL_MainMenuWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:333][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_61.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:333][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_60.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:334][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/LevelSelectWidget_BP.LevelSelectWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:334][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/MainMenuWidget_BP.MainMenuWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:334][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_52.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:334][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_73.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:335][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_72.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:335][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_56.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:335][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_55.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:336][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_51.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:336][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_50.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:337][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:PM_OptionsWidget_BP_C_15.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:337][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:337][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:PM_OptionsWidget_BP_C_16.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:338][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_59.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:338][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_58.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:338][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_57.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:338][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_54.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:339][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.REINST_MM_OptionsWidget_BP_C_30:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:339][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MM_OptionsWidget_BP_C_2.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:339][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.REINST_MM_OptionsWidget_BP_C_11:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:340][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_53.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:340][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_71.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:340][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_70.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:341][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_46.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:341][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_47.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:341][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_48.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:342][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_49.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:342][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:PM_OptionsWidget_BP_C_11.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:342][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:PM_OptionsWidget_BP_C_12.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:343][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_68.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:343][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_69.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:343][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.REINST_PM_OptionsWidget_BP_C_20:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:344][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_74.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:344][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_75.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:344][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:PM_OptionsWidget_BP_C_17.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:345][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.REINST_PM_OptionsWidget_BP_C_28:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:345][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/PM_OptionsWidget_BP.PM_OptionsWidget_BP_C:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:345][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_76.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:346][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_77.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:346][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_78.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:346][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_79.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:347][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:PM_OptionsWidget_BP_C_27.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:347][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_70.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:347][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_71.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:348][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.REINST_MM_OptionsWidget_BP_C_40:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:348][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MM_OptionsWidget_BP_C_21.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:348][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_20.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:349][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_21.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:349][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_22.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:349][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_23.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:350][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_24.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:350][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_25.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:350][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_26.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:350][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_27.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:351][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_28.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:351][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_29.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:351][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MM_OptionsWidget_BP_C_22.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:351][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_30.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:352][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_31.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:352][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_32.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:352][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_33.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:353][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_34.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:353][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_35.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:353][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_36.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:353][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_37.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:354][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_38.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:354][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:RemapWidget_BP_C_39.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:354][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.REINST_MM_OptionsWidget_BP_C_34:WidgetTree.CanvasPanel_0
+[2019.11.10-06.54.01:355][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_72.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:355][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_73.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:355][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MM_OptionsWidget_BP_C_29.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:356][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_3:MM_OptionsWidget_BP_C_30.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:356][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_74.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:356][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_75.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:356][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_76.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:357][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_77.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:357][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_78.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:357][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanel /Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP.CrosshairWidget_BP:WidgetTree.CanvasPanel_0 or CanvasPanel /Engine/Transient.World_1:RemapWidget_BP_C_79.WidgetTree_0.CanvasPanel_0
+[2019.11.10-06.54.01:358][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanelSlot /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4 or CanvasPanelSlot /Engine/Transient.World_3:MM_OptionsWidget_BP_C_21.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4
+[2019.11.10-06.54.01:358][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanelSlot /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4 or CanvasPanelSlot /Engine/Transient.World_3:MM_OptionsWidget_BP_C_2.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4
+[2019.11.10-06.54.01:358][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanelSlot /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4 or CanvasPanelSlot /Engine/Transient.REINST_MM_OptionsWidget_BP_C_11:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4
+[2019.11.10-06.54.01:359][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanelSlot /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4 or CanvasPanelSlot /Engine/Transient.REINST_MM_OptionsWidget_BP_C_30:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4
+[2019.11.10-06.54.01:359][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanelSlot /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4 or CanvasPanelSlot /Engine/Transient.World_3:MM_OptionsWidget_BP_C_17.WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4
+[2019.11.10-06.54.01:359][559]LogUObjectHash: Warning: Ambiguous search, could be CanvasPanelSlot /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4 or CanvasPanelSlot /Engine/Transient.REINST_MM_OptionsWidget_BP_C_34:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4
+[2019.11.10-06.54.01:360][559]LogProperty: Warning: Illegal TEXT reference to a private object in external package (CanvasPanelSlot /Game/SideScrollerCPP/Blueprints/Widgets/MM_OptionsWidget_BP.MM_OptionsWidget_BP:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4) from referencer (TextBlock /Engine/UMG/Editor/Transient.MouseSensitivityLabel).  Import failed...
+[2019.11.10-06.54.01:360][559]LogProperty: Warning: ObjectProperty /Script/UMG.Widget:Slot: unresolved reference to 'CanvasPanelSlot'"CanvasPanel_0.CanvasPanelSlot_4"''
+[2019.11.10-06.54.10:999][867]LogHttp: Warning: 0000012F143779C0: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2019.11.10-06.54.10:999][867]LogHttp: Warning: 0000012F143779C0: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2019.11.10-06.54.11:000][867]LogHttp: Warning: 0000012F143779C0: libcurl info message cache 1 (Closing connection 258)
+[2019.11.10-06.56.03:826][600]BlueprintLog: New page: Compile PM_OptionsWidget_BP
+[2019.11.10-06.56.04:703][612]LogSavePackage: Moving '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/PM_OptionsWidget_BPBD4E4CBD47E6B695D7F50FB631CB0558.tmp' to '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Blueprints/Widgets/PM_OptionsWidget_BP.uasset'
+[2019.11.10-06.56.11:067][819]LogHttp: Warning: 0000012F62908A40: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2019.11.10-06.56.11:067][819]LogHttp: Warning: 0000012F62908A40: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2019.11.10-06.56.11:067][819]LogHttp: Warning: 0000012F62908A40: libcurl info message cache 1 (Closing connection 259)
+[2019.11.10-06.56.16:901][980]LogSlate: Window 'Color Picker' being destroyed
+[2019.11.10-06.56.25:413][219]LogSlate: Window 'Color Picker' being destroyed
+[2019.11.10-06.56.27:698][292]LogEditorTransaction: Undo Edit Slider Handle Color
+[2019.11.10-06.56.28:362][301]LogEditorTransaction: Undo Edit Slider Bar Color
+[2019.11.10-06.56.29:590][332]LogEditorTransaction: Undo Edit Bar Thickness
+[2019.11.10-06.56.31:462][383]LogEditorTransaction: Undo Edit Bar Thickness
+[2019.11.10-06.57.11:334][697]BlueprintLog: New page: Compile PM_OptionsWidget_BP
+[2019.11.10-06.57.12:588][726]LogSavePackage: Moving '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/PM_OptionsWidget_BP52A34034463D87B59C19FD924EAC7696.tmp' to '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Blueprints/Widgets/PM_OptionsWidget_BP.uasset'
+[2019.11.10-06.57.13:801][764]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.10-06.57.13:839][764]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.10-06.57.13:839][764]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.10-06.57.13:840][764]PIE: New page: PIE session: SideScrollerExampleMap (11 Nov 2019 4:57:13 am)
+[2019.11.10-06.57.13:840][764]LogPlayLevel: Creating play world package: /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2019.11.10-06.57.13:875][764]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034835s)
+[2019.11.10-06.57.13:876][764]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.10-06.57.13:876][764]LogPlayLevel: PIE: World Init took: (0.001389s)
+[2019.11.10-06.57.13:876][764]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.036784s)
+[2019.11.10-06.57.13:969][764]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.10-06.57.14:048][764]LogInit: FAudioDevice initialized.
+[2019.11.10-06.57.14:069][764]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.10-06.57.14:278][764]LogLoad: Game class is 'DejaBrewGameMode'
+[2019.11.10-06.57.14:287][764]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 60) at 2019.11.10-17.57.14
+[2019.11.10-06.57.14:288][764]LogWorld: Bringing up level for play took: 0.006881
+[2019.11.10-06.57.14:397][764]PIE: Play in editor start time for /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap 1.419
+[2019.11.10-06.57.14:398][764]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.10-06.57.18:928][894]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.10-06.57.27:125][124]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.10-06.57.27:127][124]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.10-06.57.27:201][124]LogSlate: Window 'DejaBrew Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.11.10-06.57.27:261][124]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.10-06.57.27:262][124]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.10-06.57.27:326][125]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2019.11.10-06.57.31:870][282]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.10-06.57.31:908][282]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.10-06.57.31:908][282]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.10-06.57.31:909][282]PIE: New page: PIE session: SideScrollerExampleMap (11 Nov 2019 4:57:31 am)
+[2019.11.10-06.57.31:909][282]LogPlayLevel: Creating play world package: /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2019.11.10-06.57.31:922][282]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013141s)
+[2019.11.10-06.57.31:924][282]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.10-06.57.31:924][282]LogPlayLevel: PIE: World Init took: (0.001390s)
+[2019.11.10-06.57.31:924][282]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.015230s)
+[2019.11.10-06.57.32:019][282]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.10-06.57.32:100][282]LogInit: FAudioDevice initialized.
+[2019.11.10-06.57.32:115][282]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.10-06.57.32:264][282]LogLoad: Game class is 'DejaBrewGameMode'
+[2019.11.10-06.57.32:270][282]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 60) at 2019.11.10-17.57.32
+[2019.11.10-06.57.32:271][282]LogWorld: Bringing up level for play took: 0.004900
+[2019.11.10-06.57.32:368][282]PIE: Play in editor start time for /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap 1.39
+[2019.11.10-06.57.32:369][282]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.10-06.57.37:207][420]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.10-06.58.01:425][113]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.10-06.58.11:126][399]LogHttp: Warning: 0000012F579F7600: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2019.11.10-06.58.11:127][399]LogHttp: Warning: 0000012F579F7600: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2019.11.10-06.58.11:127][399]LogHttp: Warning: 0000012F579F7600: libcurl info message cache 1 (Closing connection 260)
+[2019.11.10-06.58.21:071][685]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.10-06.58.21:073][685]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.10-06.58.21:143][685]LogSlate: Window 'DejaBrew Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.11.10-06.58.21:204][685]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.10-06.58.21:204][685]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.10-06.58.21:268][686]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2019.11.10-06.59.43:398][295]BlueprintLog: New page: Compile PM_OptionsWidget_BP
+[2019.11.10-06.59.44:214][313]LogSavePackage: Moving '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/PM_OptionsWidget_BP4661F4EA4A1ABE9AEC04E29DE9ECBD5F.tmp' to '../../../../../Users/hi_it/OneDrive/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Blueprints/Widgets/PM_OptionsWidget_BP.uasset'
+[2019.11.10-06.59.45:347][343]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.10-06.59.45:383][343]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.10-06.59.45:383][343]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.10-06.59.45:384][343]PIE: New page: PIE session: SideScrollerExampleMap (11 Nov 2019 4:59:45 am)
+[2019.11.10-06.59.45:384][343]LogPlayLevel: Creating play world package: /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2019.11.10-06.59.45:402][343]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018197s)
+[2019.11.10-06.59.45:403][343]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.10-06.59.45:403][343]LogPlayLevel: PIE: World Init took: (0.001042s)
+[2019.11.10-06.59.45:404][343]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.019810s)
+[2019.11.10-06.59.45:497][343]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2019.11.10-06.59.45:594][343]LogInit: FAudioDevice initialized.
+[2019.11.10-06.59.45:626][343]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.10-06.59.45:794][343]LogLoad: Game class is 'DejaBrewGameMode'
+[2019.11.10-06.59.45:797][343]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 60) at 2019.11.10-17.59.45
+[2019.11.10-06.59.45:797][343]LogWorld: Bringing up level for play took: 0.002458
+[2019.11.10-06.59.45:860][343]PIE: Play in editor start time for /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap 0.883
+[2019.11.10-06.59.45:861][343]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.10-06.59.49:499][452]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.10-06.59.56:467][661]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.10-06.59.56:468][661]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.10-06.59.56:533][661]LogSlate: Window 'DejaBrew Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.11.10-06.59.56:597][661]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.10-06.59.56:597][661]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.10-06.59.56:665][662]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2019.11.10-07.00.11:259][208]LogHttp: Warning: 0000012F49FAAD40: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2019.11.10-07.00.11:259][208]LogHttp: Warning: 0000012F49FAAD40: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2019.11.10-07.00.11:260][208]LogHttp: Warning: 0000012F49FAAD40: libcurl info message cache 1 (Closing connection 261)

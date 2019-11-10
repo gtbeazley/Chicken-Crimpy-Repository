@@ -60,9 +60,11 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	GetCharacterMovement()->MaxFlySpeed = 600.f;
 	GetCharacterMovement()->MaxWalkSpeed = m_moveSpeed * 600.0f;
 
+	m_compressionCharge = m_initialCompressionCharge;
  	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
+
 
 //////////////////////////////////////////////////////////////////////////
 // Input
@@ -111,10 +113,10 @@ void ADejaBrewCharacter::OffSetCrosshair()
 void ADejaBrewCharacter::Tick(float a_dt)
 {
 	Super::Tick(a_dt); 
-//	if (m_compressionBlastCharge <= 0)
-//		bCanShoot = false;
-//	else
-//		bCanShoot = true;
+	if (m_compressionCharge <= 0)
+		bCanShoot = false;
+	else
+		bCanShoot = true;
 	OffSetCrosshair(); 
 	UpdateCompressionCharge();
 
@@ -146,7 +148,7 @@ void ADejaBrewCharacter::PanCameraRight(float a_val)
 
 void ADejaBrewCharacter::PanCursorRight(float a_val)
 {
-	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, -a_val * m_mouseSpeed, 0);
+	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, -a_val * 10 * m_mouseSpeed, 0);
 
 	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= m_maxCursorDistance)
 		CrosshairWidget->SetWorldLocation(l_newLoc);
@@ -154,7 +156,7 @@ void ADejaBrewCharacter::PanCursorRight(float a_val)
 
 void ADejaBrewCharacter::PanCursorUp(float a_val)
 {
-	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, 0, a_val * m_mouseSpeed);
+	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, 0, a_val *  10 * m_mouseSpeed);
 
 	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= m_maxCursorDistance)
 		CrosshairWidget->SetWorldLocation(l_newLoc);
@@ -166,16 +168,30 @@ void ADejaBrewCharacter::Pause()
 
 void ADejaBrewCharacter::Shoot()
 {
-	FVector l_crosshairLoc = CrosshairWidget->GetComponentLocation(), 
-		l_boundsLoc = CrosshairBoundWidget->GetComponentLocation(),
-		l_cursorDir = l_crosshairLoc - l_boundsLoc;
-	float l_crosshairLength = l_cursorDir.Size();
+	if (bCanShoot)
+	{
+		FVector l_crosshairLoc = CrosshairWidget->GetComponentLocation(),
+			l_boundsLoc = CrosshairBoundWidget->GetComponentLocation(),
+			l_cursorDir = l_crosshairLoc - l_boundsLoc;
+		float l_crosshairLength = l_cursorDir.Size();
+		float l_percentToMinus = (l_crosshairLength / m_maxCursorDistance) * 100;
 
-	l_cursorDir.Normalize();
-	
-	CompressionBlastMoveCharacter(l_cursorDir, l_crosshairLength);
-	DepleteCharge((l_crosshairLength / m_maxCursorDistance) * 100);
+		l_cursorDir.Normalize();
 
+		if (m_compressionCharge - l_percentToMinus < 0)
+		{
+			l_percentToMinus += m_compressionCharge - l_percentToMinus;
+			l_crosshairLength *= l_percentToMinus * 0.01;
+			if(l_percentToMinus < 20)
+				CompressionBlastMoveCharacter(l_cursorDir, l_crosshairLength, false, false);
+			else
+				CompressionBlastMoveCharacter(l_cursorDir, l_crosshairLength, true, true);
+		}
+		else
+			CompressionBlastMoveCharacter(l_cursorDir, l_crosshairLength, true, true);
+
+		DepleteCharge(l_percentToMinus * (1 + (m_chargeChangeImpact / 100)));
+	}
 }
 
 void ADejaBrewCharacter::Sprint()
@@ -189,35 +205,43 @@ void ADejaBrewCharacter::StopSprinting()
 	GetCharacterMovement()->MaxWalkSpeed = m_moveSpeed * 600.0f;
 }
 
-void ADejaBrewCharacter::CompressionBlastMoveCharacter(FVector a_dir, float a_length)
+void ADejaBrewCharacter::CompressionBlastMoveCharacter(FVector a_dir, float a_length, bool a_setForceXY, bool a_setForceZ)
 {
 	if (CanJump())
 		LaunchCharacter( (a_dir * (a_length * -10)) * .25, false, false);
 	else
-		LaunchCharacter(a_dir * (a_length * -10), true, true);
+		LaunchCharacter(a_dir * (a_length * -10), a_setForceXY, a_setForceZ);
 }
 
 void ADejaBrewCharacter::DepleteCharge(float a_percentTominus)
 {
-	//if (m_compressionBlastCharge - a_percentTominus < 0)
-	//	m_compressionBlastCharge = 0;
-	//else
-	//	m_compressionBlastCharge = m_compressionBlastCharge - a_percentTominus;
+	if (m_compressionCharge - a_percentTominus < 0)
+		m_compressionCharge = 0;
+	else
+		m_compressionCharge = m_compressionCharge - a_percentTominus;
 	m_timeLeftForCharging = m_timeTillChargeLimit;
 }
 
 
 void ADejaBrewCharacter::UpdateCompressionCharge()
 {
-	//if (m_compressionBlastCharge < 200)
-	//{
-	//	if (m_timeTillChargeLimit <= 0)
-	//		m_compressionBlastCharge += m_chargeSpeed;
-	//	else
-	//		m_timeLeftForCharging--;
-	//	if (!bIsCharging)
-	//		bIsCharging = true;
-	//}
-	//else
-	//	bIsCharging = false;
+	if (m_compressionCharge < 200)
+	{
+		if (m_timeLeftForCharging <= 0)
+		{
+			m_timeLeftForCharging = 0;
+			m_compressionCharge += m_chargeSpeed;
+		}
+		else
+			m_timeLeftForCharging--;
+		if (!bIsCharging)
+			bIsCharging = true;
+	}
+	else
+		bIsCharging = false;
+}
+
+void ADejaBrewCharacter::SetMouseSpeed(float a_newMouseSpeed)
+{
+	m_mouseSpeed = a_newMouseSpeed;
 }
