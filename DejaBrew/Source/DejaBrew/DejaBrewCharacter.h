@@ -36,14 +36,15 @@ protected:
 	UPROPERTY(EditAnywhere)
 		bool bCanShoot = false;
 
+
 	UPROPERTY(EditAnywhere)
 		float m_mouseSpeed = .5;
 
 	UPROPERTY(EditAnywhere)
-		float m_sprintSpeed = 1.5;
+		float m_moveSpeed = 1;
 
 	UPROPERTY(EditAnywhere)
-		float m_moveSpeed = 1;
+		float m_CameraMoveSpeed = 3;
 
 	UPROPERTY(EditAnywhere)
 		float m_maxCursorDistance = 140;
@@ -79,12 +80,6 @@ protected:
 	/** Called for shooting the compression charge gun*/
 	void Shoot();
 
-	/** Adds to the max speed the character can move*/
-	void Sprint();
-
-	/** Slows down the max speed of the characters max speed */
-	void StopSprinting();
-
 	//AXIS IMPUT FUNCTIONS
 	/** Called for side scroller characters right movement*/
 	void MoveRight(float a_val);
@@ -119,6 +114,8 @@ protected:
 	@param a_setForceZ ..and Z scale*/
 	void CompressionBlastMoveCharacter(FVector a_dir, float a_length, bool a_setForceXY = true, bool a_setForceZ = false );
 
+	void CompressionBlastMoveActor(FVector a_dir, float a_length);
+
 	/**Decrements the compression blasts percentage*/
 	void DepleteCharge(float a_percentTominus);
 
@@ -143,4 +140,7 @@ public:
 	/** Sets the speed of the mouse */
 	UFUNCTION(BlueprintCallable)
 		void SetMouseSpeed(float a_newMouseSpeed);
+
+	float m_cameraYChange = 0, m_cameraZChange = 0; 
+	bool bCameraIsMoving = false, bCamIsMovingUp = false, bCamIsMovingRight = false;
 };

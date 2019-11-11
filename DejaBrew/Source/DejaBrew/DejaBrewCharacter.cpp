@@ -9,6 +9,8 @@
 #include "ConstructorHelpers.h"
 #include "Components/WidgetComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "SlimeEnemy.h"
+#include "DrawDebugHelpers.h"
 
 ADejaBrewCharacter::ADejaBrewCharacter()
 {
@@ -74,8 +76,6 @@ void ADejaBrewCharacter::SetupPlayerInputComponent(class UInputComponent* Player
 	// set up action bindings
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
-	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &ADejaBrewCharacter::Sprint);
-	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &ADejaBrewCharacter::StopSprinting);
 	PlayerInputComponent->BindAction("Pause", IE_Pressed, this, &ADejaBrewCharacter::Pause);
 	PlayerInputComponent->BindAction("Shoot", IE_Pressed, this, &ADejaBrewCharacter::Shoot);
 
@@ -84,8 +84,8 @@ void ADejaBrewCharacter::SetupPlayerInputComponent(class UInputComponent* Player
 	PlayerInputComponent->BindAxis("MoveLeft", this, &ADejaBrewCharacter::MoveLeft);
 	PlayerInputComponent->BindAxis("CameraPanUp", this, &ADejaBrewCharacter::PanCameraUp);
 	PlayerInputComponent->BindAxis("CameraPanDown", this, &ADejaBrewCharacter::PanCameraUp);
-	PlayerInputComponent->BindAxis("CameraPanLeft", this, &ADejaBrewCharacter::PanCameraRight);
 	PlayerInputComponent->BindAxis("CameraPanRight", this, &ADejaBrewCharacter::PanCameraRight);
+	PlayerInputComponent->BindAxis("CameraPanLeft", this, &ADejaBrewCharacter::PanCameraRight);
 
 	PlayerInputComponent->BindAxis("CursorPanUp", this, &ADejaBrewCharacter::PanCursorUp);
 	PlayerInputComponent->BindAxis("CursorPanRight", this, &ADejaBrewCharacter::PanCursorRight);
@@ -119,7 +119,23 @@ void ADejaBrewCharacter::Tick(float a_dt)
 		bCanShoot = true;
 	OffSetCrosshair(); 
 	UpdateCompressionCharge();
+	
+	bCameraIsMoving = (bCamIsMovingUp || bCamIsMovingRight);
+	if (!bCameraIsMoving)
+	{
 
+		FVector l_camCurLoc = SideViewCamera->GetComponentLocation();
+		FVector l_changeLoc(0, m_cameraYChange, m_cameraZChange);
+		SideViewCamera->SetWorldLocation(l_camCurLoc - l_changeLoc);
+		m_cameraYChange = 0;
+		m_cameraZChange = 0;
+		CrosshairBoundWidget->SetVisibility(true, true);
+	}
+	else
+	{
+		CrosshairBoundWidget->SetVisibility(false, true); 
+	}
+	
 }
 
 void ADejaBrewCharacter::BeginPlay()
@@ -140,10 +156,30 @@ void ADejaBrewCharacter::MoveLeft(float a_val)
 
 void ADejaBrewCharacter::PanCameraUp(float a_val)
 {
+	if (a_val == 0.0f)
+		bCamIsMovingUp = false;
+	else
+		bCamIsMovingUp = true;
+
+	m_cameraZChange += a_val * m_CameraMoveSpeed;
+
+	FVector l_curCameraLoc = SideViewCamera->GetComponentLocation();
+	FVector zChange(0, 0, a_val * m_CameraMoveSpeed);
+	SideViewCamera->SetWorldLocation(l_curCameraLoc + zChange);
 }
 
 void ADejaBrewCharacter::PanCameraRight(float a_val)
 {
+	if (-a_val == 0.0f)
+		bCamIsMovingRight = false;
+	else
+		bCamIsMovingRight = true;
+
+	m_cameraYChange += -a_val * m_CameraMoveSpeed;
+
+	FVector l_curCameraLoc = SideViewCamera->GetComponentLocation();
+	FVector yChange(0, -a_val * m_CameraMoveSpeed, 0);
+	SideViewCamera->SetWorldLocation(l_curCameraLoc + yChange);
 }
 
 void ADejaBrewCharacter::PanCursorRight(float a_val)
@@ -189,20 +225,9 @@ void ADejaBrewCharacter::Shoot()
 		}
 		else
 			CompressionBlastMoveCharacter(l_cursorDir, l_crosshairLength, true, true);
-
+		CompressionBlastMoveActor(l_cursorDir, l_crosshairLength);
 		DepleteCharge(l_percentToMinus * (1 + (m_chargeChangeImpact / 100)));
 	}
-}
-
-void ADejaBrewCharacter::Sprint()
-{
-	if(CanJump())
-		GetCharacterMovement()->MaxWalkSpeed = m_sprintSpeed * 600.0f;
-}
-
-void ADejaBrewCharacter::StopSprinting()
-{
-	GetCharacterMovement()->MaxWalkSpeed = m_moveSpeed * 600.0f;
 }
 
 void ADejaBrewCharacter::CompressionBlastMoveCharacter(FVector a_dir, float a_length, bool a_setForceXY, bool a_setForceZ)
@@ -211,6 +236,26 @@ void ADejaBrewCharacter::CompressionBlastMoveCharacter(FVector a_dir, float a_le
 		LaunchCharacter( (a_dir * (a_length * -10)) * .25, false, false);
 	else
 		LaunchCharacter(a_dir * (a_length * -10), a_setForceXY, a_setForceZ);
+}
+
+void ADejaBrewCharacter::CompressionBlastMoveActor(FVector a_dir, float a_length)
+{
+	TArray<FHitResult> l_outHits;
+	FVector l_traceStartLoc = GetActorLocation(), l_traceEndLoc = l_traceStartLoc + (a_dir * (2 * a_length));
+	DrawDebugLine(GetWorld(), l_traceStartLoc, l_traceEndLoc, FColor::Green, true);
+	GetWorld()->LineTraceMultiByChannel(l_outHits, l_traceStartLoc, l_traceEndLoc, ECC_Visibility);
+	//static ConstructorHelpers::FClassFinder<ASlimeEnemy> SlimeEnemy(TEXT("/Game/SideScrollerCPP/Blueprints/SlimeEnemy_BP"));
+	for (auto hitResult : l_outHits)
+	{
+		
+		if (Cast<ASlimeEnemy>(hitResult.Actor))
+		{
+		//	Cast<ASlimeEnemy>(hitResult.Actor)->GetCharacterMovement()->MaxWalkSpeed = 0;
+			Cast<ASlimeEnemy>(hitResult.Actor)->LaunchCharacter(a_dir * (10 * a_length), true, true);
+
+		//	Cast<ASlimeEnemy>(hitResult.Actor)->LaunchCharacter((a_dir * (a_length * -10)) * .25, false, false);
+		}
+	}
 }
 
 void ADejaBrewCharacter::DepleteCharge(float a_percentTominus)

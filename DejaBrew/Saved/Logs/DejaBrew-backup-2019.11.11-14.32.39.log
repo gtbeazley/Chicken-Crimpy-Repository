@@ -1,0 +1,433 @@
+﻿Log file open, 11/11/19 14:26:18
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
+LogWindows: File 'VSPerf140.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: DejaBrew
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.404406
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +10:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MeshEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapEmulator
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Plugin shader directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders found
+LogPluginManager: Mapping shader source directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders to virtual directory /Plugin/OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogStreaming: Display: Took  0.116s to configure plugins.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2h
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.20-CL-4369336
+LogInit: Engine Version: 4.20.3-4369336+++UE4+Release-4.20
+LogInit: Compatible Engine Version: 4.20.0-4212847+++UE4+Release-4.20
+LogInit: Net CL: 4212847
+LogInit: OS: Windows 10 (), CPU: Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz, GPU: NVIDIA GeForce GTX 960
+LogInit: Compiled (64-bit): Sep 17 2018 12:26:19
+LogInit: Compiled with Visual C++: 19.13.26129.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.20
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 20
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 24
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 34
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 26
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 9
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 12
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
+LogStreaming: Display: Took  0.003s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2019.11.11-03.26.19:156][  0]LogInit: Selected Device Profile: [Windows]
+[2019.11.11-03.26.19:156][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.11.11-03.26.19:171][  0]LogHAL: Display: Platform has ~ 32 GB [34293071872 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.11.11-03.26.19:171][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2019.11.11-03.26.19:171][  0]LogInit: Going up to parent DeviceProfile []
+[2019.11.11-03.26.19:172][  0]LogInit: Computer: SYD-4DE60A
+[2019.11.11-03.26.19:172][  0]LogInit: User: s181813
+[2019.11.11-03.26.19:172][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.11.11-03.26.19:172][  0]LogInit: High frequency timer resolution =3.328119 MHz
+[2019.11.11-03.26.19:172][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2019.11.11-03.26.19:172][  0]LogMemory: Platform Memory Stats for Windows
+[2019.11.11-03.26.19:172][  0]LogMemory: Process Physical Memory: 102.12 MB used, 102.12 MB peak
+[2019.11.11-03.26.19:172][  0]LogMemory: Process Virtual Memory: 93.29 MB used, 93.29 MB peak
+[2019.11.11-03.26.19:172][  0]LogMemory: Physical Memory: 10074.77 MB used,  22629.66 MB free, 32704.42 MB total
+[2019.11.11-03.26.19:172][  0]LogMemory: Virtual Memory: 4643.10 MB used,  22629.66 MB free, 134217728.00 MB total
+[2019.11.11-03.26.19:271][  0]LogInit: Using OS detected language (en-US).
+[2019.11.11-03.26.19:271][  0]LogInit: Using OS detected locale (en-US).
+[2019.11.11-03.26.19:272][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2019.11.11-03.26.19:729][  0]LogStreaming: Display: Took  0.458s to InitEngineTextLocalization.
+[2019.11.11-03.26.19:730][  0]LogInit: Setting process to per monitor DPI aware
+[2019.11.11-03.26.19:825][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.11.11-03.26.19:826][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.11.11-03.26.20:020][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.11.11-03.26.20:020][  0]LogD3D11RHI: D3D11 adapters:
+[2019.11.11-03.26.20:087][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960' (Feature Level 11_0)
+[2019.11.11-03.26.20:087][  0]LogD3D11RHI:       4053/0/16352 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2019.11.11-03.26.20:090][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.11.11-03.26.20:090][  0]LogD3D11RHI:       0/0/16352 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.11.11-03.26.20:090][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.11.11-03.26.20:096][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.11.11-03.26.20:096][  0]LogD3D11RHI:     GPU DeviceId: 0x1401 (for the marketing name, search the web for "GPU Device Id")
+[2019.11.11-03.26.20:096][  0]LogWindows: EnumDisplayDevices:
+[2019.11.11-03.26.20:096][  0]LogWindows:    0. 'NVIDIA GeForce GTX 960' (P:1 D:1)
+[2019.11.11-03.26.20:096][  0]LogWindows:    1. 'NVIDIA GeForce GTX 960' (P:0 D:1)
+[2019.11.11-03.26.20:097][  0]LogWindows:    2. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2019.11.11-03.26.20:097][  0]LogWindows:    3. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2019.11.11-03.26.20:097][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2019.11.11-03.26.20:097][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960
+[2019.11.11-03.26.20:097][  0]LogD3D11RHI:   Driver Version: 417.35 (internal:25.21.14.1735, unified:417.35)
+[2019.11.11-03.26.20:097][  0]LogD3D11RHI:      Driver Date: 12-11-2018
+[2019.11.11-03.26.20:097][  0]LogRHI: Texture pool is 2837 MB (70% of 4053 MB)
+[2019.11.11-03.26.20:143][  0]LogD3D11RHI: Async texture creation enabled
+[2019.11.11-03.26.20:159][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2019.11.11-03.26.20:161][  0]LogShaderCompilers: Guid format shader working directory is -35 characters bigger than the processId version (../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Intermediate/Shaders/WorkingDirectory/4040/).
+[2019.11.11-03.26.20:161][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/s181813/AppData/Local/Temp/UnrealShaderWorkingDir/2105C71B4AFF7C71235FEDB73F3A7A80/'.
+[2019.11.11-03.26.20:373][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2019.11.11-03.26.20:387][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2019.11.11-03.26.20:404][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2019.11.11-03.26.20:422][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2019.11.11-03.26.20:438][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2019.11.11-03.26.20:453][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2019.11.11-03.26.20:469][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2019.11.11-03.26.20:484][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2019.11.11-03.26.20:492][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:571][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:572][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:572][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.11-03.26.20:574][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2019.11.11-03.26.20:641][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.11.11-03.26.20:641][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.11.11-03.26.20:665][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.11.11-03.26.20:665][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.11.11-03.26.20:678][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2019.11.11-03.26.20:692][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2019.11.11-03.26.20:708][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2019.11.11-03.26.20:721][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2019.11.11-03.26.20:731][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.11.11-03.26.20:732][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.11.11-03.26.20:824][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.11.11-03.26.20:824][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.11.11-03.26.20:824][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.11.11-03.26.21:463][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.11.11-03.26.21:515][  0]LogDerivedDataCache: Loaded boot cache 0.05s 80MB C:/Users/s181813/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2019.11.11-03.26.21:516][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/s181813/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
+[2019.11.11-03.26.21:516][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.11.11-03.26.21:516][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.11.11-03.26.21:516][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.11.11-03.26.21:516][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.11.11-03.26.21:529][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.11.11-03.26.21:543][  0]LogDerivedDataCache: Using Local data cache path C:/Users/s181813/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.11.11-03.26.21:543][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.11.11-03.26.21:543][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.11.11-03.26.21:560][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.11.11-03.26.21:562][  0]LogSlate: Using FreeType 2.6.0
+[2019.11.11-03.26.21:562][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.11.11-03.26.21:632][  0]LogAssetRegistry: FAssetRegistry took 0.0281 seconds to start up
+[2019.11.11-03.26.21:944][  0]LogInit: Selected Device Profile: [Windows]
+[2019.11.11-03.26.22:095][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2019.11.11-03.26.22:101][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2019.11.11-03.26.22:102][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.11.11-03.26.22:102][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.11.11-03.26.22:102][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2019.11.11-03.26.22:119][  0]LogNetVersion: DejaBrew 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 719251921)
+[2019.11.11-03.26.22:602][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.122760 seconds
+[2019.11.11-03.26.22:609][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
+[2019.11.11-03.26.22:609][  0]LogUObjectAllocator: 6690872 out of 0 bytes used by permanent object pool.
+[2019.11.11-03.26.22:609][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.11.11-03.26.23:450][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.11.11-03.26.23:465][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.11.11-03.26.23:898][  0]SourceControl: Source control is disabled
+[2019.11.11-03.26.23:898][  0]SourceControl: Source control is disabled
+[2019.11.11-03.26.23:902][  0]SourceControl: Source control is disabled
+[2019.11.11-03.26.23:905][  0]SourceControl: Source control is disabled
+[2019.11.11-03.26.24:145][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.11.11-03.26.24:229][  0]LogOcInput: OculusInput pre-init called
+[2019.11.11-03.26.24:296][  0]LogEngine: Initializing Engine...
+[2019.11.11-03.26.24:297][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.11.11-03.26.24:298][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.11.11-03.26.24:298][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.11.11-03.26.24:299][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.11.11-03.26.24:299][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.11.11-03.26.24:479][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.11.11-03.26.24:492][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.11.11-03.26.24:513][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.11.11-03.26.24:535][  0]LogInit: FAudioDevice initialized.
+[2019.11.11-03.26.24:536][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.11.11-03.26.24:605][  0]LogDerivedDataCache: Saved boot cache 0.07s 80MB C:/Users/s181813/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2019.11.11-03.26.24:615][  0]LogInit: Texture streaming: Enabled
+[2019.11.11-03.26.24:638][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.11.11-03.26.24:653][  0]LogInit: Transaction tracking system initialized
+[2019.11.11-03.26.24:682][  0]BlueprintLog: New page: Editor Load
+[2019.11.11-03.26.24:851][  0]LocalizationService: Localization service is disabled
+[2019.11.11-03.26.25:123][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.11.11-03.26.25:123][  0]LogCook: Display: Mobile HDR setting 1
+[2019.11.11-03.26.25:124][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.11.11-03.26.25:124][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.11.11-03.26.25:124][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.11.11-03.26.25:124][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.11.11-03.26.25:124][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.11.11-03.26.25:273][  0]LogFileCache: Scanning file cache for directory 'C:/Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/' took 0.02s
+[2019.11.11-03.26.25:273][  0]SourceControl: Source control is disabled
+[2019.11.11-03.26.25:274][  0]Cmd: MAP LOAD FILE="../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Maps/SideScrollerExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.11.11-03.26.25:274][  0]LightingResults: New page: Lighting Build
+[2019.11.11-03.26.25:277][  0]MapCheck: New page: Map Check
+[2019.11.11-03.26.25:277][  0]LightingResults: New page: Lighting Build
+[2019.11.11-03.26.25:460][  0]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.11-03.26.25:476][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.11.11-03.26.25:497][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.11.11-03.26.25:552][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 54.797ms to complete.
+[2019.11.11-03.26.25:552][  0]LogFileHelpers: Loading map 'SideScrollerExampleMap' took 0.279
+[2019.11.11-03.26.25:658][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.11-03.26.25:666][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.11-03.26.25:672][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.11-03.26.25:679][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.11-03.26.25:685][  0]LogCollectionManager: Loaded 0 collections in 0.001528 seconds
+[2019.11.11-03.26.25:735][  0]LogFileCache: Scanning file cache for directory 'C:/Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/Collections/' took 0.01s
+[2019.11.11-03.26.25:735][  0]LogFileCache: Scanning file cache for directory 'C:/Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/Developers/s181813/Collections/' took 0.01s
+[2019.11.11-03.26.25:735][  0]LogFileCache: Scanning file cache for directory 'C:/Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/Collections/' took 0.01s
+[2019.11.11-03.26.25:736][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.11.11-03.26.25:746][  0]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2577 classes and 605 folders.
+[2019.11.11-03.26.25:751][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.11.11-03.26.25:781][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.11.11-03.26.25:787][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2019.11.11-03.26.26:674][  0]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2019.11.11-03.26.26:707][  0]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.DejaBrew
+[2019.11.11-03.26.26:707][  0]LogTemp: CWD: C:\Program Files\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
+[2019.11.11-03.26.26:708][  0]LogTemp: Initial Dir: C:\Program Files\Epic Games\UE_4.20
+[2019.11.11-03.26.26:708][  0]LogTemp: Env CWD: C:\Program Files\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
+[2019.11.11-03.26.26:708][  0]LogTemp: BranchPath = SYD-4DE60A/C/Program Files/Epic Games/UE_4.20/Engine/Binaries --- GameBranchPath = SYD-4DE60A/C/Program Files/Epic Games/UE_4.20/Engine/Binaries
+[2019.11.11-03.26.26:708][  0]LogSlate: Took 0.000200 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.11.11-03.26.26:710][  0]LogSlate: Took 0.000218 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.11.11-03.26.26:715][  0]LogSlate: Took 0.000141 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.11.11-03.26.26:821][  0]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\s181813\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
+[2019.11.11-03.26.26:822][  0]LogRenderer: Reallocating scene render targets to support 1068x576 Format 10 NumSamples 1 (Frame:1).
+[2019.11.11-03.26.26:998][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2019.11.11-03.26.26:999][  0]LogLoad: (Engine Initialization) Total time: 9.51 seconds
+[2019.11.11-03.26.26:999][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.11.11-03.26.27:011][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2019.11.11-03.26.27:037][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.11.11-03.26.27:064][  0]LogSlate: Took 0.000133 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.11.11-03.26.27:088][  1]LogAssetRegistry: Asset discovery search completed in 5.4798 seconds
+[2019.11.11-03.26.27:089][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.11.11-03.26.27:090][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000152 seconds (updated 0 objects)
+[2019.11.11-03.27.31:681][721]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.11-03.27.31:799][722]Candidate modules for hot reload:
+[2019.11.11-03.27.31:799][722]  DejaBrew
+[2019.11.11-03.27.31:799][722]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=DejaBrew,6946 Win64 Development -TargetType=Editor -Project="../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/DejaBrew.uproject" -canskiplink "C:/Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/DejaBrew.uproject" ]
+[2019.11.11-03.27.31:802][722]Warning: Starting HotReload took  0.0s.
+[2019.11.11-03.27.40:724][782]CompilerResultsLog: New page: Compilation - Nov 12, 2019, 1:27:40 AM
+[2019.11.11-03.27.40:724][782]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build.
+[2019.11.11-03.27.40:724][782]CompilerResultsLog: Creating makefile for hot reloading DejaBrewEditor (modules to compile have changed)
+[2019.11.11-03.27.40:724][782]CompilerResultsLog: Compiling game modules for hot reload
+[2019.11.11-03.27.40:724][782]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2019.11.11-03.27.40:724][782]CompilerResultsLog: Building 3 actions with 8 processes...
+[2019.11.11-03.27.40:724][782]CompilerResultsLog:   [1/3] DejaBrewCharacter.cpp
+[2019.11.11-03.27.40:724][782]CompilerResultsLog:   [2/3] UE4Editor-DejaBrew-6946.lib
+[2019.11.11-03.27.40:724][782]CompilerResultsLog:      Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-6946.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-6946.exp
+[2019.11.11-03.27.40:725][782]CompilerResultsLog:   [3/3] UE4Editor-DejaBrew-6946.dll
+[2019.11.11-03.27.40:725][782]CompilerResultsLog:      Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-6946.suppressed.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-6946.suppressed.exp
+[2019.11.11-03.27.40:725][782]CompilerResultsLog: Total build time: 8.72 seconds (Parallel executor: 3.60 seconds)
+[2019.11.11-03.27.40:725][782]LogMainFrame: MainFrame: Module compiling took 8.935 seconds
+[2019.11.11-03.27.40:781][782]LogContentBrowser: Native class hierarchy updated for 'DejaBrew' in 0.0004 seconds. Added 5 classes and 2 folders.
+[2019.11.11-03.27.40:783][782]Display: HotReload successful (3 functions remapped  0 scriptstructs remapped)
+[2019.11.11-03.27.40:903][782]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 2578 classes and 607 folders.
+[2019.11.11-03.27.40:903][782]Display: HotReload took  9.1s.
+[2019.11.11-03.27.41:432][845]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.11-03.27.41:532][857]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.11-03.27.41:552][857]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.11-03.27.41:553][857]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.11-03.27.41:566][857]PIE: New page: PIE session: SideScrollerExampleMap (Nov 12, 2019, 1:27:41 AM)
+[2019.11.11-03.27.41:567][857]LogPlayLevel: Creating play world package: /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2019.11.11-03.27.41:585][857]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017758s)
+[2019.11.11-03.27.41:586][857]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.11-03.27.41:586][857]LogPlayLevel: PIE: World Init took: (0.001105s)
+[2019.11.11-03.27.41:586][857]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.019495s)
+[2019.11.11-03.27.41:612][857]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.11.11-03.27.41:626][857]LogInit: FAudioDevice initialized.
+[2019.11.11-03.27.41:675][857]LogLoad: Game class is 'DejaBrewGameMode'
+[2019.11.11-03.27.41:679][857]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 0) at 2019.11.11-14.27.41
+[2019.11.11-03.27.41:680][857]LogWorld: Bringing up level for play took: 0.003042
+[2019.11.11-03.27.41:710][857]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 10 classes and 0 folders.
+[2019.11.11-03.27.41:736][857]PIE: Play in editor start time for /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap 0.052
+[2019.11.11-03.27.41:736][857]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.11-03.27.49:486][780]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.11-03.27.49:486][780]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.11-03.27.49:525][780]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.11-03.27.49:525][780]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.11-03.27.49:550][780]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.11-03.27.49:587][783]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2019.11.11-03.27.51:108][965]LogEditorViewport: Clicking on Actor (LMB): SlimeEnemy_BP_C (SlimeEnemy_BP)
+[2019.11.11-03.27.58:670][849]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.11-03.28.18:303][195]LogEditorViewport: Clicking on Actor (LMB): SlimeEnemy_BP_C (SlimeEnemy_BP)
+[2019.11.11-03.28.18:962][265]LogSlate: Took 0.000201 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.11.11-03.28.23:519][809]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.11-03.28.23:683][828]LogSlate: Took 0.000161 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.11.11-03.28.23:689][828]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/SideScrollerCPP/Blueprints/SlimeEnemy_BP.SlimeEnemy_BP
+[2019.11.11-03.28.24:103][828]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 116 classes and 0 folders.
+[2019.11.11-03.28.34:657][866]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.11-03.28.34:675][866]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.11-03.28.34:676][866]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.11-03.28.34:676][866]PIE: New page: PIE session: SideScrollerExampleMap (Nov 12, 2019, 1:28:34 AM)
+[2019.11.11-03.28.34:676][866]LogPlayLevel: Creating play world package: /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2019.11.11-03.28.34:688][866]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011909s)
+[2019.11.11-03.28.34:689][866]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.11-03.28.34:689][866]LogPlayLevel: PIE: World Init took: (0.001173s)
+[2019.11.11-03.28.34:689][866]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.013446s)
+[2019.11.11-03.28.34:728][866]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.11.11-03.28.34:743][866]LogInit: FAudioDevice initialized.
+[2019.11.11-03.28.34:779][866]LogLoad: Game class is 'DejaBrewGameMode'
+[2019.11.11-03.28.34:782][866]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 0) at 2019.11.11-14.28.34
+[2019.11.11-03.28.34:783][866]LogWorld: Bringing up level for play took: 0.002616
+[2019.11.11-03.28.34:823][866]PIE: Play in editor start time for /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap 1.138
+[2019.11.11-03.28.34:823][866]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.11-03.28.47:279][358]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.11-03.28.47:280][358]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.11-03.28.47:323][358]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.11-03.28.47:324][358]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.11-03.28.47:353][358]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.11-03.28.47:396][360]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2019.11.11-03.28.57:353][294]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.11-03.28.57:469][294]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.11-03.28.57:487][294]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.11-03.28.57:488][294]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.11-03.28.57:488][294]PIE: New page: PIE session: SideScrollerExampleMap (Nov 12, 2019, 1:28:57 AM)
+[2019.11.11-03.28.57:488][294]LogPlayLevel: Creating play world package: /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2019.11.11-03.28.57:500][294]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011932s)
+[2019.11.11-03.28.57:501][294]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.11-03.28.57:502][294]LogPlayLevel: PIE: World Init took: (0.001159s)
+[2019.11.11-03.28.57:502][294]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.013613s)
+[2019.11.11-03.28.57:536][294]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.11.11-03.28.57:550][294]LogInit: FAudioDevice initialized.
+[2019.11.11-03.28.57:587][294]LogLoad: Game class is 'DejaBrewGameMode'
+[2019.11.11-03.28.57:590][294]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 0) at 2019.11.11-14.28.57
+[2019.11.11-03.28.57:591][294]LogWorld: Bringing up level for play took: 0.002880
+[2019.11.11-03.28.57:630][294]PIE: Play in editor start time for /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap -0.054
+[2019.11.11-03.28.57:630][294]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'

@@ -119,8 +119,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADejaBrewCharacter); \
 	FORCEINLINE static uint32 __PPO__bIsCharging() { return STRUCT_OFFSET(ADejaBrewCharacter, bIsCharging); } \
 	FORCEINLINE static uint32 __PPO__bCanShoot() { return STRUCT_OFFSET(ADejaBrewCharacter, bCanShoot); } \
 	FORCEINLINE static uint32 __PPO__m_mouseSpeed() { return STRUCT_OFFSET(ADejaBrewCharacter, m_mouseSpeed); } \
-	FORCEINLINE static uint32 __PPO__m_sprintSpeed() { return STRUCT_OFFSET(ADejaBrewCharacter, m_sprintSpeed); } \
 	FORCEINLINE static uint32 __PPO__m_moveSpeed() { return STRUCT_OFFSET(ADejaBrewCharacter, m_moveSpeed); } \
+	FORCEINLINE static uint32 __PPO__m_CameraMoveSpeed() { return STRUCT_OFFSET(ADejaBrewCharacter, m_CameraMoveSpeed); } \
 	FORCEINLINE static uint32 __PPO__m_maxCursorDistance() { return STRUCT_OFFSET(ADejaBrewCharacter, m_maxCursorDistance); } \
 	FORCEINLINE static uint32 __PPO__m_timeLeftForCharging() { return STRUCT_OFFSET(ADejaBrewCharacter, m_timeLeftForCharging); } \
 	FORCEINLINE static uint32 __PPO__m_timeTillChargeLimit() { return STRUCT_OFFSET(ADejaBrewCharacter, m_timeTillChargeLimit); } \
