@@ -400,20 +400,21 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\PropertyPath
 /I Runtime\PropertyPath\Public
 /I Runtime\PropertyPath
-/I C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew
-/I C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source
-/I C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source\DejaBrew
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h"
-/Yu"C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew\CrosshairBoundWidget_cpp.gen.cpp"
-/FI"C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\Definitions.DejaBrew.h"
-/Fo"C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\CrosshairBoundWidget_cpp.gen.cpp.obj"
+/I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew
+/I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source
+/I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source\DejaBrew
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
+/FI"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h"
+/Yu"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew\CrosshairBoundWidget_cpp.gen.cpp"
+/FI"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\Definitions.DejaBrew.h"
+/Fo"C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\CrosshairBoundWidget_cpp.gen.cpp.obj"
 /TP
 /GR-
 /W4
