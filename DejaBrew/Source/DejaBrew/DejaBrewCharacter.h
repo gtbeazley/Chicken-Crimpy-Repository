@@ -28,7 +28,7 @@ protected:
 
 	/** The Crosshair widgety that will determine the blast strength and length  */
 	UPROPERTY(EditAnywhere)
-		UWidgetComponent* CrosshairWidget; 
+		UWidgetComponent* CrosshairWidget;
 
 	UPROPERTY(EditAnywhere)
 		bool bIsCharging = false;
@@ -36,9 +36,6 @@ protected:
 	UPROPERTY(EditAnywhere)
 		bool bCanShoot = false;
 
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		bool bHasShot = false;
 
 	UPROPERTY(EditAnywhere)
 		float m_mouseSpeed = .5;

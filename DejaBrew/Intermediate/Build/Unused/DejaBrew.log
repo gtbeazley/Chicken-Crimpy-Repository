@@ -1,12 +1,12 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Creating makefile for hot reloading DejaBrewEditor (modules to compile have changed)
+  Creating makefile for hot reloading DejaBrewEditor (ini files are newer than UBTMakefile)
   Compiling game modules for hot reload
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 3 actions with 8 processes...
-    [1/3] Thorn.cpp
-    [2/3] UE4Editor-DejaBrew-9159.lib
-       Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-9159.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-9159.exp
-    [3/3] UE4Editor-DejaBrew-9159.dll
-       Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-9159.suppressed.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-9159.suppressed.exp
+    [1/3] DejaBrewCharacter.cpp
+    [2/3] UE4Editor-DejaBrew-7394.lib
+       Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-7394.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-7394.exp
+    [3/3] UE4Editor-DejaBrew-7394.dll
+       Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-7394.suppressed.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-7394.suppressed.exp
   Deploying DejaBrewEditor Win64 Development...
-  Total build time: 22.39 seconds (Parallel executor: 1.49 seconds)
+  Total build time: 7.35 seconds (Parallel executor: 2.97 seconds)

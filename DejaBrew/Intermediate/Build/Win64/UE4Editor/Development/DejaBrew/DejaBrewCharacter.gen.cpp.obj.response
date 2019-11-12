@@ -23,7 +23,6 @@
 /wd4838
 /we4668
 /I .
-/I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source\DejaBrew\Private
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Slate
 /I Runtime
 /I Runtime\Slate\Public
@@ -403,7 +402,6 @@
 /I Runtime\PropertyPath
 /I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Inc\DejaBrew
 /I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source
-/I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source\DejaBrew\Public
 /I C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source\DejaBrew
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"

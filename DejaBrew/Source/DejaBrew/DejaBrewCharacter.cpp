@@ -4,7 +4,6 @@
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
-#include "Components/StaticMeshComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "ConstructorHelpers.h"
@@ -12,7 +11,6 @@
 #include "Kismet/GameplayStatics.h"
 #include "SlimeEnemy.h"
 #include "DrawDebugHelpers.h"
-#include "Thorn.h"
 
 ADejaBrewCharacter::ADejaBrewCharacter()
 {
@@ -208,7 +206,6 @@ void ADejaBrewCharacter::Shoot()
 {
 	if (bCanShoot)
 	{
-		bHasShot = true;
 		FVector l_crosshairLoc = CrosshairWidget->GetComponentLocation(),
 			l_boundsLoc = CrosshairBoundWidget->GetComponentLocation(),
 			l_cursorDir = l_crosshairLoc - l_boundsLoc;
@@ -247,18 +244,16 @@ void ADejaBrewCharacter::CompressionBlastMoveActor(FVector a_dir, float a_length
 	FVector l_traceStartLoc = GetActorLocation(), l_traceEndLoc = l_traceStartLoc + (a_dir * (2 * a_length));
 	DrawDebugLine(GetWorld(), l_traceStartLoc, l_traceEndLoc, FColor::Green, true);
 	GetWorld()->LineTraceMultiByChannel(l_outHits, l_traceStartLoc, l_traceEndLoc, ECC_Visibility);
-	//static ConstructorHelpers::FClassFinder<ASlimeEnemy_BP> SlimeEnemy(TEXT("/Game/SideScrollerCPP/Blueprints/SlimeEnemy_BP"));
+	//static ConstructorHelpers::FClassFinder<ASlimeEnemy> SlimeEnemy(TEXT("/Game/SideScrollerCPP/Blueprints/SlimeEnemy_BP"));
 	for (auto hitResult : l_outHits)
 	{
 		
 		if (Cast<ASlimeEnemy>(hitResult.Actor))
 		{
-		
+		//	Cast<ASlimeEnemy>(hitResult.Actor)->GetCharacterMovement()->MaxWalkSpeed = 0;
 			Cast<ASlimeEnemy>(hitResult.Actor)->LaunchCharacter(a_dir * (10 * a_length), true, true);
-		}
-		else if (Cast<AThorn>(hitResult.Actor))
-		{
-			Cast<AThorn>(hitResult.Actor)->Thorn1->AddForce(a_dir * (1000 * a_length), NAME_None, true); 
+
+		//	Cast<ASlimeEnemy>(hitResult.Actor)->LaunchCharacter((a_dir * (a_length * -10)) * .25, false, false);
 		}
 	}
 }

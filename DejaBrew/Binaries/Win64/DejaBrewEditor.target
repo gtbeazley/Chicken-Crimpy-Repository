@@ -16,11 +16,11 @@
 	},
 	"BuildProducts": [
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-DejaBrew-9159.dll",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-DejaBrew-7394.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-DejaBrew-9159.pdb",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-DejaBrew-7394.pdb",
 			"Type": "SymbolFile"
 		},
 		{
