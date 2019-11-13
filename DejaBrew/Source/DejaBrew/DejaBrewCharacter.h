@@ -23,11 +23,11 @@ protected:
 	class USpringArmComponent* CameraBoom;
 
 	/** The bounds that the cross can not pass, only a widget */
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	class UWidgetComponent* CrosshairBoundWidget;
 
-	/** The Crosshair widgety that will determine the blast strength and length  */
-	UPROPERTY(EditAnywhere)
+	/** The Crosshair widget that will determine the blast strength and length  */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		UWidgetComponent* CrosshairWidget;
 
 	UPROPERTY(EditAnywhere)
@@ -35,18 +35,19 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 		bool bCanShoot = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool bCameraIsMoving = false;
 
-
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float m_mouseSpeed = .5;
 
 	UPROPERTY(EditAnywhere)
 		float m_moveSpeed = 1;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float m_CameraMoveSpeed = 3;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float m_maxCursorDistance = 140;
 
 	UPROPERTY(EditAnywhere)
@@ -87,18 +88,8 @@ protected:
 	/** Called for side scroller characters left movement*/
 	void MoveLeft(float a_val);
 
-	/** Camera Panning Function Up and Down */
-	void PanCameraUp(float a_val);
 
-	/** Camera Panning Function Left and Right*/
-	void PanCameraRight(float a_val);
-
-	//AXIS INPUT FUNCTIONS - Can not be remapped
-	/** Panning the Cursor Left and Right */
-	void PanCursorRight(float a_val);
-
-	/** Panning the Cursor Up and Down */
-	void PanCursorUp(float a_val);
+	
 
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
@@ -140,7 +131,5 @@ public:
 	/** Sets the speed of the mouse */
 	UFUNCTION(BlueprintCallable)
 		void SetMouseSpeed(float a_newMouseSpeed);
-
-	float m_cameraYChange = 0, m_cameraZChange = 0; 
-	bool bCameraIsMoving = false, bCamIsMovingUp = false, bCamIsMovingRight = false;
+	 
 };

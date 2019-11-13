@@ -1,25 +1,12 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Creating makefile for DejaBrewEditor (no existing makefile)
+  Creating makefile for hot reloading DejaBrewEditor (ini files are newer than UBTMakefile)
+  Compiling game modules for hot reload
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Parsing headers for DejaBrewEditor
-    Running UnrealHeaderTool "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\DejaBrew.uproject" "C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\DejaBrewEditor\Development\DejaBrewEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for DejaBrewEditor in 8.0220616 seconds
-  Building 14 actions with 8 processes...
-    [1/14] DejaBrew.init.gen.cpp
-    [2/14] SlimeEnemy.cpp
-    [3/14] DejaBrewGameMode.cpp
-    [4/14] SlimeEnemy_PC.cpp
-    [5/14] CrosshairBoundWidget_cpp.cpp
-    [6/14] CrosshairBoundWidget_cpp.gen.cpp
-    [7/14] DejaBrewGameMode.gen.cpp
-    [8/14] DejaBrewCharacter.gen.cpp
-    [9/14] SlimeEnemy.gen.cpp
-    [10/14] SlimeEnemy_PC.gen.cpp
-    [11/14] DejaBrewCharacter.cpp
-    [12/14] DejaBrew.cpp
-    [13/14] UE4Editor-DejaBrew.lib
-       Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew.exp
-    [14/14] UE4Editor-DejaBrew.dll
-       Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew.suppressed.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew.suppressed.exp
+  Building 3 actions with 8 processes...
+    [1/3] Thorn.cpp
+    [2/3] UE4Editor-DejaBrew-3449.lib
+       Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-3449.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-3449.exp
+    [3/3] UE4Editor-DejaBrew-3449.dll
+       Creating library C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-3449.suppressed.lib and object C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew-3449.suppressed.exp
   Deploying DejaBrewEditor Win64 Development...
-  Total build time: 57.77 seconds (Parallel executor: 20.47 seconds)
+  Total build time: 5.97 seconds (Parallel executor: 1.60 seconds)

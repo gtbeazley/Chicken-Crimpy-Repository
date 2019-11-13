@@ -185,6 +185,11 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_m_mouseSpeed;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bCameraIsMoving_MetaData[];
+#endif
+		static void NewProp_bCameraIsMoving_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bCameraIsMoving;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bCanShoot_MetaData[];
 #endif
 		static void NewProp_bCanShoot_SetBit(void* Obj);
@@ -280,14 +285,14 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_maxCursorDistance = { UE4CodeGen_Private::EPropertyClass::Float, "m_maxCursorDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, m_maxCursorDistance), METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_maxCursorDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_maxCursorDistance_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_maxCursorDistance = { UE4CodeGen_Private::EPropertyClass::Float, "m_maxCursorDistance", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000005, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, m_maxCursorDistance), METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_maxCursorDistance_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_maxCursorDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_CameraMoveSpeed_MetaData[] = {
 		{ "Category", "DejaBrewCharacter" },
 		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_CameraMoveSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "m_CameraMoveSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, m_CameraMoveSpeed), METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_CameraMoveSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_CameraMoveSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_CameraMoveSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "m_CameraMoveSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000005, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, m_CameraMoveSpeed), METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_CameraMoveSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_CameraMoveSpeed_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_moveSpeed_MetaData[] = {
 		{ "Category", "DejaBrewCharacter" },
@@ -301,7 +306,18 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_mouseSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "m_mouseSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000001, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, m_mouseSpeed), METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_mouseSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_mouseSpeed_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_mouseSpeed = { UE4CodeGen_Private::EPropertyClass::Float, "m_mouseSpeed", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000005, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, m_mouseSpeed), METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_mouseSpeed_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_mouseSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_bCameraIsMoving_MetaData[] = {
+		{ "Category", "DejaBrewCharacter" },
+		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
+	};
+#endif
+	void Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_bCameraIsMoving_SetBit(void* Obj)
+	{
+		((ADejaBrewCharacter*)Obj)->bCameraIsMoving = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_bCameraIsMoving = { UE4CodeGen_Private::EPropertyClass::Bool, "bCameraIsMoving", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000000005, 1, nullptr, sizeof(bool), UE4CodeGen_Private::ENativeBool::Native, sizeof(ADejaBrewCharacter), &Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_bCameraIsMoving_SetBit, METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_bCameraIsMoving_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_bCameraIsMoving_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_bCanShoot_MetaData[] = {
 		{ "Category", "DejaBrewCharacter" },
@@ -329,10 +345,10 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 		{ "Category", "DejaBrewCharacter" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "DejaBrewCharacter.h" },
-		{ "ToolTip", "The Crosshair widgety that will determine the blast strength and length" },
+		{ "ToolTip", "The Crosshair widget that will determine the blast strength and length" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairWidget = { UE4CodeGen_Private::EPropertyClass::Object, "CrosshairWidget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080009, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, CrosshairWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairWidget_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairWidget = { UE4CodeGen_Private::EPropertyClass::Object, "CrosshairWidget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x002008000008000d, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, CrosshairWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairWidget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairBoundWidget_MetaData[] = {
 		{ "Category", "DejaBrewCharacter" },
@@ -341,7 +357,7 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 		{ "ToolTip", "The bounds that the cross can not pass, only a widget" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairBoundWidget = { UE4CodeGen_Private::EPropertyClass::Object, "CrosshairBoundWidget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0020080000080009, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, CrosshairBoundWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairBoundWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairBoundWidget_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairBoundWidget = { UE4CodeGen_Private::EPropertyClass::Object, "CrosshairBoundWidget", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x002008000008000d, 1, nullptr, STRUCT_OFFSET(ADejaBrewCharacter, CrosshairBoundWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairBoundWidget_MetaData, ARRAY_COUNT(Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairBoundWidget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CameraBoom_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -372,6 +388,7 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_CameraMoveSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_moveSpeed,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_m_mouseSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_bCameraIsMoving,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_bCanShoot,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_bIsCharging,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADejaBrewCharacter_Statics::NewProp_CrosshairWidget,
@@ -402,7 +419,7 @@ void EmptyLinkFunctionForGeneratedCodeDejaBrewCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADejaBrewCharacter, 2878702691);
+	IMPLEMENT_CLASS(ADejaBrewCharacter, 4036619057);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ADejaBrewCharacter(Z_Construct_UClass_ADejaBrewCharacter, &ADejaBrewCharacter::StaticClass, TEXT("/Script/DejaBrew"), TEXT("ADejaBrewCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ADejaBrewCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

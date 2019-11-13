@@ -4,10 +4,12 @@
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
+#include "Components/WidgetComponent.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "Components/CapsuleComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "ConstructorHelpers.h"
-#include "Components/WidgetComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "SlimeEnemy.h"
 #include "DrawDebugHelpers.h"
@@ -50,7 +52,6 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	CrosshairWidget->SetWidgetClass(ClassFinderCrosshairWidget.Class);
 	CrosshairWidget->SetDrawSize(FVector2D(1000, 1000));
 	CrosshairWidget->SetupAttachment(CrosshairBoundWidget);
-	CrosshairWidget->SetManuallyRedraw(false);
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Face in the direction we are moving..
@@ -61,6 +62,12 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	GetCharacterMovement()->GroundFriction = 3.f;
 	GetCharacterMovement()->MaxFlySpeed = 600.f;
 	GetCharacterMovement()->MaxWalkSpeed = m_moveSpeed * 600.0f;
+
+	USkeletalMeshComponent* Mesh = GetMesh();
+	Mesh->SetGenerateOverlapEvents(true);
+
+	UCapsuleComponent* CapsuleCollider = GetCapsuleComponent();
+	CapsuleCollider->SetGenerateOverlapEvents(true);
 
 	m_compressionCharge = m_initialCompressionCharge;
  	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
@@ -82,13 +89,13 @@ void ADejaBrewCharacter::SetupPlayerInputComponent(class UInputComponent* Player
 	//set up axis bindings
 	PlayerInputComponent->BindAxis("MoveRight", this, &ADejaBrewCharacter::MoveRight);
 	PlayerInputComponent->BindAxis("MoveLeft", this, &ADejaBrewCharacter::MoveLeft);
-	PlayerInputComponent->BindAxis("CameraPanUp", this, &ADejaBrewCharacter::PanCameraUp);
-	PlayerInputComponent->BindAxis("CameraPanDown", this, &ADejaBrewCharacter::PanCameraUp);
-	PlayerInputComponent->BindAxis("CameraPanRight", this, &ADejaBrewCharacter::PanCameraRight);
-	PlayerInputComponent->BindAxis("CameraPanLeft", this, &ADejaBrewCharacter::PanCameraRight);
+	//PlayerInputComponent->BindAxis("CameraPanUp", this, &ADejaBrewCharacter::PanCameraUp);
+	//PlayerInputComponent->BindAxis("CameraPanDown", this, &ADejaBrewCharacter::PanCameraUp);
+	//PlayerInputComponent->BindAxis("CameraPanRight", this, &ADejaBrewCharacter::PanCameraRight);
+	//PlayerInputComponent->BindAxis("CameraPanLeft", this, &ADejaBrewCharacter::PanCameraRight);
 
-	PlayerInputComponent->BindAxis("CursorPanUp", this, &ADejaBrewCharacter::PanCursorUp);
-	PlayerInputComponent->BindAxis("CursorPanRight", this, &ADejaBrewCharacter::PanCursorRight);
+	//PlayerInputComponent->BindAxis("CursorPanUp", this, &ADejaBrewCharacter::PanCursorUp);
+	//PlayerInputComponent->BindAxis("CursorPanRight", this, &ADejaBrewCharacter::PanCursorRight);
 	
 
 }
@@ -119,22 +126,7 @@ void ADejaBrewCharacter::Tick(float a_dt)
 		bCanShoot = true;
 	OffSetCrosshair(); 
 	UpdateCompressionCharge();
-	
-	bCameraIsMoving = (bCamIsMovingUp || bCamIsMovingRight);
-	if (!bCameraIsMoving)
-	{
 
-		FVector l_camCurLoc = SideViewCamera->GetComponentLocation();
-		FVector l_changeLoc(0, m_cameraYChange, m_cameraZChange);
-		SideViewCamera->SetWorldLocation(l_camCurLoc - l_changeLoc);
-		m_cameraYChange = 0;
-		m_cameraZChange = 0;
-		CrosshairBoundWidget->SetVisibility(true, true);
-	}
-	else
-	{
-		CrosshairBoundWidget->SetVisibility(false, true); 
-	}
 	
 }
 
@@ -152,50 +144,6 @@ void ADejaBrewCharacter::MoveRight(float a_val)
 void ADejaBrewCharacter::MoveLeft(float a_val)
 {
 	AddMovementInput(FVector(0, 1, 0), a_val * m_moveSpeed);
-}
-
-void ADejaBrewCharacter::PanCameraUp(float a_val)
-{
-	if (a_val == 0.0f)
-		bCamIsMovingUp = false;
-	else
-		bCamIsMovingUp = true;
-
-	m_cameraZChange += a_val * m_CameraMoveSpeed;
-
-	FVector l_curCameraLoc = SideViewCamera->GetComponentLocation();
-	FVector zChange(0, 0, a_val * m_CameraMoveSpeed);
-	SideViewCamera->SetWorldLocation(l_curCameraLoc + zChange);
-}
-
-void ADejaBrewCharacter::PanCameraRight(float a_val)
-{
-	if (-a_val == 0.0f)
-		bCamIsMovingRight = false;
-	else
-		bCamIsMovingRight = true;
-
-	m_cameraYChange += -a_val * m_CameraMoveSpeed;
-
-	FVector l_curCameraLoc = SideViewCamera->GetComponentLocation();
-	FVector yChange(0, -a_val * m_CameraMoveSpeed, 0);
-	SideViewCamera->SetWorldLocation(l_curCameraLoc + yChange);
-}
-
-void ADejaBrewCharacter::PanCursorRight(float a_val)
-{
-	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, -a_val * 10 * m_mouseSpeed, 0);
-
-	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= m_maxCursorDistance)
-		CrosshairWidget->SetWorldLocation(l_newLoc);
-}
-
-void ADejaBrewCharacter::PanCursorUp(float a_val)
-{
-	FVector l_newLoc = CrosshairWidget->GetComponentLocation() + FVector(0, 0, a_val *  10 * m_mouseSpeed);
-
-	if ((CrosshairBoundWidget->GetComponentLocation() - l_newLoc).Size() <= m_maxCursorDistance)
-		CrosshairWidget->SetWorldLocation(l_newLoc);
 }
 
 void ADejaBrewCharacter::Pause()

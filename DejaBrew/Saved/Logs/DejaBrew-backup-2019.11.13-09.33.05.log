@@ -1,0 +1,541 @@
+﻿Log file open, 11/13/19 09:06:42
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
+LogWindows: File 'VSPerf140.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: DejaBrew
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.577557
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +10:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MeshEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapEmulator
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Plugin shader directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders found
+LogPluginManager: Mapping shader source directory ../../../Engine/Plugins/Runtime/Oculus/OculusVR/Shaders to virtual directory /Plugin/OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogStreaming: Display: Took  0.122s to configure plugins.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2h
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.20-CL-4369336
+LogInit: Engine Version: 4.20.3-4369336+++UE4+Release-4.20
+LogInit: Compatible Engine Version: 4.20.0-4212847+++UE4+Release-4.20
+LogInit: Net CL: 4212847
+LogInit: OS: Windows 10 (), CPU: Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz, GPU: NVIDIA GeForce GTX 960
+LogInit: Compiled (64-bit): Sep 17 2018 12:26:19
+LogInit: Compiled with Visual C++: 19.13.26129.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.20
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.20/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 20
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 24
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 34
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 26
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 9
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 12
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
+LogStreaming: Display: Took  0.004s to delete old logs.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2019.11.12-22.06.42:615][  0]LogInit: Selected Device Profile: [Windows]
+[2019.11.12-22.06.42:615][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.11.12-22.06.42:634][  0]LogHAL: Display: Platform has ~ 32 GB [34293071872 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.11.12-22.06.42:634][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2019.11.12-22.06.42:634][  0]LogInit: Going up to parent DeviceProfile []
+[2019.11.12-22.06.42:640][  0]LogInit: Computer: SYD-4DE60A
+[2019.11.12-22.06.42:640][  0]LogInit: User: s181813
+[2019.11.12-22.06.42:640][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.11.12-22.06.42:640][  0]LogInit: High frequency timer resolution =3.328131 MHz
+[2019.11.12-22.06.42:640][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2019.11.12-22.06.42:640][  0]LogMemory: Platform Memory Stats for Windows
+[2019.11.12-22.06.42:640][  0]LogMemory: Process Physical Memory: 102.27 MB used, 102.27 MB peak
+[2019.11.12-22.06.42:640][  0]LogMemory: Process Virtual Memory: 89.23 MB used, 89.23 MB peak
+[2019.11.12-22.06.42:640][  0]LogMemory: Physical Memory: 5923.61 MB used,  26780.81 MB free, 32704.42 MB total
+[2019.11.12-22.06.42:640][  0]LogMemory: Virtual Memory: 4639.47 MB used,  26780.81 MB free, 134217728.00 MB total
+[2019.11.12-22.06.42:997][  0]LogInit: Using OS detected language (en-US).
+[2019.11.12-22.06.42:997][  0]LogInit: Using OS detected locale (en-US).
+[2019.11.12-22.06.43:000][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2019.11.12-22.06.43:415][  0]LogStreaming: Display: Took  0.415s to InitEngineTextLocalization.
+[2019.11.12-22.06.43:415][  0]LogInit: Setting process to per monitor DPI aware
+[2019.11.12-22.06.43:506][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.11.12-22.06.43:506][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.11.12-22.06.45:505][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.11.12-22.06.45:506][  0]LogD3D11RHI: D3D11 adapters:
+[2019.11.12-22.06.45:686][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960' (Feature Level 11_0)
+[2019.11.12-22.06.45:687][  0]LogD3D11RHI:       4053/0/16352 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2019.11.12-22.06.45:690][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.11.12-22.06.45:690][  0]LogD3D11RHI:       0/0/16352 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.11.12-22.06.45:690][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.11.12-22.06.45:696][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.11.12-22.06.45:696][  0]LogD3D11RHI:     GPU DeviceId: 0x1401 (for the marketing name, search the web for "GPU Device Id")
+[2019.11.12-22.06.45:696][  0]LogWindows: EnumDisplayDevices:
+[2019.11.12-22.06.45:696][  0]LogWindows:    0. 'NVIDIA GeForce GTX 960' (P:1 D:1)
+[2019.11.12-22.06.45:697][  0]LogWindows:    1. 'NVIDIA GeForce GTX 960' (P:0 D:1)
+[2019.11.12-22.06.45:697][  0]LogWindows:    2. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2019.11.12-22.06.45:697][  0]LogWindows:    3. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2019.11.12-22.06.45:697][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2019.11.12-22.06.45:697][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960
+[2019.11.12-22.06.45:697][  0]LogD3D11RHI:   Driver Version: 417.35 (internal:25.21.14.1735, unified:417.35)
+[2019.11.12-22.06.45:698][  0]LogD3D11RHI:      Driver Date: 12-11-2018
+[2019.11.12-22.06.45:698][  0]LogRHI: Texture pool is 2837 MB (70% of 4053 MB)
+[2019.11.12-22.06.45:738][  0]LogD3D11RHI: Async texture creation enabled
+[2019.11.12-22.06.45:766][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2019.11.12-22.06.45:772][  0]LogShaderCompilers: Guid format shader working directory is -35 characters bigger than the processId version (../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Intermediate/Shaders/WorkingDirectory/1728/).
+[2019.11.12-22.06.45:772][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/s181813/AppData/Local/Temp/UnrealShaderWorkingDir/879865FB4DA8736ABE4E7496A27E91D2/'.
+[2019.11.12-22.06.45:974][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2019.11.12-22.06.45:989][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2019.11.12-22.06.46:003][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2019.11.12-22.06.46:018][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2019.11.12-22.06.46:037][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2019.11.12-22.06.46:053][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2019.11.12-22.06.46:069][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2019.11.12-22.06.46:085][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2019.11.12-22.06.46:094][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2019.11.12-22.06.46:181][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:181][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:181][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:181][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:181][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:181][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:181][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:181][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:181][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:181][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:181][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:182][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:182][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:182][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:182][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:182][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:182][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:182][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2019.11.12-22.06.46:188][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2019.11.12-22.06.46:266][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.11.12-22.06.46:266][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2019.11.12-22.06.46:290][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.11.12-22.06.46:290][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2019.11.12-22.06.46:304][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2019.11.12-22.06.46:319][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2019.11.12-22.06.46:333][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2019.11.12-22.06.46:356][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2019.11.12-22.06.46:367][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2019.11.12-22.06.46:367][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.11.12-22.06.46:537][  0]LogXGEController: Cleaning working directory: C:/Users/s181813/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2019.11.12-22.06.46:538][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.11.12-22.06.46:538][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.11.12-22.06.46:538][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.11.12-22.06.48:400][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.11.12-22.06.48:793][  0]LogDerivedDataCache: Loaded boot cache 0.39s 78MB C:/Users/s181813/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2019.11.12-22.06.48:794][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/s181813/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc
+[2019.11.12-22.06.48:794][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.11.12-22.06.48:794][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.11.12-22.06.48:794][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.11.12-22.06.48:795][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.11.12-22.06.48:817][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.11.12-22.06.48:831][  0]LogDerivedDataCache: Using Local data cache path C:/Users/s181813/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.11.12-22.06.48:831][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.11.12-22.06.48:831][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.11.12-22.06.48:852][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.11.12-22.06.48:858][  0]LogSlate: Using FreeType 2.6.0
+[2019.11.12-22.06.48:875][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.11.12-22.06.49:105][  0]LogAssetRegistry: FAssetRegistry took 0.0304 seconds to start up
+[2019.11.12-22.06.49:446][  0]LogInit: Selected Device Profile: [Windows]
+[2019.11.12-22.06.49:685][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2019.11.12-22.06.49:706][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2019.11.12-22.06.49:707][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.11.12-22.06.49:707][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.11.12-22.06.49:707][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2019.11.12-22.06.49:866][  0]LogNetVersion: DejaBrew 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 719251921)
+[2019.11.12-22.06.51:114][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.143488 seconds
+[2019.11.12-22.06.51:123][  0]LogUObjectArray: 38425 objects as part of root set at end of initial load.
+[2019.11.12-22.06.51:123][  0]LogUObjectAllocator: 6690872 out of 0 bytes used by permanent object pool.
+[2019.11.12-22.06.51:123][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.11.12-22.06.54:319][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.11.12-22.06.54:340][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.11.12-22.06.55:277][  0]SourceControl: Source control is disabled
+[2019.11.12-22.06.55:278][  0]SourceControl: Source control is disabled
+[2019.11.12-22.06.55:293][  0]SourceControl: Source control is disabled
+[2019.11.12-22.06.55:300][  0]SourceControl: Source control is disabled
+[2019.11.12-22.06.55:685][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.11.12-22.06.55:784][  0]LogOcInput: OculusInput pre-init called
+[2019.11.12-22.06.55:916][  0]LogEngine: Initializing Engine...
+[2019.11.12-22.06.55:919][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.11.12-22.06.55:922][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.11.12-22.06.55:922][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.11.12-22.06.55:922][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.11.12-22.06.55:923][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.11.12-22.06.56:304][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.11.12-22.06.56:344][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.11.12-22.06.56:362][  0]LogInit: XAudio2 using 'Realtek Digital Output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.11.12-22.06.56:443][  0]LogInit: FAudioDevice initialized.
+[2019.11.12-22.06.56:444][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.11.12-22.06.56:526][  0]LogDerivedDataCache: Saved boot cache 0.08s 81MB C:/Users/s181813/AppData/Local/UnrealEngine/4.20/DerivedDataCache/Boot.ddc.
+[2019.11.12-22.06.56:543][  0]LogInit: Texture streaming: Enabled
+[2019.11.12-22.06.56:572][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.11.12-22.06.56:572][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Debugger, SessionId={30838381-4E6E-3CC7-62BA-72AE7388DDEB}
+[2019.11.12-22.06.56:572][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Debugger, SessionId={F8E8B2C1-48F7-73D7-AFE5-A9B22481A6E0}
+[2019.11.12-22.06.56:592][  0]LogInit: Transaction tracking system initialized
+[2019.11.12-22.06.56:655][  0]BlueprintLog: New page: Editor Load
+[2019.11.12-22.06.56:961][  0]LocalizationService: Localization service is disabled
+[2019.11.12-22.06.57:549][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.11.12-22.06.57:549][  0]LogCook: Display: Mobile HDR setting 1
+[2019.11.12-22.06.57:549][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.11.12-22.06.57:549][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.11.12-22.06.57:549][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.11.12-22.06.57:549][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.11.12-22.06.57:549][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.11.12-22.06.57:897][  0]LogFileCache: Scanning file cache for directory 'C:/Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/' took 0.02s
+[2019.11.12-22.06.57:898][  0]SourceControl: Source control is disabled
+[2019.11.12-22.06.57:898][  0]Cmd: MAP LOAD FILE="../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Maps/SideScrollerExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.11.12-22.06.57:899][  0]LightingResults: New page: Lighting Build
+[2019.11.12-22.06.57:907][  0]MapCheck: New page: Map Check
+[2019.11.12-22.06.57:907][  0]LightingResults: New page: Lighting Build
+[2019.11.12-22.06.58:236][  0]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.12-22.06.58:276][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.11.12-22.06.58:303][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.11.12-22.06.58:361][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 57.773ms to complete.
+[2019.11.12-22.06.58:361][  0]LogFileHelpers: Loading map 'SideScrollerExampleMap' took 0.463
+[2019.11.12-22.06.58:541][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.12-22.06.58:548][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.12-22.06.58:555][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.12-22.06.58:562][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.12-22.06.58:580][  0]LogCollectionManager: Loaded 0 collections in 0.001181 seconds
+[2019.11.12-22.06.58:644][  0]LogFileCache: Scanning file cache for directory 'C:/Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/Collections/' took 0.01s
+[2019.11.12-22.06.58:644][  0]LogFileCache: Scanning file cache for directory 'C:/Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/Developers/s181813/Collections/' took 0.01s
+[2019.11.12-22.06.58:644][  0]LogFileCache: Scanning file cache for directory 'C:/Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/Collections/' took 0.01s
+[2019.11.12-22.06.58:645][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2019.11.12-22.06.58:658][  0]LogContentBrowser: Native class hierarchy populated in 0.0118 seconds. Added 2577 classes and 605 folders.
+[2019.11.12-22.06.58:671][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.11.12-22.06.59:015][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.11.12-22.06.59:029][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2019.11.12-22.07.00:163][  0]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2019.11.12-22.07.00:197][  0]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.DejaBrew
+[2019.11.12-22.07.00:197][  0]LogTemp: CWD: C:\Program Files\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
+[2019.11.12-22.07.00:198][  0]LogTemp: Initial Dir: C:\Program Files\Epic Games\UE_4.20
+[2019.11.12-22.07.00:198][  0]LogTemp: Env CWD: C:\Program Files\Epic Games\UE_4.20\Engine\Binaries\DotNET\IOS
+[2019.11.12-22.07.00:198][  0]LogTemp: BranchPath = SYD-4DE60A/C/Program Files/Epic Games/UE_4.20/Engine/Binaries --- GameBranchPath = SYD-4DE60A/C/Program Files/Epic Games/UE_4.20/Engine/Binaries
+[2019.11.12-22.07.00:198][  0]LogSlate: Took 0.005258 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.11.12-22.07.00:204][  0]LogSlate: Took 0.004193 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.11.12-22.07.00:214][  0]LogSlate: Took 0.004507 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.11.12-22.07.00:357][  0]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\s181813\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
+[2019.11.12-22.07.00:357][  0]LogRenderer: Reallocating scene render targets to support 1068x576 Format 10 NumSamples 1 (Frame:1).
+[2019.11.12-22.07.00:549][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2019.11.12-22.07.00:550][  0]LogLoad: (Engine Initialization) Total time: 20.28 seconds
+[2019.11.12-22.07.00:550][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.11.12-22.07.00:595][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.11.12-22.07.00:637][  0]LogSlate: Took 0.004693 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.11.12-22.07.00:679][  1]LogAssetRegistry: Asset discovery search completed in 11.5981 seconds
+[2019.11.12-22.07.00:680][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2019.11.12-22.07.00:681][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000116 seconds (updated 0 objects)
+[2019.11.12-22.07.02:330][  6]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Ledge1)
+[2019.11.12-22.07.02:400][  6]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.11.12-22.07.03:226][ 98]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2019.11.12-22.07.06:903][502]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.12-22.07.13:511][293]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.12-22.07.13:531][293]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.12-22.07.13:531][293]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.12-22.07.13:550][293]PIE: New page: PIE session: SideScrollerExampleMap (Nov 13, 2019, 8:07:13 PM)
+[2019.11.12-22.07.13:550][293]LogPlayLevel: Creating play world package: /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap
+[2019.11.12-22.07.13:572][293]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022093s)
+[2019.11.12-22.07.13:573][293]LogAIModule: Creating AISystem for world SideScrollerExampleMap
+[2019.11.12-22.07.13:574][293]LogPlayLevel: PIE: World Init took: (0.001102s)
+[2019.11.12-22.07.13:574][293]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap to /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap (0.023637s)
+[2019.11.12-22.07.13:599][293]LogInit: XAudio2 using 'Realtek Digital Output (Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2019.11.12-22.07.13:611][293]LogInit: FAudioDevice initialized.
+[2019.11.12-22.07.13:660][293]LogLoad: Game class is 'DejaBrewGameMode'
+[2019.11.12-22.07.13:665][293]LogWorld: Bringing World /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap.SideScrollerExampleMap up for play (max tick rate 0) at 2019.11.13-09.07.13
+[2019.11.12-22.07.13:669][293]LogWorld: Bringing up level for play took: 0.006140
+[2019.11.12-22.07.13:688][293]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 10 classes and 0 folders.
+[2019.11.12-22.07.13:719][293]PIE: Play in editor start time for /Game/SideScrollerCPP/Maps/UEDPIE_0_SideScrollerExampleMap 0.016
+[2019.11.12-22.07.13:719][293]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.12-22.07.19:466][978]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.12-22.07.19:470][978]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.12-22.07.19:507][978]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.12-22.07.19:507][978]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap' with GeneratedClass '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap_C' with ClassGeneratedBy '/Game/SideScrollerCPP/Maps/SideScrollerExampleMap.SideScrollerExampleMap:PersistentLevel.SideScrollerExampleMap'
+[2019.11.12-22.07.19:534][978]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.12-22.07.19:571][981]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2019.11.12-22.07.28:359][ 35]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.12-22.07.58:227][647]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.12-22.08.02:609][103]LogEditorViewport: Clicking on Actor (LMB): SlimeEnemy_BP_C (SlimeEnemy_BP)
+[2019.11.12-22.08.05:101][386]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.12-22.08.12:059][974]LogSlate: Took 0.000217 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.11.12-22.08.12:066][974]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/SideScrollerCPP/Blueprints/SlimeEnemy_BP.SlimeEnemy_BP
+[2019.11.12-22.08.12:596][974]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 116 classes and 0 folders.
+[2019.11.12-22.08.13:370][974]LogSlate: Took 0.004702 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.11.12-22.08.13:540][975]LogSlate: Took 0.004383 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.11.12-22.08.19:938][607]LogAssetEditorManager: Opening Asset editor for BehaviorTree /Game/SideScrollerCPP/Blueprints/SlimeEnemy_BT.SlimeEnemy_BT
+[2019.11.12-22.08.29:325][725]Cmd: TRANSACTION UNDO
+[2019.11.12-22.08.29:325][725]LogEditorTransaction: Undo Delete current selection
+[2019.11.12-22.08.52:678][671]LogSlate: Window 'Delete Assets' being destroyed
+[2019.11.12-22.08.52:756][671]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2019.11.12-22.11.07:738][347]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Template.
+[2019.11.12-22.11.07:742][347]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Save_BP.
+[2019.11.12-22.11.07:745][347]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Checkpoint_BP.
+[2019.11.12-22.11.07:748][347]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/SideScrollerCharacter.
+[2019.11.12-22.11.07:750][347]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/CompressionWave.
+[2019.11.12-22.11.08:072][348]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Enemy_BP.
+[2019.11.12-22.11.08:074][348]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/EnemyPath_BP.
+[2019.11.12-22.11.46:611][463]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/SideScrollerGameMode.
+[2019.11.12-22.11.46:613][463]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/SideScrollingPC_BP.
+[2019.11.12-22.11.46:615][463]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Spike.
+[2019.11.12-22.11.46:955][464]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/ThornsTall_BP.
+[2019.11.12-22.11.46:985][464]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Widgets/DeathMenu.
+[2019.11.12-22.11.46:988][464]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Widgets/PauseMenu.
+[2019.11.12-22.11.46:991][464]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Widgets/OptionsMenu.
+[2019.11.12-22.11.46:993][464]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Widgets/RemapWidget.
+[2019.11.12-22.11.46:997][464]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Widgets/PlayerWidgets/AimingBounds_BP.
+[2019.11.12-22.11.47:001][464]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Widgets/PlayerWidgets/AimingCrossHair_BP.
+[2019.11.12-22.11.47:005][464]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Widgets/PlayerWidgets/AimingMid_BP.
+[2019.11.12-22.11.47:009][464]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Widgets/PlayerWidgets/CompresionCharge_BP.
+[2019.11.12-22.11.47:018][464]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/BeanBag_BP.
+[2019.11.12-22.11.47:029][464]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/CoffeeBean_BP.
+[2019.11.12-22.11.47:286][465]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Grass1_BP.
+[2019.11.12-22.11.47:305][465]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/PineTree_BP.
+[2019.11.12-22.11.47:326][465]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Plant1_BP.
+[2019.11.12-22.11.47:333][465]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Rock_BP.
+[2019.11.12-22.11.47:343][465]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Vine_BP.
+[2019.11.12-22.11.47:626][466]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/FloatPlatform_BP.
+[2019.11.12-22.11.47:636][466]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Fuel_BP.
+[2019.11.12-22.11.47:649][466]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/GrassV3.
+[2019.11.12-22.11.47:665][466]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/GroundEnd_BP.
+[2019.11.12-22.11.47:679][466]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/GroundFloat_BP.
+[2019.11.12-22.11.47:684][466]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/GroundPlat_BP.
+[2019.11.12-22.11.47:688][466]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/PathPlat_BP.
+[2019.11.12-22.11.47:693][466]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/SpikeHolder_BP.
+[2019.11.12-22.11.47:958][467]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Story/CoffeeMachine_BP.
+[2019.11.12-22.11.47:972][467]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Story/Desk_BP.
+[2019.11.12-22.11.47:984][467]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Story/KeepCup_BP.
+[2019.11.12-22.11.47:996][467]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Story/PotPlant_BP.
+[2019.11.12-22.11.48:015][467]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Story/TV_BP.
+[2019.11.12-22.11.48:285][468]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Easy0.
+[2019.11.12-22.11.48:291][468]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Grass_BP.
+[2019.11.12-22.11.48:298][468]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Easy1.
+[2019.11.12-22.11.48:302][468]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Easy2.
+[2019.11.12-22.11.48:306][468]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Easy3.
+[2019.11.12-22.11.48:309][468]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Easy4.
+[2019.11.12-22.11.48:312][468]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Easy5.
+[2019.11.12-22.11.48:316][468]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Easy6.
+[2019.11.12-22.11.48:621][469]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Level0.
+[2019.11.12-22.11.48:623][469]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Door_BP.
+[2019.11.12-22.11.48:628][469]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/GroundEndGreen_BP.
+[2019.11.12-22.11.48:640][469]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/GroundPlatTeal_BP.
+[2019.11.12-22.11.48:653][469]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Level1.
+[2019.11.12-22.11.48:946][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Level2.
+[2019.11.12-22.11.48:960][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Grass1Pink_BP.
+[2019.11.12-22.11.48:965][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Grass1Teal_BP.
+[2019.11.12-22.11.48:970][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Grass2_BP.
+[2019.11.12-22.11.48:976][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Grass2Pink_BP.
+[2019.11.12-22.11.48:979][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/GrassPink_BP.
+[2019.11.12-22.11.48:982][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/GrassTeal_BP.
+[2019.11.12-22.11.48:986][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Plant2_BP.
+[2019.11.12-22.11.49:003][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Plant3_BP.
+[2019.11.12-22.11.49:007][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Plant_BP.
+[2019.11.12-22.11.49:011][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Level3.
+[2019.11.12-22.11.49:014][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/GroundEndRed_BP.
+[2019.11.12-22.11.49:016][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/GroundFloatRed_BP.
+[2019.11.12-22.11.49:019][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/GroundPlatRed_BP.
+[2019.11.12-22.11.49:022][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/MainMenuLevel.
+[2019.11.12-22.11.49:027][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Widgets/LevelSelect.
+[2019.11.12-22.11.49:029][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Widgets/MainMenu.
+[2019.11.12-22.11.49:033][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Widgets/MainMenuOptionsMenu.
+[2019.11.12-22.11.49:036][470]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/SideScrollerExampleMap.
+[2019.11.12-22.11.49:288][471]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Tutorial.
+[2019.11.12-22.11.49:291][471]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Art/Level0_Art.
+[2019.11.12-22.11.49:298][471]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Art/Level1_Art.
+[2019.11.12-22.11.49:301][471]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Decor/Easy0_Decor.
+[2019.11.12-22.11.49:304][471]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Decor/Easy1_Decor.
+[2019.11.12-22.11.49:307][471]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Decor/Easy2_Decor.
+[2019.11.12-22.11.49:612][472]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Decor/Easy3_Decor.
+[2019.11.12-22.11.49:626][472]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Decor/Easy4_Decor.
+[2019.11.12-22.11.49:629][472]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Decor/Easy5_Decor.
+[2019.11.12-22.11.49:632][472]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Decor/Easy6_Decor.
+[2019.11.12-22.11.49:635][472]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Decor/Level0_Decor.
+[2019.11.12-22.11.49:637][472]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/Grass2Teal_BP.
+[2019.11.12-22.11.49:640][472]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Blueprints/Decorations/PineBluePurp_BP.
+[2019.11.12-22.11.49:653][472]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Decor/Level1_Decor.
+[2019.11.12-22.11.49:655][472]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Decor/Level2_Decor.
+[2019.11.12-22.11.49:657][472]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Decor/Level3_Decor.
+[2019.11.12-22.11.49:947][473]LogPackageName: SearchForPackageOnDisk took   0.000s to resolve /Game/SideScrollerBP/Maps/Decor/zzLevel1_Decor.
+[2019.11.12-22.12.27:302][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy'
+[2019.11.12-22.12.27:302][ 45]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy' while loading ../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy_Cue.uasset.
+[2019.11.12-22.12.27:302][ 45]LoadErrors: Error: /Game/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy_Cue : Can't find file for asset. /Game/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy
+[2019.11.12-22.12.27:303][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy'
+[2019.11.12-22.12.27:303][ 45]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy' while loading ../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy_Cue.uasset.
+[2019.11.12-22.12.27:408][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Sounds/Checkpoint/Checkpoint'
+[2019.11.12-22.12.27:408][ 45]LoadErrors: Failed to load /Game/SideScrollerBP/Sounds/Checkpoint/Checkpoint_Cue.Checkpoint_Cue Referenced by Checkpoint_Cue_GEN_VARIABLE
+[2019.11.12-22.12.27:408][ 45]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Sounds/Checkpoint/Checkpoint' while loading ../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerBP/Sounds/Checkpoint/Checkpoint_Cue.uasset.
+[2019.11.12-22.12.27:409][ 45]LoadErrors: Error: /Game/SideScrollerBP/Sounds/Checkpoint/Checkpoint_Cue : Can't find file for asset. /Game/SideScrollerBP/Sounds/Checkpoint/Checkpoint
+[2019.11.12-22.12.27:409][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Sounds/Checkpoint/Checkpoint'
+[2019.11.12-22.12.27:409][ 45]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Sounds/Checkpoint/Checkpoint' while loading ../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerBP/Sounds/Checkpoint/Checkpoint_Cue.uasset.
+[2019.11.12-22.12.27:770][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Maps/Level1_BuiltData'
+[2019.11.12-22.12.27:770][ 45]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Maps/Level1_BuiltData' while loading ../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerBP/Maps/Level1.umap.
+[2019.11.12-22.12.27:771][ 45]LoadErrors: Error: /Game/SideScrollerBP/Maps/Level1 : Can't find file for asset. /Game/SideScrollerBP/Maps/Level1_BuiltData
+[2019.11.12-22.12.27:774][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Maps/Level1_BuiltData'
+[2019.11.12-22.12.27:775][ 45]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Maps/Level1_BuiltData' while loading ../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerBP/Maps/Level1.umap.
+[2019.11.12-22.12.27:780][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Maps/Level1_BuiltData'
+[2019.11.12-22.12.27:780][ 45]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Maps/Level1_BuiltData' while loading NULL.
+[2019.11.12-22.12.27:780][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Maps/Level1_BuiltData'
+[2019.11.12-22.12.27:780][ 45]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Maps/Level1_BuiltData' while loading NULL.
+[2019.11.12-22.12.27:873][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Sounds/Checkpoint/Checkpoint'
+[2019.11.12-22.12.27:874][ 45]LoadErrors: Failed to load /Game/SideScrollerBP/Sounds/Checkpoint/Checkpoint.Checkpoint Referenced by SoundNodeWavePlayer_0
+[2019.11.12-22.12.27:874][ 45]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Sounds/Checkpoint/Checkpoint' while loading NULL.
+[2019.11.12-22.12.27:894][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Maps/Level1_BuiltData'
+[2019.11.12-22.12.27:894][ 45]LoadErrors: Failed to load /Game/SideScrollerBP/Maps/Level1_BuiltData.Level1_BuiltData Referenced by PersistentLevel
+[2019.11.12-22.12.27:895][ 45]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Maps/Level1_BuiltData' while loading NULL.
+[2019.11.12-22.12.27:933][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy'
+[2019.11.12-22.12.27:933][ 45]LoadErrors: Failed to load /Game/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy.Death_Enemy Referenced by SoundNodeWavePlayer_0
+[2019.11.12-22.12.27:933][ 45]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy' while loading NULL.
+[2019.11.12-22.12.28:056][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Sounds/Checkpoint/Checkpoint'
+[2019.11.12-22.12.28:056][ 45]LogUObjectGlobals: Warning: Failed to find object 'Object /Game/SideScrollerBP/Sounds/Checkpoint/Checkpoint.Checkpoint'
+[2019.11.12-22.12.28:190][ 45]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy'
+[2019.11.12-22.12.28:190][ 45]LogUObjectGlobals: Warning: Failed to find object 'Object /Game/SideScrollerBP/Sounds/DeathEnemy/Death_Enemy.Death_Enemy'
+[2019.11.12-22.12.28:262][ 45]LogAIModule: Creating AISystem for world Level1
+[2019.11.12-22.12.28:528][ 45]LogAssetEditorManager: Opening Asset editor for World /Game/SideScrollerBP/Maps/Level1.Level1
+[2019.11.12-22.12.35:123][ 45]LogSlate: Window 'Save Content' being destroyed
+[2019.11.12-22.12.35:160][ 45]LogSavePackage: Moving '../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Saved/SlimeEnemy_BTDB5B600240EAFA3F9433B48801E8610F.tmp' to '../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerCPP/Blueprints/SlimeEnemy_BT.uasset'
+[2019.11.12-22.12.35:165][ 45]Cmd: MAP LOAD FILE="../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerBP/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.11.12-22.12.35:165][ 45]LightingResults: New page: Lighting Build
+[2019.11.12-22.12.35:166][ 45]LoadErrors: New page: Loading map: Level1.umap
+[2019.11.12-22.12.35:168][ 45]MapCheck: New page: Map Check
+[2019.11.12-22.12.35:168][ 45]LightingResults: New page: Lighting Build
+[2019.11.12-22.12.35:610][ 45]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.11.12-22.12.35:675][ 45]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.11.12-22.12.35:765][ 45]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 89.63ms to complete.
+[2019.11.12-22.12.35:765][ 45]LogFileHelpers: Loading map 'Level1' took 0.601
+[2019.11.12-22.24.59:225][230]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.11.12-22.24.59:468][250]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Maps/Level0_BuiltData'
+[2019.11.12-22.24.59:468][250]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Maps/Level0_BuiltData' while loading ../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerBP/Maps/Level0.umap.
+[2019.11.12-22.24.59:468][250]LoadErrors: Error: /Game/SideScrollerBP/Maps/Level0 : Can't find file for asset. /Game/SideScrollerBP/Maps/Level0_BuiltData
+[2019.11.12-22.24.59:471][250]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Maps/Level0_BuiltData'
+[2019.11.12-22.24.59:471][250]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Maps/Level0_BuiltData' while loading ../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerBP/Maps/Level0.umap.
+[2019.11.12-22.24.59:474][250]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Maps/Level0_BuiltData'
+[2019.11.12-22.24.59:475][250]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Maps/Level0_BuiltData' while loading NULL.
+[2019.11.12-22.24.59:475][250]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Maps/Level0_BuiltData'
+[2019.11.12-22.24.59:475][250]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Maps/Level0_BuiltData' while loading NULL.
+[2019.11.12-22.24.59:506][250]LogLinker: Warning: Can't find file '/Game/SideScrollerBP/Maps/Level0_BuiltData'
+[2019.11.12-22.24.59:506][250]LoadErrors: Failed to load /Game/SideScrollerBP/Maps/Level0_BuiltData.Level0_BuiltData Referenced by PersistentLevel
+[2019.11.12-22.24.59:506][250]LogLinker: Warning: Can't find file for asset '/Game/SideScrollerBP/Maps/Level0_BuiltData' while loading NULL.
+[2019.11.12-22.24.59:597][250]LogAIModule: Creating AISystem for world Level0
+[2019.11.12-22.24.59:650][250]LogAssetEditorManager: Opening Asset editor for World /Game/SideScrollerBP/Maps/Level0.Level0
+[2019.11.12-22.24.59:679][250]Cmd: MAP LOAD FILE="../../../../../../Users/s181813/Documents/GitHub/Chicken-Crimpy-Repository/DejaBrew/Content/SideScrollerBP/Maps/Level0.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.11.12-22.24.59:679][250]LightingResults: New page: Lighting Build
+[2019.11.12-22.24.59:680][250]LoadErrors: New page: Loading map: Level0.umap
+[2019.11.12-22.24.59:689][250]MapCheck: New page: Map Check
+[2019.11.12-22.24.59:689][250]LightingResults: New page: Lighting Build
+[2019.11.12-22.24.59:794][250]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.11.12-22.24.59:855][250]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.11.12-22.24.59:952][250]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 97.657ms to complete.
+[2019.11.12-22.24.59:952][250]LogFileHelpers: Loading map 'Level0' took 0.275
