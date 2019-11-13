@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeThorn() {}
 	UPackage* Z_Construct_UPackage__Script_DejaBrew();
 	ENGINE_API UClass* Z_Construct_UClass_UPointLightComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 // End Cross Module References
 	void AThorn::StaticRegisterNativesAThorn()
 	{
@@ -57,6 +58,10 @@ void EmptyLinkFunctionForGeneratedCodeThorn() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Thorn1_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Thorn1;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Scene_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Scene;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -119,6 +124,14 @@ void EmptyLinkFunctionForGeneratedCodeThorn() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AThorn_Statics::NewProp_Thorn1 = { UE4CodeGen_Private::EPropertyClass::Object, "Thorn1", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x001000000008000d, 1, nullptr, STRUCT_OFFSET(AThorn, Thorn1), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AThorn_Statics::NewProp_Thorn1_MetaData, ARRAY_COUNT(Z_Construct_UClass_AThorn_Statics::NewProp_Thorn1_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AThorn_Statics::NewProp_Scene_MetaData[] = {
+		{ "Category", "Thorn" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Thorn.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AThorn_Statics::NewProp_Scene = { UE4CodeGen_Private::EPropertyClass::Object, "Scene", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x001000000008000d, 1, nullptr, STRUCT_OFFSET(AThorn, Scene), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AThorn_Statics::NewProp_Scene_MetaData, ARRAY_COUNT(Z_Construct_UClass_AThorn_Statics::NewProp_Scene_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AThorn_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThorn_Statics::NewProp_PointLight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThorn_Statics::NewProp_Thorn5,
@@ -126,6 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeThorn() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThorn_Statics::NewProp_Thorn3,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThorn_Statics::NewProp_Thorn2,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThorn_Statics::NewProp_Thorn1,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThorn_Statics::NewProp_Scene,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AThorn_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AThorn>::IsAbstract,
@@ -150,7 +164,7 @@ void EmptyLinkFunctionForGeneratedCodeThorn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AThorn, 2709328053);
+	IMPLEMENT_CLASS(AThorn, 245372362);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AThorn(Z_Construct_UClass_AThorn, &AThorn::StaticClass, TEXT("/Script/DejaBrew"), TEXT("AThorn"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AThorn);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

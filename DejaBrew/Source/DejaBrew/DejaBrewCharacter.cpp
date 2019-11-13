@@ -7,12 +7,14 @@
 #include "Components/WidgetComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "Components/StaticMeshComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
-#include "ConstructorHelpers.h"
 #include "Kismet/GameplayStatics.h"
-#include "SlimeEnemy.h"
+#include "ConstructorHelpers.h"
 #include "DrawDebugHelpers.h"
+#include "Thorn.h"
+#include "SlimeEnemy.h"
 
 ADejaBrewCharacter::ADejaBrewCharacter()
 {
@@ -197,11 +199,16 @@ void ADejaBrewCharacter::CompressionBlastMoveActor(FVector a_dir, float a_length
 	{
 		
 		if (Cast<ASlimeEnemy>(hitResult.Actor))
+		{ 
+			Cast<ASlimeEnemy>(hitResult.Actor)->LaunchCharacter(a_dir * (10 * a_length), true, true); 
+		}
+		else if (Cast<AThorn>(hitResult.Actor))
 		{
-		//	Cast<ASlimeEnemy>(hitResult.Actor)->GetCharacterMovement()->MaxWalkSpeed = 0;
-			Cast<ASlimeEnemy>(hitResult.Actor)->LaunchCharacter(a_dir * (10 * a_length), true, true);
-
-		//	Cast<ASlimeEnemy>(hitResult.Actor)->LaunchCharacter((a_dir * (a_length * -10)) * .25, false, false);
+			Cast<AThorn>(hitResult.Actor)->Thorn1->AddForce(a_dir * (1000 * a_length));
+			Cast<AThorn>(hitResult.Actor)->Thorn2->AddForce(a_dir * (1000 * a_length));
+			Cast<AThorn>(hitResult.Actor)->Thorn3->AddForce(a_dir * (1000 * a_length));
+			Cast<AThorn>(hitResult.Actor)->Thorn4->AddForce(a_dir * (1000 * a_length));
+			Cast<AThorn>(hitResult.Actor)->Thorn5->AddForce(a_dir * (1000 * a_length));
 		}
 	}
 }

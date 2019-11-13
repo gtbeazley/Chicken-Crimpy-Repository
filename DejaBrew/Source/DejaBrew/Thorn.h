@@ -14,6 +14,8 @@ class DEJABREW_API AThorn : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AThorn();
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		class USceneComponent* Scene;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		class UStaticMeshComponent* Thorn1;

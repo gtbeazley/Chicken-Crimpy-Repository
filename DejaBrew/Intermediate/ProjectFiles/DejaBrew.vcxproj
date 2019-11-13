@@ -410,7 +410,9 @@
     <NMakeOutput>..\..\Binaries\HTML5\DejaBrew-HTML5-Shipping.js</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\DejaBrew\Checkpoint.cpp" />
     <ClCompile Include="..\..\Source\DejaBrew\Thorn.cpp" />
+    <ClInclude Include="..\..\Source\DejaBrew\Checkpoint.h" />
     <ClInclude Include="..\..\Source\DejaBrew\Thorn.h" />
     <None Include="..\..\DejaBrew.uproject" />
     <None Include="..\..\Source\DejaBrew.Target.cs" />

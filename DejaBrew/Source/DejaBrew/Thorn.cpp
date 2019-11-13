@@ -3,6 +3,7 @@
 #include "Thorn.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/PointLightComponent.h"
+#include "Components/SceneComponent.h"
 #include "ConstructorHelpers.h"
 #include "Materials/MaterialInstance.h"
 
@@ -15,12 +16,16 @@ AThorn::AThorn()
 	static ConstructorHelpers::FObjectFinder<UMaterialInterface>thornMatFinder(TEXT("Material'/Game/SideScrollerBP/Materials/ThornsV2_Material.ThornsV2_Material'"));
 	UStaticMesh* ThornMesh = thornAssetFinder.Object;
 	
-	Thorn1 = CreateDefaultSubobject<UStaticMeshComponent>("Thorn1");
-	SetRootComponent(Thorn1);
+	Scene = CreateDefaultSubobject<USceneComponent>("Scene");
+	SetRootComponent(Scene);
+
+	Thorn1 = CreateDefaultSubobject<UStaticMeshComponent>("Thorn1"); 
 	Thorn1->SetStaticMesh(ThornMesh);
 	Thorn1->SetMaterial(0, thornMatFinder.Object);
+	Thorn1->SetupAttachment(Scene);
 	Thorn1->SetGenerateOverlapEvents(true);
 	Thorn1->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	Thorn1->SetWorldScale3D(FVector(10, 10, 10));
 
 	Thorn2 = CreateDefaultSubobject<UStaticMeshComponent>("Thorn2");
 	Thorn2->SetStaticMesh(ThornMesh);
@@ -29,6 +34,7 @@ AThorn::AThorn()
 	Thorn2->SetRelativeLocation(FVector(-3, 3, 0));
 	Thorn2->SetGenerateOverlapEvents(true);
 	Thorn2->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	Thorn2->SetWorldScale3D(FVector(10, 10, 10));
 	
 
 	Thorn3 = CreateDefaultSubobject<UStaticMeshComponent>("Thorn3");
@@ -38,6 +44,7 @@ AThorn::AThorn()
 	Thorn3->SetRelativeLocation(FVector(3, 3, 0));
 	Thorn3->SetGenerateOverlapEvents(true);
 	Thorn3->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	Thorn3->SetWorldScale3D(FVector(10, 10, 10));
 
 	Thorn4 = CreateDefaultSubobject<UStaticMeshComponent>("Thorn4");
 	Thorn4->SetStaticMesh(ThornMesh);
@@ -46,6 +53,7 @@ AThorn::AThorn()
 	Thorn4->SetRelativeLocation(FVector(-3, -3, 0));
 	Thorn4->SetGenerateOverlapEvents(true);
 	Thorn4->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	Thorn4->SetWorldScale3D(FVector(10, 10, 10));
 
 	Thorn5 = CreateDefaultSubobject<UStaticMeshComponent>("Thorn5");
 	Thorn5->SetStaticMesh(ThornMesh);
@@ -54,6 +62,7 @@ AThorn::AThorn()
 	Thorn5->SetRelativeLocation(FVector(3, -3, 0));
 	Thorn5->SetGenerateOverlapEvents(true);
 	Thorn5->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	Thorn5->SetWorldScale3D(FVector(10, 10, 10));
 
 	PointLight = CreateDefaultSubobject<UPointLightComponent>("PointLight");
 	PointLight->SetupAttachment(Thorn1);
@@ -61,6 +70,7 @@ AThorn::AThorn()
 	PointLight->Intensity = 2000;
 	PointLight->AttenuationRadius = 15;
 
+	Thorn1->SetSimulatePhysics(true);
 }
 
 // Called when the game starts or when spawned

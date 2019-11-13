@@ -76,9 +76,15 @@
     <ClInclude Include="..\..\Source\DejaBrew\Thorn.h">
       <Filter>Source\DejaBrew</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\DejaBrew\Checkpoint.h">
+      <Filter>Source\DejaBrew</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\DejaBrew\Thorn.cpp">
+      <Filter>Source\DejaBrew</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DejaBrew\Checkpoint.cpp">
       <Filter>Source\DejaBrew</Filter>
     </ClCompile>
   </ItemGroup>
