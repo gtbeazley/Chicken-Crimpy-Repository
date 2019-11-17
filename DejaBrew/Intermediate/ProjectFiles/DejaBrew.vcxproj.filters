@@ -1,97 +1,94 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup>
-    <None Include="..\..\DejaBrew.uproject" />
-    <Filter Include="Source">
-      <UniqueIdentifier>{07A6F719-3CBA-4419-BC41-B0306ACBF89E}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Source\DejaBrew.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <None Include="..\..\Source\DejaBrewEditor.Target.cs">
-      <Filter>Source</Filter>
-    </None>
-    <Filter Include="Config">
-      <UniqueIdentifier>{64309FFB-C9D4-4FAF-B186-7A0A786BFE45}</UniqueIdentifier>
-    </Filter>
-    <None Include="..\..\Config\DefaultEditor.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultEngine.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultGame.ini">
-      <Filter>Config</Filter>
-    </None>
-    <None Include="..\..\Config\DefaultInput.ini">
-      <Filter>Config</Filter>
-    </None>
-    <Filter Include="Source\DejaBrew">
-      <UniqueIdentifier>{CBE102C7-63FE-44E9-AFB5-976339671308}</UniqueIdentifier>
-    </Filter>
-    <ClCompile Include="..\..\Source\DejaBrew\Checkpoint.cpp">
-      <Filter>Source\DejaBrew</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DejaBrew\Checkpoint.h">
-      <Filter>Source\DejaBrew</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\DejaBrew\CrosshairBoundWidget_cpp.cpp">
-      <Filter>Source\DejaBrew</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DejaBrew\CrosshairBoundWidget_cpp.h">
-      <Filter>Source\DejaBrew</Filter>
-    </ClInclude>
-    <None Include="..\..\Source\DejaBrew\DejaBrew.Build.cs">
-      <Filter>Source\DejaBrew</Filter>
-    </None>
-    <ClCompile Include="..\..\Source\DejaBrew\DejaBrew.cpp">
-      <Filter>Source\DejaBrew</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DejaBrew\DejaBrew.h">
-      <Filter>Source\DejaBrew</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\DejaBrew\DejaBrewCharacter.cpp">
-      <Filter>Source\DejaBrew</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DejaBrew\DejaBrewCharacter.h">
-      <Filter>Source\DejaBrew</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\DejaBrew\DejaBrewGameMode.cpp">
-      <Filter>Source\DejaBrew</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DejaBrew\DejaBrewGameMode.h">
-      <Filter>Source\DejaBrew</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\DejaBrew\SlimeEnemy.cpp">
-      <Filter>Source\DejaBrew</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DejaBrew\SlimeEnemy.h">
-      <Filter>Source\DejaBrew</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\DejaBrew\SlimeEnemy_PC.cpp">
-      <Filter>Source\DejaBrew</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DejaBrew\SlimeEnemy_PC.h">
-      <Filter>Source\DejaBrew</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\DejaBrew\Thorn.cpp">
-      <Filter>Source\DejaBrew</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DejaBrew\Thorn.h">
-      <Filter>Source\DejaBrew</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\DejaBrew\PickUp.h">
-      <Filter>Source\DejaBrew</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\DejaBrew\PickUp.cpp">
-      <Filter>Source\DejaBrew</Filter>
-    </ClCompile>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\DejaBrew.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{5C9FE679-0B38-4766-BD2F-070191B7320C}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\DejaBrew.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\DejaBrewEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{E9E65A88-8481-4F8B-AA23-F86B64E09A9D}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\DejaBrew">
+			<UniqueIdentifier>{6D9BF547-D90E-4576-88A3-ECABA38DBE04}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\DejaBrew\Checkpoint.cpp">
+			<Filter>Source\DejaBrew</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DejaBrew\Checkpoint.h">
+			<Filter>Source\DejaBrew</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DejaBrew\CrosshairBoundWidget_cpp.cpp">
+			<Filter>Source\DejaBrew</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DejaBrew\CrosshairBoundWidget_cpp.h">
+			<Filter>Source\DejaBrew</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\DejaBrew\DejaBrew.Build.cs">
+			<Filter>Source\DejaBrew</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\DejaBrew\DejaBrew.cpp">
+			<Filter>Source\DejaBrew</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DejaBrew\DejaBrew.h">
+			<Filter>Source\DejaBrew</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DejaBrew\DejaBrewCharacter.cpp">
+			<Filter>Source\DejaBrew</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DejaBrew\DejaBrewCharacter.h">
+			<Filter>Source\DejaBrew</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DejaBrew\DejaBrewGameMode.cpp">
+			<Filter>Source\DejaBrew</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DejaBrew\DejaBrewGameMode.h">
+			<Filter>Source\DejaBrew</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DejaBrew\PickUp.cpp">
+			<Filter>Source\DejaBrew</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DejaBrew\PickUp.h">
+			<Filter>Source\DejaBrew</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DejaBrew\SlimeEnemy.cpp">
+			<Filter>Source\DejaBrew</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DejaBrew\SlimeEnemy.h">
+			<Filter>Source\DejaBrew</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DejaBrew\SlimeEnemy_PC.cpp">
+			<Filter>Source\DejaBrew</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DejaBrew\SlimeEnemy_PC.h">
+			<Filter>Source\DejaBrew</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\DejaBrew\Thorn.cpp">
+			<Filter>Source\DejaBrew</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\DejaBrew\Thorn.h">
+			<Filter>Source\DejaBrew</Filter>
+		</ClInclude >
+	</ItemGroup>
 </Project>

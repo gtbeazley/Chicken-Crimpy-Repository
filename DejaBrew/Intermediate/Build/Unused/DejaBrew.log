@@ -1,14 +1,7 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Creating makefile for DejaBrewEditor (no existing makefile)
-  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Deleting old hot reload file: "C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-2038.dll".
-  Deleting old hot reload file: "C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-2038.pdb".
-  Deleting old hot reload file: "C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-783.dll".
-  Deleting old hot reload file: "C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Binaries\Win64\UE4Editor-DejaBrew-783.pdb".
-  Building 2 actions with 8 processes...
-    [1/2] UE4Editor-DejaBrew.lib
-       Creating library C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew.lib and object C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew.exp
-    [2/2] UE4Editor-DejaBrew.dll
-       Creating library C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew.suppressed.lib and object C:\Users\hi_it\OneDrive\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Intermediate\Build\Win64\UE4Editor\Development\DejaBrew\UE4Editor-DejaBrew.suppressed.exp
+  Creating makefile for hot reloading DejaBrewEditor (modules to compile have changed)
+  Compiling game modules for hot reload
+  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Target is up to date
   Deploying DejaBrewEditor Win64 Development...
-  Total build time: 6.11 seconds (Parallel executor: 1.28 seconds)
+  Total build time: 4.40 seconds (NoActionsToExecute executor: 0.00 seconds)
