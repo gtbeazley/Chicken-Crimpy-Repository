@@ -14,7 +14,8 @@ class DEJABREW_API ACheckpoint : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ACheckpoint();
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		USceneComponent* Scene;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		class UStaticMeshComponent* Flag;
 

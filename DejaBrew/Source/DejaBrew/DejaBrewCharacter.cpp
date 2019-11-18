@@ -56,8 +56,8 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	CrosshairWidget->SetupAttachment(CrosshairBoundWidget);
 
 	// Configure character movement
-	GetCharacterMovement()->bOrientRotationToMovement = true; // Face in the direction we are moving..
-	GetCharacterMovement()->RotationRate = FRotator(0.0f, 720.0f, 0.0f); // ...at this rotation rate
+	GetCharacterMovement()->bOrientRotationToMovement = false;  
+	GetCharacterMovement()->RotationRate = FRotator(0.0f, 720.0f, 0.0f); 
 	GetCharacterMovement()->GravityScale = 2.f;
 	GetCharacterMovement()->AirControl = 0.80f;
 	GetCharacterMovement()->JumpZVelocity = 1000.f;
@@ -70,6 +70,8 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 
 	UCapsuleComponent* CapsuleCollider = GetCapsuleComponent();
 	CapsuleCollider->SetGenerateOverlapEvents(true);
+
+	AutoPossessPlayer = EAutoReceiveInput::Player0;
 
 	m_compressionCharge = m_initialCompressionCharge;
  	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
@@ -140,12 +142,12 @@ void ADejaBrewCharacter::BeginPlay()
 void ADejaBrewCharacter::MoveRight(float a_val)
 {
 	// add movement in that direction
-	AddMovementInput(FVector(0.f, 1.f ,0.f), a_val * m_moveSpeed);
+	AddMovementInput(FVector(0.f, 1.f ,0.f), -a_val * m_moveSpeed);
 }
 
 void ADejaBrewCharacter::MoveLeft(float a_val)
 {
-	AddMovementInput(FVector(0, 1, 0), a_val * m_moveSpeed);
+	AddMovementInput(FVector(0, 1, 0), -a_val * m_moveSpeed);
 }
 
 void ADejaBrewCharacter::Pause()
@@ -204,11 +206,7 @@ void ADejaBrewCharacter::CompressionBlastMoveActor(FVector a_dir, float a_length
 		}
 		else if (Cast<AThorn>(hitResult.Actor))
 		{
-			Cast<AThorn>(hitResult.Actor)->Thorn1->AddForce(a_dir * (1000 * a_length));
-			Cast<AThorn>(hitResult.Actor)->Thorn2->AddForce(a_dir * (1000 * a_length));
-			Cast<AThorn>(hitResult.Actor)->Thorn3->AddForce(a_dir * (1000 * a_length));
-			Cast<AThorn>(hitResult.Actor)->Thorn4->AddForce(a_dir * (1000 * a_length));
-			Cast<AThorn>(hitResult.Actor)->Thorn5->AddForce(a_dir * (1000 * a_length));
+			Cast<AThorn>(hitResult.Actor)->Thorn1->AddForce(a_dir * (1000 * a_length)); 
 		}
 	}
 }

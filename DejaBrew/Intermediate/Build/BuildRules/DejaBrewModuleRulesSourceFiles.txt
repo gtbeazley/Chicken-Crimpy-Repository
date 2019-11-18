@@ -1,3 +1,0 @@
-C:\Users\s191273\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source\DejaBrew\DejaBrew.Build.cs
-C:\Users\s191273\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source\DejaBrew.Target.cs
-C:\Users\s191273\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\Source\DejaBrewEditor.Target.cs
