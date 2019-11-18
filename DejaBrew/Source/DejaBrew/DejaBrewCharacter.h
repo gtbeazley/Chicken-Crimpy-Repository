@@ -30,6 +30,14 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		UWidgetComponent* CrosshairWidget;
 
+	UFUNCTION()
+		void OnOverlapBegin( UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
+			int32 OtherbodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	UFUNCTION()
+		void OnOverlapEnd( UPrimitiveComponent* OverlappedComp,  AActor* OtherActor, UPrimitiveComponent* OtherComp,
+			int32 OtherbodyIndex);
+
 	UPROPERTY(EditAnywhere)
 		bool bIsCharging = false;
 
@@ -88,8 +96,9 @@ protected:
 	/** Called for side scroller characters left movement*/
 	void MoveLeft(float a_val);
 
-
+	void Die();
 	
+	void LoadLastCheckpoint();
 
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;

@@ -22,6 +22,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		class UBoxComponent* Collider;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool isReached = false;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -30,6 +32,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	
+	/** Called to access the savegame and save the current status of the game */
+	void SaveThisMoment();
 	
 };

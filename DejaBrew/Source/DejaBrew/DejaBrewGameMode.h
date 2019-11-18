@@ -13,6 +13,9 @@ class ADejaBrewGameMode : public AGameModeBase
 
 public:
 	ADejaBrewGameMode();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		FString SlotName = "";
 };
 
 

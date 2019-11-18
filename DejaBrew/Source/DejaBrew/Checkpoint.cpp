@@ -3,8 +3,11 @@
 #include "Checkpoint.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/BoxComponent.h"
-#include "ConstructorHelpers.h"
 #include "Materials/MaterialInstance.h"
+#include "Kismet/GameplayStatics.h"
+#include "ConstructorHelpers.h"
+#include "DejaBrew_SaveGame.h"
+#include "DejaBrewGameMode.h"
 
 // Sets default values
 ACheckpoint::ACheckpoint()
@@ -44,3 +47,14 @@ void ACheckpoint::Tick(float DeltaTime)
 
 }
 
+void ACheckpoint::SaveThisMoment()
+{
+	if (!isReached)
+	{
+		UDejaBrew_SaveGame* SGInstance = Cast<UDejaBrew_SaveGame>(UGameplayStatics::CreateSaveGameObject(UDejaBrew_SaveGame::StaticClass()));
+		SGInstance->PlayerLoc = GetActorLocation() + FVector(0, 0, 60);
+		ADejaBrewGameMode* GMInstance = Cast<ADejaBrewGameMode>(UGameplayStatics::GetGameMode(this));
+		UGameplayStatics::SaveGameToSlot(SGInstance, GMInstance->SlotName, 0);
+		isReached = true;
+	}
+}

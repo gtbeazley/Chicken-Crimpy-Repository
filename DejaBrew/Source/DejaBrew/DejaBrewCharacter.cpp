@@ -13,8 +13,12 @@
 #include "Kismet/GameplayStatics.h"
 #include "ConstructorHelpers.h"
 #include "DrawDebugHelpers.h"
+#include "DejaBrewGameMode.h"
+#include "DejaBrew_SaveGame.h"
 #include "Thorn.h"
-#include "SlimeEnemy.h"
+#include "Spike.h"
+#include "SlimeEnemy.h" 
+#include "Checkpoint.h"
 
 ADejaBrewCharacter::ADejaBrewCharacter()
 {
@@ -22,6 +26,8 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
+	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &ADejaBrewCharacter::OnOverlapBegin);
+	GetCapsuleComponent()->OnComponentEndOverlap.AddDynamic(this, &ADejaBrewCharacter::OnOverlapEnd);
 
 	// Don't rotate when the controller rotates.
 	bUseControllerRotationPitch = false;
@@ -243,3 +249,40 @@ void ADejaBrewCharacter::SetMouseSpeed(float a_newMouseSpeed)
 {
 	m_mouseSpeed = a_newMouseSpeed;
 }
+
+void ADejaBrewCharacter::Die()
+{
+	LoadLastCheckpoint();
+}
+
+void ADejaBrewCharacter::LoadLastCheckpoint()
+{
+	FString slotName = Cast<ADejaBrewGameMode>(UGameplayStatics::GetGameMode(this))->SlotName;
+	if (UGameplayStatics::DoesSaveGameExist(slotName, 0))
+	{
+		UDejaBrew_SaveGame* SGInstance = Cast<UDejaBrew_SaveGame>(UGameplayStatics::LoadGameFromSlot(slotName, 0));
+		SetActorLocation(SGInstance->PlayerLoc);
+	}
+
+}
+
+void ADejaBrewCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
+	int32 OtherbodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (Cast<AThorn>(OtherActor) || Cast<ASpike>(OtherActor) || Cast<ASlimeEnemy>(OtherActor))
+	{
+		Die();
+	}
+
+}
+
+
+void ADejaBrewCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
+	int32 OtherbodyIndex)
+{
+	if (Cast<ACheckpoint>(OtherActor))
+	{
+		Cast<ACheckpoint>(OtherActor)->SaveThisMoment();
+	}
+}
+
