@@ -3,6 +3,7 @@
 #include "SlimeEnemy.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 // Sets default values
 ASlimeEnemy::ASlimeEnemy()
@@ -14,6 +15,11 @@ ASlimeEnemy::ASlimeEnemy()
 	Mesh->SetGenerateOverlapEvents(true); 
 	UCapsuleComponent* CapsuleCollider = GetCapsuleComponent();
 	CapsuleCollider->SetGenerateOverlapEvents(true);
+	CapsuleCollider->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	CapsuleCollider->SetCollisionResponseToChannel(ECC_Visibility, ECR_Overlap);
+
+	GetCharacterMovement()->MaxWalkSpeed = 300 * maxWalkSpeed;
+	GetCharacterMovement()->bCanWalkOffLedges = false;
 }
 
 // Called when the game starts or when spawned

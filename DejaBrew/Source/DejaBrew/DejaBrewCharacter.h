@@ -12,7 +12,8 @@ class ADejaBrewCharacter : public ACharacter
 	GENERATED_BODY()
 
 public:
-
+	/** Accessible by any class to use players death functionality */
+	void Die();
 protected:
 	/** Side view camera */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -96,8 +97,7 @@ protected:
 	/** Called for side scroller characters left movement*/
 	void MoveLeft(float a_val);
 
-	void Die();
-	
+	/** Loads the game savedand loads last checkpoint */
 	void LoadLastCheckpoint();
 
 	// APawn interface

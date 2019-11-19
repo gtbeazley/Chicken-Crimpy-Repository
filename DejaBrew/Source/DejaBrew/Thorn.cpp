@@ -26,6 +26,9 @@ AThorn::AThorn()
 	Thorn1->SetGenerateOverlapEvents(true);
 	Thorn1->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 	Thorn1->SetWorldScale3D(FVector(10, 10, 10));
+	Thorn1->GetBodyInstance()->bLockXRotation = true;
+	Thorn1->GetBodyInstance()->bLockYRotation = true;
+	Thorn1->GetBodyInstance()->bLockZRotation = true;
 
 	Thorn2 = CreateDefaultSubobject<UStaticMeshComponent>("Thorn2");
 	Thorn2->SetStaticMesh(ThornMesh);

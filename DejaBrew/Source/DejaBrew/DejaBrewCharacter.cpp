@@ -28,6 +28,7 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &ADejaBrewCharacter::OnOverlapBegin);
 	GetCapsuleComponent()->OnComponentEndOverlap.AddDynamic(this, &ADejaBrewCharacter::OnOverlapEnd);
+	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 
 	// Don't rotate when the controller rotates.
 	bUseControllerRotationPitch = false;
@@ -212,7 +213,7 @@ void ADejaBrewCharacter::CompressionBlastMoveActor(FVector a_dir, float a_length
 		}
 		else if (Cast<AThorn>(hitResult.Actor))
 		{
-			Cast<AThorn>(hitResult.Actor)->Thorn1->AddForce(a_dir * (1000 * a_length)); 
+			Cast<AThorn>(hitResult.Actor)->Thorn1->AddForce(a_dir * (1000 * a_length), NAME_None, true); 
 		}
 	}
 }

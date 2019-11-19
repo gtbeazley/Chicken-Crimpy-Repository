@@ -26,6 +26,7 @@ ASpike::ASpike()
 	Trigger->SetupAttachment(Cone);
 	Trigger->SetRelativeLocation(FVector(0, 0, 30));
 	Trigger->SetRelativeScale3D(FVector(1.5, 1.5, 1));
+	Trigger->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 
 	StaticMesh = CreateDefaultSubobject<UStaticMeshComponent>("StaticMesh");
 	StaticMesh->SetupAttachment(Cone);
@@ -34,6 +35,7 @@ ASpike::ASpike()
 	StaticMesh->SetRelativeLocation(FVector(-40, 0, -55));
 	StaticMesh->SetRelativeRotation(FRotator(0, 180, 0));
 	StaticMesh->SetRelativeScale3D(FVector(25, 25, 25));
+	StaticMesh->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 }
 
 // Called when the game starts or when spawned
