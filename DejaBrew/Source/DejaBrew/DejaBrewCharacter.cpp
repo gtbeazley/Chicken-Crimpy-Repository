@@ -19,6 +19,9 @@
 #include "Spike.h"
 #include "SlimeEnemy.h" 
 #include "Checkpoint.h"
+#include "CoffeeBean.h"
+#include "Fuel.h"
+#include "CoffeeBag.h"
 
 ADejaBrewCharacter::ADejaBrewCharacter()
 {
@@ -273,6 +276,19 @@ void ADejaBrewCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 	if (Cast<AThorn>(OtherActor) || Cast<ASpike>(OtherActor) || Cast<ASlimeEnemy>(OtherActor))
 	{
 		Die();
+	}
+	else if (Cast<AFuel>(OtherActor))
+	{
+		Cast<AFuel>(OtherActor)->Collected = true;
+	}
+	else if (Cast<ACoffeeBean>(OtherActor))
+	{
+		Cast<ACoffeeBean>(OtherActor)->Collected = true;
+	}
+	else if (Cast<ACoffeeBag>(OtherActor))
+	{
+		TArray<AActor*> OutActors;
+		UGameplayStatics::GetAllActorsOfClass(GetWorld(), AFuel::StaticClass(), OutActors);
 	}
 
 }

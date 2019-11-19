@@ -17,6 +17,10 @@ ACoffeeBean::ACoffeeBean()
 
 	Trigger = CreateDefaultSubobject<UBoxComponent>("Trigger");
 	SetRootComponent(Trigger);
+	Trigger->SetGenerateOverlapEvents(true);
+	Trigger->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	Trigger->SetCollisionResponseToAllChannels(ECR_Overlap);
+	Trigger->CanCharacterStepUpOn = ECB_No;
 
 	Mesh = CreateDefaultSubobject<USkeletalMeshComponent>("Mesh");
 	Mesh->SetupAttachment(Trigger);
@@ -24,6 +28,9 @@ ACoffeeBean::ACoffeeBean()
 	Mesh->SetMaterial(0, beanMat.Object);
 	Mesh->SetRelativeRotation(FRotator(45, -20, 180));
 	Mesh->SetWorldScale3D(FVector(2.75, 2.75, 2.75));
+	Mesh->SetCollisionResponseToAllChannels(ECR_Overlap);
+	Mesh->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	Mesh->CanCharacterStepUpOn = ECB_No;
 	
 }
 
@@ -39,5 +46,7 @@ void ACoffeeBean::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (Mesh->bVisible == Collected)
+		Mesh->SetVisibility(!Collected, true);
 }
 

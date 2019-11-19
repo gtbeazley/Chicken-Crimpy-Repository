@@ -27,7 +27,11 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		USceneComponent* Scene;
+
 public:	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool Collected = false;
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 

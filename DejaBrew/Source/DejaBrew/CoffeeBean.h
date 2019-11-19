@@ -21,7 +21,11 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		class UBoxComponent* Trigger;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool Collected = false;
 protected:
+
+
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 

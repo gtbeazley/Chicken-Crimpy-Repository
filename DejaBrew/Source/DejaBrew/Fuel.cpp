@@ -23,10 +23,16 @@ AFuel::AFuel()
 	Mesh->SetStaticMesh(fuelAsset.Object);
 	Mesh->SetMaterial(0, fuelMat.Object);
 	Mesh->SetWorldScale3D(FVector(15, 15, 15));
+	Mesh->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	Mesh->SetGenerateOverlapEvents(true);
+	Mesh->SetCollisionResponseToAllChannels(ECR_Overlap);
 
 	Trigger = CreateDefaultSubobject<UBoxComponent>("Trigger");
 	Trigger->SetupAttachment(Mesh);
 	Trigger->SetRelativeScale3D(FVector(0.05, 0.05, 0.05));
+	Trigger->SetGenerateOverlapEvents(true);
+	Trigger->SetCollisionResponseToAllChannels(ECR_Overlap);
+	Trigger->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 }
 
 // Called when the game starts or when spawned
@@ -40,6 +46,7 @@ void AFuel::BeginPlay()
 void AFuel::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	if (Collected == Mesh->bVisible)
+		Mesh->SetVisibility(!Collected, true);
 }
 
