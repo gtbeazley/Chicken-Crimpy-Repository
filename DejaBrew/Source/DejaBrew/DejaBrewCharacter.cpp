@@ -287,8 +287,21 @@ void ADejaBrewCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 	}
 	else if (Cast<ACoffeeBag>(OtherActor))
 	{
+		bool l_CanContinue = true;
 		TArray<AActor*> OutActors;
 		UGameplayStatics::GetAllActorsOfClass(GetWorld(), AFuel::StaticClass(), OutActors);
+		for(auto Actor: OutActors)
+		{
+			if(Actor)
+				if (Cast<AFuel>(Actor)->Collected == false)
+					l_CanContinue = false;
+		}
+		if (l_CanContinue)
+		{
+			Cast<ADejaBrewGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->NextLevelName = "Level1";
+			FName l_NextLevel = Cast<ADejaBrewGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->NextLevelName;
+			UGameplayStatics::OpenLevel(GetWorld(), l_NextLevel);
+		}
 	}
 
 }

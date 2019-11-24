@@ -6,6 +6,13 @@
 #include "GameFramework/SaveGame.h"
 #include "DejaBrew_SaveGame.generated.h"
 
+class ADoor;
+class AFuel;
+class ACoffeeBean;
+class AEnemy;
+class ACheckpoint;
+class AThorn;
+
 /**
  * 
  */
@@ -18,7 +25,44 @@ public:
 	UDejaBrew_SaveGame();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		FVector PlayerLoc;
+		FVector PlayerLoc; 
+
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//	TArray<ACheckpoint*> CheckpointRefs;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//	TArray<bool> CheckpointReached;
+	//
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//	TArray<ADoor*> DoorRefs;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//	TArray<bool> DoorOpened;
+	//
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//	TArray<ACoffeeBean*> CoffeeBeanRefs;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//	TArray<bool> BeanCollected;
+	//
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//	TArray<AFuel*> FuelRefs;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//	TArray<bool> FuelCollected;
+	//
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//	TArray<AEnemy*> EnemyRefs;
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	//	TArray<FVector> EnemyLoc;
+	//
+	//
+	//
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TArray<AThorn*> ThornRefs;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TArray<FVector> ThornLoc;
+
+
+
 	
 	
 };

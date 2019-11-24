@@ -16,6 +16,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		FString SlotName = "";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		FName NextLevelName = "";
 };
 
 

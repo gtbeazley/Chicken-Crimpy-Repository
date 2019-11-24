@@ -27,6 +27,8 @@ ACoffeeBag::ACoffeeBag()
 	Trigger->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	Trigger->SetGenerateOverlapEvents(true);
 	Trigger->SetCollisionResponseToAllChannels(ECR_Overlap);
+	Trigger->SetWorldScale3D(FVector(2, 2, 2));
+	Trigger->SetRelativeLocation(FVector(0, 0, 0));
 }
 
 // Called when the game starts or when spawned
