@@ -18,6 +18,9 @@ public:
 		USceneComponent* Scene;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		class UStaticMeshComponent* Flag;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		class UMaterialInterface* FlagGreen;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		class UBoxComponent* Collider;
@@ -34,5 +37,8 @@ public:
 
 	/** Called to access the savegame and save the current status of the game */
 	void SaveThisMoment();
+
+	/** Changes the colour of the flag to green */
+	void ChangeColour();
 	
 };

@@ -53,6 +53,7 @@ protected:
 	UPROPERTY(EditAnywhere)
 		float m_moveSpeed = 1;
 
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float m_CameraMoveSpeed = 3;
 
@@ -76,6 +77,18 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = 0, ClampMax = 200))
 		float m_compressionCharge;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = 0))
+		int32 m_curScore = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int32 m_scoreIncrementing = 1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int32 m_time = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool m_timeCounting = false;
 
 	/**Tick event called every frame
 	@param a_dt time from the start of the last frame*/
@@ -133,6 +146,8 @@ public:
 	UFUNCTION(BlueprintPure)
 		float GetCurrentCompressionCharge() { return m_compressionCharge; }
 
+	UFUNCTION(BlueprintPure)
+		int GetCurScore() { return m_curScore; }
 	/** Accesses the current Mouse Speed */
 	UFUNCTION(BlueprintPure)
 		float GetMouseSpeed() { return m_mouseSpeed; }
