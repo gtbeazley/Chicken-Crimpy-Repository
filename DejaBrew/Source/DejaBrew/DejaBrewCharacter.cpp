@@ -153,19 +153,28 @@ void ADejaBrewCharacter::MoveRight(float a_val)
 {
 	// add movement in that direction
 	AddMovementInput(FVector(0.f, 1.f ,0.f), -a_val * m_moveSpeed);
+	if(!m_timeCounting)m_timeCounting = true;
 }
 
 void ADejaBrewCharacter::MoveLeft(float a_val)
 {
 	AddMovementInput(FVector(0, 1, 0), -a_val * m_moveSpeed);
+	if (!m_timeCounting)m_timeCounting = true;
 }
 
 void ADejaBrewCharacter::Pause()
 {
+	if (UGameplayStatics::IsGamePaused(GetWorld()))
+		UGameplayStatics::SetGamePaused(GetWorld(), true);
+	else
+		UGameplayStatics::SetGamePaused(GetWorld(), false);
+	if (!m_timeCounting)m_timeCounting = true;
+
 }
 
 void ADejaBrewCharacter::Shoot()
 {
+	if (!m_timeCounting)m_timeCounting = true;
 	if (bCanShoot)
 	{
 		FVector l_crosshairLoc = CrosshairWidget->GetComponentLocation(),
@@ -265,7 +274,28 @@ void ADejaBrewCharacter::LoadLastCheckpoint()
 	if (UGameplayStatics::DoesSaveGameExist(slotName, 0))
 	{
 		UDejaBrew_SaveGame* SGInstance = Cast<UDejaBrew_SaveGame>(UGameplayStatics::LoadGameFromSlot(slotName, 0));
+
+		//Loading Player Stats
+		m_compressionCharge = m_initialCompressionCharge;
 		SetActorLocation(SGInstance->PlayerLoc);
+		m_curScore = SGInstance->curScore;
+
+		//Loading all CoffeeBean States
+		for (int32 i = 0; i < SGInstance->CoffeeBeanRefs.Num(); i++)
+			SGInstance->CoffeeBeanRefs[i]->Collected = SGInstance->BeanCollected[i];
+
+		//Loading all fuel states; 
+		for (int32 i = 0; i < SGInstance->FuelRefs.Num(); i++)
+			SGInstance->FuelRefs[i]->Collected = SGInstance->FuelCollected[i];  
+
+		//Loading all Thorns 
+		for (int32 i = 0; i < SGInstance->ThornRefs.Num(); i++)
+			SGInstance->ThornRefs[i]->SetActorLocation(SGInstance->ThornLoc[i]);
+
+		//Loading all SlimeEnemys
+		for (int32 i = 0; i < SGInstance->EnemyRefs.Num(); i++)
+			SGInstance->EnemyRefs[i]->SetActorLocation(SGInstance->EnemyLoc[i]);
+
 	}
 
 }
@@ -283,7 +313,11 @@ void ADejaBrewCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 	}
 	else if (Cast<ACoffeeBean>(OtherActor))
 	{
-		Cast<ACoffeeBean>(OtherActor)->Collected = true;
+		if (!Cast<ACoffeeBean>(OtherActor)->Collected)
+		{
+			Cast<ACoffeeBean>(OtherActor)->Collected = true;
+			m_curScore += m_scoreIncrementing;
+		}
 	}
 	else if (Cast<ACoffeeBag>(OtherActor))
 	{
@@ -302,6 +336,10 @@ void ADejaBrewCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 			FName l_NextLevel = Cast<ADejaBrewGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->NextLevelName;
 			UGameplayStatics::OpenLevel(GetWorld(), l_NextLevel);
 		}
+	}
+	else if (Cast<ACheckpoint>(OtherActor))
+	{
+		Cast<ACheckpoint>(OtherActor)->ChangeColour();
 	}
 
 }
