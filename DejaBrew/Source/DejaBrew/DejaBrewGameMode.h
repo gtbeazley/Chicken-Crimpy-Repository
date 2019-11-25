@@ -14,8 +14,13 @@ class ADejaBrewGameMode : public AGameModeBase
 public:
 	ADejaBrewGameMode();
 
+	void SetSlotName(FString a_SlotName);
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		FString SlotName = "";
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		FString BestGameSlotName = "";
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		FName NextLevelName = "";

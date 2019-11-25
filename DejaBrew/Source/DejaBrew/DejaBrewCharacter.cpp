@@ -15,6 +15,7 @@
 #include "DrawDebugHelpers.h"
 #include "DejaBrewGameMode.h"
 #include "DejaBrew_SaveGame.h"
+#include "BestGameSave.h"
 #include "Thorn.h"
 #include "Spike.h"
 #include "SlimeEnemy.h" 
@@ -83,7 +84,8 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 
-	m_compressionCharge = m_initialCompressionCharge;
+	m_compressionCharge = m_initialCompressionCharge; 
+	m_timeCounting = false;
  	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
@@ -140,7 +142,12 @@ void ADejaBrewCharacter::Tick(float a_dt)
 		bCanShoot = true;
 	OffSetCrosshair(); 
 	UpdateCompressionCharge();
-
+	if (m_timeCounting)
+	{
+		frame++;
+		//	if (frame % m_timeFrameIncrement == 0)
+		m_timeInLevel = frame / 128;
+	}
 	
 }
 
@@ -163,13 +170,18 @@ void ADejaBrewCharacter::MoveLeft(float a_val)
 }
 
 void ADejaBrewCharacter::Pause()
-{
+{ 
 	if (UGameplayStatics::IsGamePaused(GetWorld()))
-		UGameplayStatics::SetGamePaused(GetWorld(), true);
-	else
+	{
+		//UNPAUSE
 		UGameplayStatics::SetGamePaused(GetWorld(), false);
-	if (!m_timeCounting)m_timeCounting = true;
+	}
+	else
+	{
+		//PAUSE
+		UGameplayStatics::SetGamePaused(GetWorld(), true);
 
+	}
 }
 
 void ADejaBrewCharacter::Shoot()
@@ -332,14 +344,33 @@ void ADejaBrewCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 		}
 		if (l_CanContinue)
 		{
-			Cast<ADejaBrewGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->NextLevelName = "Level1";
-			FName l_NextLevel = Cast<ADejaBrewGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->NextLevelName;
+			ADejaBrewGameMode* GMInstance = Cast<ADejaBrewGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
+			GMInstance->NextLevelName = "Level1";
+			FName l_NextLevel = GMInstance->NextLevelName;
+			
+			if (UGameplayStatics::DoesSaveGameExist(GMInstance->BestGameSlotName, 0))
+			{
+				UBestGameSave* SGInstance = Cast<UBestGameSave>(UGameplayStatics::LoadGameFromSlot(GMInstance->BestGameSlotName, 0));
+				if (SGInstance->FastestTime < GetCurTime())
+				{
+					SGInstance->FastestTime = GetCurTime();
+					UGameplayStatics::SaveGameToSlot(SGInstance, GMInstance->BestGameSlotName, 0); 
+				}
+			}
+			else
+			{
+				UBestGameSave* SGInstance = Cast<UBestGameSave>(UGameplayStatics::CreateSaveGameObject(UBestGameSave::StaticClass()));
+				SGInstance->FastestTime = GetCurTime();
+				SGInstance->Highscore = GetCurScore();
+			}
+
 			UGameplayStatics::OpenLevel(GetWorld(), l_NextLevel);
 		}
 	}
 	else if (Cast<ACheckpoint>(OtherActor))
 	{
 		Cast<ACheckpoint>(OtherActor)->ChangeColour();
+		Cast<ACheckpoint>(OtherActor)->SaveThisMoment();
 	}
 
 }
@@ -350,7 +381,25 @@ void ADejaBrewCharacter::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActo
 {
 	if (Cast<ACheckpoint>(OtherActor))
 	{
+		Cast<ACheckpoint>(OtherActor)->ChangeColour();
 		Cast<ACheckpoint>(OtherActor)->SaveThisMoment();
 	}
 }
 
+void ADejaBrewCharacter::SetMaxFuel(int32 a_fuelToFind)
+{
+	m_fuelToFind = a_fuelToFind;
+}
+
+int ADejaBrewCharacter::GetCurFuelCount()
+{
+	TArray<AActor*> OutActors;
+	UGameplayStatics::GetAllActorsOfClass(this, AFuel::StaticClass(), OutActors);
+	int rtn = 0;
+
+	if (OutActors.IsValidIndex(0))
+		for (auto Fuel : OutActors)
+			if(Cast<AFuel>(Fuel)->Collected) rtn++;
+
+	return rtn;
+}
