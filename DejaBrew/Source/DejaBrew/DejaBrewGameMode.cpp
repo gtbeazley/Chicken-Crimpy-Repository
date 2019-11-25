@@ -13,3 +13,9 @@ ADejaBrewGameMode::ADejaBrewGameMode()
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 }
+
+void ADejaBrewGameMode::SetSlotName(FString a_slotName)
+{
+	SlotName = a_slotName;
+	BestGameSlotName = FString(a_slotName + "_BGS");
+}

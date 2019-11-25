@@ -82,10 +82,21 @@ protected:
 		int32 m_curScore = 0;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		int32 m_scoreIncrementing = 1;
+		int32 m_scoreIncrementing = 1; 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		int32 m_time = 0;
+		int32 m_fuelToFind;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int32 m_curFuel = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int32 m_timeInLevel = 0;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int32 frame = 0;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int32 m_timeFrameIncrement = 1;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool m_timeCounting = false;
@@ -146,8 +157,18 @@ public:
 	UFUNCTION(BlueprintPure)
 		float GetCurrentCompressionCharge() { return m_compressionCharge; }
 
+	/** Accesses time in level */
+	UFUNCTION(BlueprintPure)
+		int GetCurTime() { return m_timeInLevel; }
+
+	/** Accesses collected beancount */
 	UFUNCTION(BlueprintPure)
 		int GetCurScore() { return m_curScore; }
+
+	/** Access collected fuel count */
+	UFUNCTION(BlueprintPure)
+		int GetCurFuelCount();
+
 	/** Accesses the current Mouse Speed */
 	UFUNCTION(BlueprintPure)
 		float GetMouseSpeed() { return m_mouseSpeed; }
@@ -155,5 +176,9 @@ public:
 	/** Sets the speed of the mouse */
 	UFUNCTION(BlueprintCallable)
 		void SetMouseSpeed(float a_newMouseSpeed);
+
+	/** Sets the initial fuel max count */
+	UFUNCTION(BlueprintCallable)
+		void SetMaxFuel(int32 a_fuelToFind);
 	 
 };
