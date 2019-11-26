@@ -2,27 +2,28 @@
 
 #include "DejaBrewCharacter.h"
 #include "Camera/CameraComponent.h"
+#include "Components/AudioComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
-#include "Components/WidgetComponent.h"
 #include "Components/SkeletalMeshComponent.h"
-#include "Components/CapsuleComponent.h"
 #include "Components/StaticMeshComponent.h"
+#include "Components/WidgetComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "Sound/SoundCue.h"
+#include "BestGameSave.h"
+#include "Checkpoint.h"
+#include "CoffeeBag.h"
+#include "CoffeeBean.h"
 #include "ConstructorHelpers.h"
-#include "DrawDebugHelpers.h"
 #include "DejaBrewGameMode.h"
 #include "DejaBrew_SaveGame.h"
-#include "BestGameSave.h"
+#include "DrawDebugHelpers.h"
+#include "Fuel.h"
 #include "Thorn.h"
 #include "Spike.h"
 #include "SlimeEnemy.h" 
-#include "Checkpoint.h"
-#include "CoffeeBean.h"
-#include "Fuel.h"
-#include "CoffeeBag.h"
 
 ADejaBrewCharacter::ADejaBrewCharacter()
 {
@@ -57,14 +58,69 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	//Setting up the widgets
 	CrosshairBoundWidget = CreateDefaultSubobject<UWidgetComponent>("CrosshairBoundWidget");
 	static ConstructorHelpers::FClassFinder<UUserWidget> ClassFinder4Widget(TEXT("/Game/SideScrollerCPP/Blueprints/Widgets/CrosshairBoundsWidget_BP"));
-	CrosshairBoundWidget->SetWidgetClass(ClassFinder4Widget.Class);
-	CrosshairBoundWidget->SetDrawSize(FVector2D(1000, 1000));
+	if (ClassFinder4Widget.Succeeded())
+	{
+		CrosshairBoundWidget->SetWidgetClass(ClassFinder4Widget.Class);
+		CrosshairBoundWidget->SetDrawSize(FVector2D(1000, 1000));
+	}
 
 	CrosshairWidget = CreateDefaultSubobject<UWidgetComponent>("CrosshairWidget");
 	static ConstructorHelpers::FClassFinder<UUserWidget> ClassFinderCrosshairWidget(TEXT("/Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP"));
-	CrosshairWidget->SetWidgetClass(ClassFinderCrosshairWidget.Class);
-	CrosshairWidget->SetDrawSize(FVector2D(1000, 1000));
-	CrosshairWidget->SetupAttachment(CrosshairBoundWidget);
+	if (ClassFinder4Widget.Succeeded())
+	{
+		CrosshairWidget->SetWidgetClass(ClassFinderCrosshairWidget.Class);
+		CrosshairWidget->SetDrawSize(FVector2D(1000, 1000));
+		CrosshairWidget->SetupAttachment(CrosshairBoundWidget);
+	}
+
+	//Setting up Audio
+	Checkpoint_Audio = CreateDefaultSubobject<UAudioComponent>("Checkpoint_Audio");
+	static ConstructorHelpers::FObjectFinder<USoundCue> checkpoint_Cue(TEXT("SoundCue'/Game/SideScrollerCPP/Sounds/Checkpoint/Checkpoint_Cue.Checkpoint_Cue'"));
+	if (checkpoint_Cue.Succeeded())
+	{
+		Checkpoint_Audio->SetupAttachment(GetCapsuleComponent());
+		Checkpoint_Audio->SetSound(checkpoint_Cue.Object);
+	}
+
+	Collect_Audio = CreateDefaultSubobject<UAudioComponent>("Collect_Audio");
+	static ConstructorHelpers::FObjectFinder<USoundCue> collect_Cue(TEXT("SoundCue'/Game/SideScrollerCPP/Sounds/Collect/Collect_Cue.Collect_Cue'"));
+	if (collect_Cue.Succeeded())
+	{
+		Collect_Audio->SetupAttachment(GetCapsuleComponent());
+		Collect_Audio->SetSound(collect_Cue.Object);
+	}
+
+	Shoot_Audio = CreateDefaultSubobject<UAudioComponent>("Shoot_Audio");
+	static ConstructorHelpers::FObjectFinder<USoundCue> shoot_Cue(TEXT("SoundCue'/Game/SideScrollerCPP/Sounds/Blast/Blast_Cue.Blast_Cue'"));
+	if (shoot_Cue.Succeeded())
+	{
+		Shoot_Audio->SetupAttachment(GetCapsuleComponent());
+		Shoot_Audio->SetSound(shoot_Cue.Object);
+	}
+
+	EnemyDeath_Audio = CreateDefaultSubobject<UAudioComponent>("EnemyDeath_Audio");
+	static ConstructorHelpers::FObjectFinder<USoundCue> enemy_Cue(TEXT("SoundCue'/Game/SideScrollerCPP/Sounds/DeathEnemy/DeathEnemy_Cue.DeathEnemy_Cue'"));
+	if (enemy_Cue.Succeeded())
+	{
+		EnemyDeath_Audio->SetupAttachment(GetCapsuleComponent());
+		EnemyDeath_Audio->SetSound(enemy_Cue.Object);
+	}
+
+	TerrainDeath_Audio = CreateDefaultSubobject<UAudioComponent>("TerrainDeath_Audio");
+	static ConstructorHelpers::FObjectFinder<USoundCue> terrain_Cue(TEXT("SoundCue'/Game/SideScrollerCPP/Sounds/DeathTerrain/DeathTerrain_Cue.DeathTerrain_Cue'"));
+	if (terrain_Cue.Succeeded())
+	{
+		TerrainDeath_Audio->SetupAttachment(GetCapsuleComponent());
+		TerrainDeath_Audio->SetSound(terrain_Cue.Object);
+	}
+
+	Jump_Audio = CreateDefaultSubobject< UAudioComponent>("Jump_Audio");
+	static ConstructorHelpers::FObjectFinder<USoundCue> jump_Cue(TEXT("SoundCue'/Game/SideScrollerCPP/Sounds/DeathTerrain/DeathTerrain_Cue.DeathTerrain_Cue'"));
+	if (jump_Cue.Succeeded())
+	{
+		Jump_Audio->SetupAttachment(GetCapsuleComponent());
+		Jump_Audio->SetSound(jump_Cue.Object);
+	}
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = false;  
@@ -210,6 +266,7 @@ void ADejaBrewCharacter::Shoot()
 			CompressionBlastMoveCharacter(l_cursorDir, l_crosshairLength, true, true);
 		CompressionBlastMoveActor(l_cursorDir, l_crosshairLength);
 		DepleteCharge(l_percentToMinus * (1 + (m_chargeChangeImpact / 100)));
+		Shoot_Audio->Play();
 	}
 }
 
@@ -315,13 +372,23 @@ void ADejaBrewCharacter::LoadLastCheckpoint()
 void ADejaBrewCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 	int32 OtherbodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (Cast<AThorn>(OtherActor) || Cast<ASpike>(OtherActor) || Cast<ASlimeEnemy>(OtherActor))
+	if (Cast<AThorn>(OtherActor) || Cast<ASpike>(OtherActor)) 
 	{
+		if (TerrainDeath_Audio) TerrainDeath_Audio->Play();
+		Die();
+	}
+	else if (Cast<ASlimeEnemy>(OtherActor))
+	{
+		if (EnemyDeath_Audio) EnemyDeath_Audio->Play();
 		Die();
 	}
 	else if (Cast<AFuel>(OtherActor))
 	{
-		Cast<AFuel>(OtherActor)->Collected = true;
+		if (!Cast<AFuel>(OtherActor)->Collected)
+		{
+			Cast<AFuel>(OtherActor)->Collected = true;
+			if (Collect_Audio) Collect_Audio->Play();
+		}
 	}
 	else if (Cast<ACoffeeBean>(OtherActor))
 	{
@@ -329,6 +396,7 @@ void ADejaBrewCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 		{
 			Cast<ACoffeeBean>(OtherActor)->Collected = true;
 			m_curScore += m_scoreIncrementing;
+			if (Collect_Audio) Collect_Audio->Play();
 		}
 	}
 	else if (Cast<ACoffeeBag>(OtherActor))
@@ -345,32 +413,38 @@ void ADejaBrewCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 		if (l_CanContinue)
 		{
 			ADejaBrewGameMode* GMInstance = Cast<ADejaBrewGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
-			
-			FName l_NextLevel = GMInstance->NextLevelName;
-			
-			if (UGameplayStatics::DoesSaveGameExist(GMInstance->BestGameSlotName, 0))
-			{
-				UBestGameSave* SGInstance = Cast<UBestGameSave>(UGameplayStatics::LoadGameFromSlot(GMInstance->BestGameSlotName, 0));
-				if (SGInstance->FastestTime < GetCurTime())
-				{
-					SGInstance->FastestTime = GetCurTime();
-					UGameplayStatics::SaveGameToSlot(SGInstance, GMInstance->BestGameSlotName, 0); 
-				}
-			}
-			else
-			{
-				UBestGameSave* SGInstance = Cast<UBestGameSave>(UGameplayStatics::CreateSaveGameObject(UBestGameSave::StaticClass()));
-				SGInstance->FastestTime = GetCurTime();
-				SGInstance->Highscore = GetCurScore();
-			}
+			if (GMInstance) {
+				FName l_NextLevel = GMInstance->NextLevelName;
 
-			UGameplayStatics::OpenLevel(GetWorld(), l_NextLevel);
+				if (UGameplayStatics::DoesSaveGameExist(GMInstance->BestGameSlotName, 0))
+				{
+					UBestGameSave* SGInstance = Cast<UBestGameSave>(UGameplayStatics::LoadGameFromSlot(GMInstance->BestGameSlotName, 0));
+					if (SGInstance->FastestTime < GetCurTime())
+					{
+						SGInstance->FastestTime = GetCurTime();
+						UGameplayStatics::SaveGameToSlot(SGInstance, GMInstance->BestGameSlotName, 0);
+					}
+				}
+				else
+				{
+					UBestGameSave* SGInstance = Cast<UBestGameSave>(UGameplayStatics::CreateSaveGameObject(UBestGameSave::StaticClass()));
+					SGInstance->FastestTime = GetCurTime();
+					SGInstance->Highscore = GetCurScore();
+				}
+
+				UGameplayStatics::OpenLevel(GetWorld(), l_NextLevel);
+			}
 		}
 	}
 	else if (Cast<ACheckpoint>(OtherActor))
 	{
-		Cast<ACheckpoint>(OtherActor)->ChangeColour();
-		Cast<ACheckpoint>(OtherActor)->SaveThisMoment();
+		ACheckpoint* CPInstance = Cast<ACheckpoint>(OtherActor);
+		if (!CPInstance->isReached)
+		{
+			CPInstance->ChangeColour();
+			CPInstance->SaveThisMoment();
+			if (Checkpoint_Audio) Checkpoint_Audio->Play();
+		}
 	}
 
 }

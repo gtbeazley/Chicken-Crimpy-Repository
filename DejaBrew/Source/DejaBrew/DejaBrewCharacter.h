@@ -6,6 +6,11 @@
 #include "GameFramework/Character.h"
 #include "DejaBrewCharacter.generated.h"
 
+class UCameraComponent;
+class USpringArmComponent;
+class UWidgetComponent;
+class UAudioComponent;
+
 UCLASS(config=Game)
 class ADejaBrewCharacter : public ACharacter
 {
@@ -17,19 +22,37 @@ public:
 protected:
 	/** Side view camera */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	class UCameraComponent* SideViewCamera;
+		UCameraComponent* SideViewCamera;
 
 	/** Camera boom positioning the camera bebside the character */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* CameraBoom;
+		USpringArmComponent* CameraBoom;
 
 	/** The bounds that the cross can not pass, only a widget */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	class UWidgetComponent* CrosshairBoundWidget;
+		UWidgetComponent* CrosshairBoundWidget;
 
 	/** The Crosshair widget that will determine the blast strength and length  */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		UWidgetComponent* CrosshairWidget;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		UAudioComponent* Collect_Audio;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		UAudioComponent* Checkpoint_Audio;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		UAudioComponent* Shoot_Audio;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		UAudioComponent* EnemyDeath_Audio;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		UAudioComponent* TerrainDeath_Audio;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		UAudioComponent* Jump_Audio;
 
 	UFUNCTION()
 		void OnOverlapBegin( UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
