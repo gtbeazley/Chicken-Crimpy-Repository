@@ -26,7 +26,7 @@ ACoffeeBean::ACoffeeBean()
 	Mesh->SetupAttachment(Trigger);
 	Mesh->SetSkeletalMesh(beanAsset.Object);
 	Mesh->SetMaterial(0, beanMat.Object);
-	Mesh->SetRelativeRotation(FRotator(45, -20, 180));
+	Mesh->SetWorldRotation(FRotator(345, 180, 45));
 	Mesh->SetWorldScale3D(FVector(2.75, 2.75, 2.75));
 	Mesh->SetCollisionResponseToAllChannels(ECR_Overlap);
 	Mesh->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
