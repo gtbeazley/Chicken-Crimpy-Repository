@@ -13,7 +13,7 @@ AFuel::AFuel()
 	PrimaryActorTick.bCanEverTick = true;
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> fuelAsset(TEXT("StaticMesh'/Game/SideScrollerBP/Assets/FuelLP.FuelLP'"));
-	static ConstructorHelpers::FObjectFinder<UMaterialInterface> fuelMat(TEXT("Material'/Game/SideScrollerBP/Materials/GroundPlat3_Material.GroundPlat3_Material'"));
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface> fuelMat(TEXT("MaterialInstanceConstant'/Game/SideScrollerCPP/Materials/FuelGlow_Material.FuelGlow_Material'"));
 
 	Scene = CreateDefaultSubobject<USceneComponent>("Scene");
 	SetRootComponent(Scene);
