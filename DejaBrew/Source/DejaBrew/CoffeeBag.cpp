@@ -21,6 +21,7 @@ ACoffeeBag::ACoffeeBag()
 	Mesh->SetGenerateOverlapEvents(true);
 	Mesh->SetCollisionResponseToAllChannels(ECR_Overlap);
 	Mesh->SetWorldScale3D(FVector(2, 2, 2));
+	Mesh->SetWorldRotation(FRotator(0, 90, 0));
 
 
 	Trigger = CreateDefaultSubobject<UBoxComponent>("Trigger");

@@ -10,6 +10,7 @@ class UCameraComponent;
 class USpringArmComponent;
 class UWidgetComponent;
 class UAudioComponent;
+class UUserWidget;
 
 UCLASS(config=Game)
 class ADejaBrewCharacter : public ACharacter

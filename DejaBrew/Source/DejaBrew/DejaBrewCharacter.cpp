@@ -57,16 +57,16 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 
 	//Setting up the widgets
 	CrosshairBoundWidget = CreateDefaultSubobject<UWidgetComponent>("CrosshairBoundWidget");
-	static ConstructorHelpers::FClassFinder<UUserWidget> ClassFinder4Widget(TEXT("/Game/SideScrollerCPP/Blueprints/Widgets/CrosshairBoundsWidget_BP"));
-	if (ClassFinder4Widget.Succeeded())
+	static ConstructorHelpers::FClassFinder<UUserWidget> ClassFinderBoundWidget(TEXT("/Game/SideScrollerCPP/Blueprints/Widgets/CrosshairBoundsWidget_BP"));
+	if (ClassFinderBoundWidget.Succeeded())
 	{
-		CrosshairBoundWidget->SetWidgetClass(ClassFinder4Widget.Class);
+		CrosshairBoundWidget->SetWidgetClass(ClassFinderBoundWidget.Class);
 		CrosshairBoundWidget->SetDrawSize(FVector2D(1000, 1000));
 	}
 
 	CrosshairWidget = CreateDefaultSubobject<UWidgetComponent>("CrosshairWidget");
 	static ConstructorHelpers::FClassFinder<UUserWidget> ClassFinderCrosshairWidget(TEXT("/Game/SideScrollerCPP/Blueprints/Widgets/CrosshairWidget_BP"));
-	if (ClassFinder4Widget.Succeeded())
+	if (ClassFinderCrosshairWidget.Succeeded())
 	{
 		CrosshairWidget->SetWidgetClass(ClassFinderCrosshairWidget.Class);
 		CrosshairWidget->SetDrawSize(FVector2D(1000, 1000));
