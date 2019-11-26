@@ -64,6 +64,7 @@ void ACheckpoint::SaveThisMoment()
 		
 		//Saving player Stats
 		SGInstance->PlayerLoc = GetActorLocation() + FVector(0, 0, 60);
+		SGInstance->PlayerRot = FRotator(0, 0, 90);
 		SGInstance->curScore = Cast<ADejaBrewCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0))->GetCurScore();
 
 		//Saving all Coffee Beans States

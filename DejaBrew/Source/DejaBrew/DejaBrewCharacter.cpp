@@ -216,9 +216,9 @@ void ADejaBrewCharacter::Shoot()
 void ADejaBrewCharacter::CompressionBlastMoveCharacter(FVector a_dir, float a_length, bool a_setForceXY, bool a_setForceZ)
 {
 	if (CanJump())
-		LaunchCharacter( (a_dir * (a_length * -10)) * .25, false, false);
+		LaunchCharacter( (a_dir * (a_length * -m_launchScale)) * .25, false, false);
 	else
-		LaunchCharacter(a_dir * (a_length * -10), a_setForceXY, a_setForceZ);
+		LaunchCharacter(a_dir * (a_length * -m_launchScale), a_setForceXY, a_setForceZ);
 }
 
 void ADejaBrewCharacter::CompressionBlastMoveActor(FVector a_dir, float a_length)

@@ -11,6 +11,7 @@
 UDejaBrew_SaveGame::UDejaBrew_SaveGame()
 {
 	PlayerLoc = FVector();
+	PlayerRot = FRotator(0, 0, 90);
 	curScore = 0;
 }
 

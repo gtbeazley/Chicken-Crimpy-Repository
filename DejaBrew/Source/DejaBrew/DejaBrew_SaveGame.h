@@ -27,6 +27,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		FVector PlayerLoc; 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		FRotator PlayerRot;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int32 curScore;
 	
 	//UPROPERTY(EditAnywhere, BlueprintReadWrite)

@@ -44,15 +44,15 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 		bool bCanShoot = false;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool bCameraIsMoving = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float m_mouseSpeed = .5;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float m_moveSpeed = 1;
-
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float m_CameraMoveSpeed = 3;
@@ -65,6 +65,9 @@ protected:
 
 	UPROPERTY(EditAnywhere)
 		float m_timeTillChargeLimit = 96;
+
+	UPROPERTY(EditAnywhere)
+		float m_launchScale = 10;
 	
 	UPROPERTY(EditAnywhere)
 		float m_chargeSpeed = 3;
@@ -121,8 +124,6 @@ protected:
 	/** Called for side scroller characters left movement*/
 	void MoveLeft(float a_val);
 
-	/** Loads the game savedand loads last checkpoint */
-	void LoadLastCheckpoint();
 
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
@@ -180,5 +181,8 @@ public:
 	/** Sets the initial fuel max count */
 	UFUNCTION(BlueprintCallable)
 		void SetMaxFuel(int32 a_fuelToFind);
-	 
+
+	/** Loads the game savedand loads last checkpoint */ 
+	UFUNCTION(BlueprintCallable)
+		void LoadLastCheckpoint();
 };
