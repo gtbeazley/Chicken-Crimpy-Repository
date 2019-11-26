@@ -18,6 +18,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float maxWalkSpeed = 1;
 protected:
+
+
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
