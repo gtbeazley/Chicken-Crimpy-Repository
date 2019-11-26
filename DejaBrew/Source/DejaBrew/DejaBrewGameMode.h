@@ -24,6 +24,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		FName NextLevelName = "";
+
+	UFUNCTION(BlueprintCallable)
+		void LoadCheckpoint(FVector a_playerLoc, FRotator a_playerRotator);
 };
 
 
