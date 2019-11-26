@@ -62,6 +62,21 @@ protected:
 		void OnOverlapEnd( UPrimitiveComponent* OverlappedComp,  AActor* OtherActor, UPrimitiveComponent* OtherComp,
 			int32 OtherbodyIndex);
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool bControlMove = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool bControlShoot = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool bControlJump = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool bControlAim = true;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool bControlCameraPan = true;
+
 	UPROPERTY(EditAnywhere)
 		bool bIsCharging = false;
 
@@ -208,4 +223,8 @@ public:
 	/** Loads the game savedand loads last checkpoint */ 
 	UFUNCTION(BlueprintCallable)
 		void LoadLastCheckpoint();
+
+	/** Loads the game savedand loads last checkpoint */
+	UFUNCTION(BlueprintCallable)
+		void SetControlEnabled(bool a_canControl);
 };
