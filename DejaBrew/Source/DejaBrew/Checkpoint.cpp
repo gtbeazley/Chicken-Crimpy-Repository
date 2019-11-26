@@ -60,64 +60,67 @@ void ACheckpoint::SaveThisMoment()
 	{
 		UDejaBrew_SaveGame* SGInstance = Cast<UDejaBrew_SaveGame>(UGameplayStatics::CreateSaveGameObject(UDejaBrew_SaveGame::StaticClass()));
 		ADejaBrewGameMode* GMInstance = Cast<ADejaBrewGameMode>(UGameplayStatics::GetGameMode(this));
+		ADejaBrewCharacter* PlayerInstance = Cast<ADejaBrewCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
 		TArray<AActor*> OutActors;
-		
-		//Saving player Stats
-		SGInstance->PlayerLoc = GetActorLocation() + FVector(0, 0, 60);
-		SGInstance->PlayerRot = FRotator(0, 0, 90);
-		SGInstance->curScore = Cast<ADejaBrewCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0))->GetCurScore();
 
-		//Saving all Coffee Beans States
-		UGameplayStatics::GetAllActorsOfClass(this, ACoffeeBean::StaticClass(), OutActors);
-		for (auto Bean : OutActors)
-		{
-			if (Bean)
-			{
-				SGInstance->CoffeeBeanRefs.Add(Cast<ACoffeeBean>(Bean));
-				SGInstance->BeanCollected.Add(Cast<ACoffeeBean>(Bean)->Collected);
-			}
-		}
-		OutActors.Empty();
+		if (SGInstance && GMInstance && PlayerInstance)
+		{//Saving player Stats
+			SGInstance->PlayerLoc = GetActorLocation() + FVector(0, 0, 60);
+			SGInstance->PlayerRot = FRotator(0, 0, 90);
+			SGInstance->curScore = PlayerInstance->GetCurScore();
 
-		//Saving all fuel states
-		UGameplayStatics::GetAllActorsOfClass(this, AFuel::StaticClass(), OutActors); 
-		for (auto Fuel : OutActors)
-		{
-			if (Fuel)
+			//Saving all Coffee Beans States
+			UGameplayStatics::GetAllActorsOfClass(this, ACoffeeBean::StaticClass(), OutActors);
+			for (auto Bean : OutActors)
 			{
-				SGInstance->FuelRefs.Add(Cast<AFuel>(Fuel));
-				SGInstance->FuelCollected.Add(Cast<AFuel>(Fuel)->Collected);
+				if (Bean)
+				{
+					SGInstance->CoffeeBeanRefs.Add(Cast<ACoffeeBean>(Bean));
+					SGInstance->BeanCollected.Add(Cast<ACoffeeBean>(Bean)->Collected);
+				}
 			}
-		}
-		OutActors.Empty();
+			OutActors.Empty();
 
-		//Saving all Thorns
-		UGameplayStatics::GetAllActorsOfClass(this, AThorn::StaticClass(), OutActors);
-		for (auto Thorn : OutActors)
-		{
-			if (Thorn)
+			//Saving all fuel states
+			UGameplayStatics::GetAllActorsOfClass(this, AFuel::StaticClass(), OutActors);
+			for (auto Fuel : OutActors)
 			{
-				SGInstance->ThornRefs.Add(Cast<AThorn>(Thorn));
-				SGInstance->ThornLoc.Add(Cast<AThorn>(Thorn)->GetActorLocation());
+				if (Fuel)
+				{
+					SGInstance->FuelRefs.Add(Cast<AFuel>(Fuel));
+					SGInstance->FuelCollected.Add(Cast<AFuel>(Fuel)->Collected);
+				}
 			}
-		}
-		OutActors.Empty();
+			OutActors.Empty();
 
-		//Saving all SlimeEnemys
-		UGameplayStatics::GetAllActorsOfClass(this, ASlimeEnemy::StaticClass(), OutActors);
-		for (auto Enemy : OutActors)
-		{
-			if (Enemy)
+			//Saving all Thorns
+			UGameplayStatics::GetAllActorsOfClass(this, AThorn::StaticClass(), OutActors);
+			for (auto Thorn : OutActors)
 			{
-				SGInstance->EnemyRefs.Add(Cast<ASlimeEnemy>(Enemy));
-				SGInstance->EnemyLoc.Add(Cast<ASlimeEnemy>(Enemy)->GetActorLocation());
+				if (Thorn)
+				{
+					SGInstance->ThornRefs.Add(Cast<AThorn>(Thorn));
+					SGInstance->ThornLoc.Add(Cast<AThorn>(Thorn)->GetActorLocation());
+				}
 			}
+			OutActors.Empty();
+
+			//Saving all SlimeEnemys
+			UGameplayStatics::GetAllActorsOfClass(this, ASlimeEnemy::StaticClass(), OutActors);
+			for (auto Enemy : OutActors)
+			{
+				if (Enemy)
+				{
+					SGInstance->EnemyRefs.Add(Cast<ASlimeEnemy>(Enemy));
+					SGInstance->EnemyLoc.Add(Cast<ASlimeEnemy>(Enemy)->GetActorLocation());
+				}
+			}
+
+			UGameplayStatics::SaveGameToSlot(SGInstance, GMInstance->SlotName, 0);
+
+			ChangeColour();
+			isReached = true;
 		}
-		
-		UGameplayStatics::SaveGameToSlot(SGInstance, GMInstance->SlotName, 0);
-		
-		ChangeColour();
-		isReached = true;
 	}
 }
 
