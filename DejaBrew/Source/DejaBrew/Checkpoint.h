@@ -20,7 +20,7 @@ public:
 		class UStaticMeshComponent* Flag;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		class UMaterialInterface* FlagGreen;
+		class UMaterialInterface* FlagCheckedMat;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		class UBoxComponent* Collider;

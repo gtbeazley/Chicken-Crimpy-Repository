@@ -13,8 +13,9 @@ class ADejaBrewGameMode : public AGameModeBase
 
 public:
 	ADejaBrewGameMode();
-
-	void SetSlotName(FString a_SlotName);
+	
+	UFUNCTION(BlueprintCallable)
+		void SetSlotName(FString a_SlotName);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		FString SlotName = "";

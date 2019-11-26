@@ -22,16 +22,16 @@ ACheckpoint::ACheckpoint()
 	PrimaryActorTick.bCanEverTick = true;
 	
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> flagAsset(TEXT("StaticMesh'/Game/SideScrollerBP/Assets/CheckpointLP.CheckpointLP'"));
-	static ConstructorHelpers::FObjectFinder<UMaterialInterface> flagRed(TEXT("Material'/Game/SideScrollerBP/Materials/Scarlet_Material.Scarlet_Material'"));
-	static ConstructorHelpers::FObjectFinder<UMaterialInterface> flagGreen(TEXT("Material'/Game/SideScrollerBP/Materials/PaletteLightGreen_Material.PaletteLightGreen_Material'"));
-	FlagGreen = flagGreen.Object;
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface> flagUnchecked(TEXT("Material'/Game/SideScrollerCPP/Materials/Checkpoint_Material.Checkpoint_Material'"));
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface> flagChecked(TEXT("Material'/Game/SideScrollerBP/Materials/PaletteLightGreen_Material.PaletteLightGreen_Material'"));
+	FlagCheckedMat = flagChecked.Object;
 	Scene = CreateDefaultSubobject<USceneComponent>("Scene");
 	RootComponent = Scene;
 
 	Flag = CreateDefaultSubobject<UStaticMeshComponent>("Flag");
 	Flag->SetupAttachment(Scene);
 	Flag->SetStaticMesh(flagAsset.Object);
-	Flag->SetMaterial(0, flagRed.Object);
+	Flag->SetMaterial(0, flagUnchecked.Object);
 	Flag->SetRelativeLocationAndRotation(FVector(-70, 20, 0), FRotator(0, -90, 0));
 
 	Collider = CreateDefaultSubobject<UBoxComponent>("Collider");
@@ -56,7 +56,7 @@ void ACheckpoint::Tick(float DeltaTime)
 
 void ACheckpoint::SaveThisMoment()
 {
-	if (!isReached && FlagGreen)
+	if (!isReached && FlagCheckedMat)
 	{
 		UDejaBrew_SaveGame* SGInstance = Cast<UDejaBrew_SaveGame>(UGameplayStatics::CreateSaveGameObject(UDejaBrew_SaveGame::StaticClass()));
 		ADejaBrewGameMode* GMInstance = Cast<ADejaBrewGameMode>(UGameplayStatics::GetGameMode(this));
@@ -123,5 +123,5 @@ void ACheckpoint::SaveThisMoment()
 
 void ACheckpoint::ChangeColour() {
 	if(!isReached)
-		Flag->SetMaterial(0, FlagGreen);
+		Flag->SetMaterial(0, FlagCheckedMat);
 }

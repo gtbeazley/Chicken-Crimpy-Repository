@@ -39,11 +39,12 @@ void ADejaBrewGameMode::LoadCheckpoint(FVector a_playerLoc, FRotator a_playerRot
 	
 	UDejaBrew_SaveGame* SGInstance = Cast<UDejaBrew_SaveGame>(UGameplayStatics::CreateSaveGameObject(UDejaBrew_SaveGame::StaticClass()));
 	TArray<AActor*> OutActors;
-	
+	ADejaBrewCharacter* CharInstance = Cast<ADejaBrewCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0));
 	//Saving Players Stats
 	SGInstance->PlayerLoc = a_playerLoc;
 	SGInstance->PlayerRot = a_playerRot;
-	SGInstance->curScore = Cast<ADejaBrewCharacter>(UGameplayStatics::GetPlayerCharacter(this, 0))->GetCurScore();
+	if(CharInstance)
+	SGInstance->curScore = CharInstance->GetCurScore();
 
 	//Saving all Coffee Beans States
 	UGameplayStatics::GetAllActorsOfClass(this, ACoffeeBean::StaticClass(), OutActors);

@@ -345,7 +345,7 @@ void ADejaBrewCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 		if (l_CanContinue)
 		{
 			ADejaBrewGameMode* GMInstance = Cast<ADejaBrewGameMode>(UGameplayStatics::GetGameMode(GetWorld()));
-			GMInstance->NextLevelName = "Level1";
+			
 			FName l_NextLevel = GMInstance->NextLevelName;
 			
 			if (UGameplayStatics::DoesSaveGameExist(GMInstance->BestGameSlotName, 0))

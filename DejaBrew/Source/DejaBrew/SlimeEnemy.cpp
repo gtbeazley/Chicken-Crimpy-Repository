@@ -13,6 +13,9 @@ ASlimeEnemy::ASlimeEnemy()
 
 	USkeletalMeshComponent* Mesh = GetMesh();
 	Mesh->SetGenerateOverlapEvents(true); 
+	Mesh->SetWorldScale3D(FVector(1, 1, 1.75));
+	Mesh->SetCollisionResponseToAllChannels(ECR_Ignore);
+
 	UCapsuleComponent* CapsuleCollider = GetCapsuleComponent();
 	CapsuleCollider->SetGenerateOverlapEvents(true);
 	CapsuleCollider->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);

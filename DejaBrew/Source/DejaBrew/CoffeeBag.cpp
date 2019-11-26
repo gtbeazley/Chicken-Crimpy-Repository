@@ -13,7 +13,7 @@ ACoffeeBag::ACoffeeBag()
 	PrimaryActorTick.bCanEverTick = true;
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> BeanBagAsset(TEXT("StaticMesh'/Game/SideScrollerBP/Assets/BeanBagLP.BeanBagLP'"));
-	static ConstructorHelpers::FObjectFinder<UMaterialInterface> BeanBagMat(TEXT("Material'/Game/SideScrollerBP/Materials/Desk_Material.Desk_Material'"));
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface> BeanBagMat(TEXT("Material'/Game/SideScrollerCPP/Materials/BeanBag_Material.BeanBag_Material'"));
 	Mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
 	Mesh->SetStaticMesh(BeanBagAsset.Object);
 	Mesh->SetMaterial(0, BeanBagMat.Object);
