@@ -8,6 +8,5 @@
 3) Type 'cmd' in the task bar.
 4) Copy paste this in to the command line: UnrealBuildTool.exe -ProjectFiles -project="C:\Users\s181813\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\DejaBrew.uproject" -game -engine
 
-UnrealBuildTool.exe -ProjectFiles -project="C:\Users\s191273\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\DejaBrew.uproject" -game -engine
-
 UnrealBuildTool.exe -ProjectFiles -project="C:\Users\Rick\Documents\GitHub\Chicken-Crimpy-Repository\DejaBrew\DejaBrew.uproject" -game -engine
+
