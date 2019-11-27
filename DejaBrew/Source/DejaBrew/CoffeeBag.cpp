@@ -12,7 +12,7 @@ ACoffeeBag::ACoffeeBag()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> BeanBagAsset(TEXT("StaticMesh'/Game/SideScrollerBP/Assets/BeanBagLP.BeanBagLP'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> BeanBagAsset(TEXT("StaticMesh'/Game/SideScrollerCPP/Assets/BeanBagLP.BeanBagLP'"));
 	static ConstructorHelpers::FObjectFinder<UMaterialInterface> BeanBagMat(TEXT("Material'/Game/SideScrollerCPP/Materials/BeanBag_Material.BeanBag_Material'"));
 	Mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
 	Mesh->SetStaticMesh(BeanBagAsset.Object);

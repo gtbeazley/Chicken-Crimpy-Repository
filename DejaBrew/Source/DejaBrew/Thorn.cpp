@@ -12,8 +12,8 @@ AThorn::AThorn()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	static ConstructorHelpers::FObjectFinder<UStaticMesh>thornAssetFinder(TEXT("StaticMesh'/Game/SideScrollerBP/Assets/ThornsV2.ThornsV2'"));
-	static ConstructorHelpers::FObjectFinder<UMaterialInterface>thornMatFinder(TEXT("Material'/Game/SideScrollerBP/Materials/ThornsV2_Material.ThornsV2_Material'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh>thornAssetFinder(TEXT("StaticMesh'/Game/SideScrollerCPP/Assets/ThornsV2.ThornsV2'"));
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface>thornMatFinder(TEXT("Material'/Game/SideScrollerCPP/Materials/ThornsV2_Material.ThornsV2_Material'"));
 	UStaticMesh* ThornMesh = thornAssetFinder.Object;
 	
 	Scene = CreateDefaultSubobject<USceneComponent>("Scene");
