@@ -23,7 +23,7 @@ ACheckpoint::ACheckpoint()
 	
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> flagAsset(TEXT("StaticMesh'/Game/SideScrollerBP/Assets/CheckpointLP.CheckpointLP'"));
 	static ConstructorHelpers::FObjectFinder<UMaterialInterface> flagUnchecked(TEXT("Material'/Game/SideScrollerCPP/Materials/Checkpoint_Material.Checkpoint_Material'"));
-	static ConstructorHelpers::FObjectFinder<UMaterialInterface> flagChecked(TEXT("Material'/Game/SideScrollerBP/Materials/PaletteLightGreen_Material.PaletteLightGreen_Material'"));
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface> flagChecked(TEXT("Material'/Game/SideScrollerBP/Materials/CheckpointGREEN_Material.CheckpointGREEN_Material'"));
 	FlagCheckedMat = flagChecked.Object;
 	Scene = CreateDefaultSubobject<USceneComponent>("Scene");
 	RootComponent = Scene;
