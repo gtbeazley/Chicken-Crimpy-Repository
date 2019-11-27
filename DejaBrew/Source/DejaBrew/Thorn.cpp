@@ -26,6 +26,7 @@ AThorn::AThorn()
 	Thorn1->SetGenerateOverlapEvents(true);
 	Thorn1->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 	Thorn1->SetWorldScale3D(FVector(10, 10, 10));
+	Thorn1->GetBodyInstance()->SetDOFLock(EDOFMode::YZPlane);
 	Thorn1->GetBodyInstance()->bLockXRotation = true;
 	Thorn1->GetBodyInstance()->bLockYRotation = true;
 	Thorn1->GetBodyInstance()->bLockZRotation = true;
@@ -39,6 +40,7 @@ AThorn::AThorn()
 	Thorn2->SetCollisionResponseToAllChannels(ECR_Ignore);
 	Thorn2->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 	Thorn2->SetWorldScale3D(FVector(10, 10, 10));
+	Thorn2->GetBodyInstance()->SetDOFLock(EDOFMode::YZPlane);
 	
 
 	Thorn3 = CreateDefaultSubobject<UStaticMeshComponent>("Thorn3");
@@ -50,6 +52,7 @@ AThorn::AThorn()
 	Thorn3->SetCollisionResponseToAllChannels(ECR_Ignore);
 	Thorn3->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 	Thorn3->SetWorldScale3D(FVector(10, 10, 10));
+	Thorn3->GetBodyInstance()->SetDOFLock(EDOFMode::YZPlane);
 
 	Thorn4 = CreateDefaultSubobject<UStaticMeshComponent>("Thorn4");
 	Thorn4->SetStaticMesh(ThornMesh);
@@ -60,6 +63,7 @@ AThorn::AThorn()
 	Thorn4->SetCollisionResponseToAllChannels(ECR_Ignore);
 	Thorn4->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 	Thorn4->SetWorldScale3D(FVector(10, 10, 10));
+	Thorn4->GetBodyInstance()->SetDOFLock(EDOFMode::YZPlane);
 
 	Thorn5 = CreateDefaultSubobject<UStaticMeshComponent>("Thorn5");
 	Thorn5->SetStaticMesh(ThornMesh);
@@ -70,6 +74,7 @@ AThorn::AThorn()
 	Thorn5->SetCollisionResponseToAllChannels(ECR_Ignore);
 	Thorn5->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 	Thorn5->SetWorldScale3D(FVector(10, 10, 10));
+	Thorn5->GetBodyInstance()->SetDOFLock(EDOFMode::YZPlane);
 
 	PointLight = CreateDefaultSubobject<UPointLightComponent>("PointLight");
 	PointLight->SetupAttachment(Thorn1);
