@@ -21,9 +21,9 @@ ACheckpoint::ACheckpoint()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> flagAsset(TEXT("StaticMesh'/Game/SideScrollerBP/Assets/CheckpointLP.CheckpointLP'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> flagAsset(TEXT("StaticMesh'/Game/SideScrollerCPP/Assets/CheckpointLP.CheckpointLP'"));
 	static ConstructorHelpers::FObjectFinder<UMaterialInterface> flagUnchecked(TEXT("Material'/Game/SideScrollerCPP/Materials/Checkpoint_Material.Checkpoint_Material'"));
-	static ConstructorHelpers::FObjectFinder<UMaterialInterface> flagChecked(TEXT("Material'/Game/SideScrollerBP/Materials/CheckpointGREEN_Material.CheckpointGREEN_Material'"));
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface> flagChecked(TEXT("Material'/Game/SideScrollerCPP/Materials/CheckpointGREEN_Material.CheckpointGREEN_Material'"));
 	FlagCheckedMat = flagChecked.Object;
 	Scene = CreateDefaultSubobject<USceneComponent>("Scene");
 	RootComponent = Scene;

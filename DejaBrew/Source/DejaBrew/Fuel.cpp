@@ -12,7 +12,7 @@ AFuel::AFuel()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> fuelAsset(TEXT("StaticMesh'/Game/SideScrollerBP/Assets/FuelLP.FuelLP'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> fuelAsset(TEXT("StaticMesh'/Game/SideScrollerCPP/Assets/FuelLP.FuelLP'"));
 	static ConstructorHelpers::FObjectFinder<UMaterialInterface> fuelMat(TEXT("MaterialInstanceConstant'/Game/SideScrollerCPP/Materials/FuelGlow_Material.FuelGlow_Material'"));
 
 	Scene = CreateDefaultSubobject<USceneComponent>("Scene");
