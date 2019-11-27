@@ -79,7 +79,8 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	if (checkpoint_Cue.Succeeded())
 	{
 		Checkpoint_Audio->SetupAttachment(GetCapsuleComponent());
-		Checkpoint_Audio->SetSound(checkpoint_Cue.Object);
+		Checkpoint_Audio->SetSound(checkpoint_Cue.Object); 
+		Checkpoint_Audio->SetAutoActivate(false);
 	}
 
 	Collect_Audio = CreateDefaultSubobject<UAudioComponent>("Collect_Audio");
@@ -87,7 +88,8 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	if (collect_Cue.Succeeded())
 	{
 		Collect_Audio->SetupAttachment(GetCapsuleComponent());
-		Collect_Audio->SetSound(collect_Cue.Object);
+		Collect_Audio->SetSound(collect_Cue.Object); 
+		Collect_Audio->SetAutoActivate(false);
 	}
 
 	Shoot_Audio = CreateDefaultSubobject<UAudioComponent>("Shoot_Audio");
@@ -95,7 +97,8 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	if (shoot_Cue.Succeeded())
 	{
 		Shoot_Audio->SetupAttachment(GetCapsuleComponent());
-		Shoot_Audio->SetSound(shoot_Cue.Object);
+		Shoot_Audio->SetSound(shoot_Cue.Object); 
+		Shoot_Audio->SetAutoActivate(false);
 	}
 
 	EnemyDeath_Audio = CreateDefaultSubobject<UAudioComponent>("EnemyDeath_Audio");
@@ -103,7 +106,8 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	if (enemy_Cue.Succeeded())
 	{
 		EnemyDeath_Audio->SetupAttachment(GetCapsuleComponent());
-		EnemyDeath_Audio->SetSound(enemy_Cue.Object);
+		EnemyDeath_Audio->SetSound(enemy_Cue.Object); 
+		EnemyDeath_Audio->SetAutoActivate(false);
 	}
 
 	TerrainDeath_Audio = CreateDefaultSubobject<UAudioComponent>("TerrainDeath_Audio");
@@ -112,6 +116,7 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	{
 		TerrainDeath_Audio->SetupAttachment(GetCapsuleComponent());
 		TerrainDeath_Audio->SetSound(terrain_Cue.Object);
+		TerrainDeath_Audio->SetAutoActivate(false);
 	}
 
 	Jump_Audio = CreateDefaultSubobject< UAudioComponent>("Jump_Audio");
@@ -120,6 +125,7 @@ ADejaBrewCharacter::ADejaBrewCharacter()
 	{
 		Jump_Audio->SetupAttachment(GetCapsuleComponent());
 		Jump_Audio->SetSound(jump_Cue.Object);
+		Jump_Audio->SetAutoActivate(false);
 	}
 
 	// Configure character movement
