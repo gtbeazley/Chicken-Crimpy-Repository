@@ -81,7 +81,7 @@ protected:
 	UPROPERTY(EditAnywhere)
 		bool bIsCharging = false;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool bCanShoot = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
