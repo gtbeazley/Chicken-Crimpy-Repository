@@ -12,8 +12,8 @@ ASpike::ASpike()
 	PrimaryActorTick.bCanEverTick = true;
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> coneAsset(TEXT("StaticMesh'/Engine/BasicShapes/Cone.Cone'"));
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> spikeAsset(TEXT("StaticMesh'/Game/SideScrollerCPP/Assets/Spikes.Spikes'"));
-	static ConstructorHelpers::FObjectFinder<UMaterialInterface> spikeMat(TEXT("Material'/Game/SideScrollerCPP/Materials/Spikes_Material.Spikes_Material'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> spikeAsset(TEXT("StaticMesh'/Game/SideScrollerBP/Assets/Spikes.Spikes'"));
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface> spikeMat(TEXT("Material'/Game/SideScrollerBP/Materials/Spikes_Material.Spikes_Material'"));
 	static ConstructorHelpers::FObjectFinder<UMaterialInterface> coneMat(TEXT("Material'/Game/StarterContent/Materials/M_Metal_Gold.M_Metal_Gold'"));
 
 	Cone = CreateDefaultSubobject<UStaticMeshComponent>("Cone");

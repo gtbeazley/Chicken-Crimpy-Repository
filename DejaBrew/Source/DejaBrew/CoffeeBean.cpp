@@ -12,8 +12,8 @@ ACoffeeBean::ACoffeeBean()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
-	static ConstructorHelpers::FObjectFinder<USkeletalMesh> beanAsset(TEXT("SkeletalMesh'/Game/SideScrollerCPP/Assets/BeanLP/BeanLP.BeanLP'"));
-	static ConstructorHelpers::FObjectFinder<UMaterialInterface> beanMat(TEXT("Material'/Game/SideScrollerCPP/Materials/Bean_Material.Bean_Material'"));
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh> beanAsset(TEXT("SkeletalMesh'/Game/SideScrollerBP/Assets/BeanLP/BeanLP.BeanLP'"));
+	static ConstructorHelpers::FObjectFinder<UMaterialInterface> beanMat(TEXT("Material'/Game/SideScrollerBP/Materials/Bean_Material.Bean_Material'"));
 
 	Trigger = CreateDefaultSubobject<UBoxComponent>("Trigger");
 	SetRootComponent(Trigger);
