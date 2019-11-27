@@ -293,7 +293,7 @@ void ADejaBrewCharacter::CompressionBlastMoveActor(FVector a_dir, float a_length
 {
 	TArray<FHitResult> l_outHits;
 	FVector l_traceStartLoc = GetActorLocation(), l_traceEndLoc = l_traceStartLoc + (a_dir * (2 * a_length));
-	DrawDebugLine(GetWorld(), l_traceStartLoc, l_traceEndLoc, FColor::Green, true);
+	DrawDebugLine(GetWorld(), l_traceStartLoc, l_traceEndLoc, FColor::FColor(0, 0, 0, 0));
 	GetWorld()->LineTraceMultiByChannel(l_outHits, l_traceStartLoc, l_traceEndLoc, ECC_Visibility);
 	//static ConstructorHelpers::FClassFinder<ASlimeEnemy> SlimeEnemy(TEXT("/Game/SideScrollerCPP/Blueprints/SlimeEnemy_BP"));
 	for (auto hitResult : l_outHits)
