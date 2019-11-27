@@ -357,27 +357,30 @@ void ADejaBrewCharacter::LoadLastCheckpoint()
 		if (UGameplayStatics::DoesSaveGameExist(slotName, 0))
 		{
 			UDejaBrew_SaveGame* SGInstance = Cast<UDejaBrew_SaveGame>(UGameplayStatics::LoadGameFromSlot(slotName, 0));
+			if (SGInstance)
+			{
+				//Loading Player Stats
+				m_compressionCharge = m_initialCompressionCharge;
+				SetActorLocation(SGInstance->PlayerLoc);
+				m_curScore = SGInstance->curScore;
 
-			//Loading Player Stats
-			m_compressionCharge = m_initialCompressionCharge;
-			SetActorLocation(SGInstance->PlayerLoc);
-			m_curScore = SGInstance->curScore;
+				//Loading all CoffeeBean States
+				for (int32 i = 0; i < SGInstance->CoffeeBeanRefs.Num(); i++)
+					SGInstance->CoffeeBeanRefs[i]->Collected = SGInstance->BeanCollected[i];
 
-			//Loading all CoffeeBean States
-			for (int32 i = 0; i < SGInstance->CoffeeBeanRefs.Num(); i++)
-				SGInstance->CoffeeBeanRefs[i]->Collected = SGInstance->BeanCollected[i];
+				//Loading all fuel states; 
+				for (int32 i = 0; i < SGInstance->FuelRefs.Num(); i++)
+					SGInstance->FuelRefs[i]->Collected = SGInstance->FuelCollected[i];
 
-			//Loading all fuel states; 
-			for (int32 i = 0; i < SGInstance->FuelRefs.Num(); i++)
-				SGInstance->FuelRefs[i]->Collected = SGInstance->FuelCollected[i];
+				//Loading all Thorns 
+				for (int32 i = 0; i < SGInstance->ThornRefs.Num(); i++)
+					SGInstance->ThornRefs[i]->SetActorLocation(SGInstance->ThornLoc[i]);
 
-			//Loading all Thorns 
-			for (int32 i = 0; i < SGInstance->ThornRefs.Num(); i++)
-				SGInstance->ThornRefs[i]->SetActorLocation(SGInstance->ThornLoc[i]);
+				//Loading all SlimeEnemys
+				for (int32 i = 0; i < SGInstance->EnemyRefs.Num(); i++)
+					SGInstance->EnemyRefs[i]->SetActorLocation(SGInstance->EnemyLoc[i]);
+			}
 
-			//Loading all SlimeEnemys
-			for (int32 i = 0; i < SGInstance->EnemyRefs.Num(); i++)
-				SGInstance->EnemyRefs[i]->SetActorLocation(SGInstance->EnemyLoc[i]);
 
 		}
 	}
