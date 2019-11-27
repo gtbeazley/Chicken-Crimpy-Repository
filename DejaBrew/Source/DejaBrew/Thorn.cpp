@@ -36,6 +36,7 @@ AThorn::AThorn()
 	Thorn2->SetupAttachment(Thorn1);
 	Thorn2->SetRelativeLocation(FVector(-3, 3, 0));
 	Thorn2->SetGenerateOverlapEvents(true);
+	Thorn2->SetCollisionResponseToAllChannels(ECR_Ignore);
 	Thorn2->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 	Thorn2->SetWorldScale3D(FVector(10, 10, 10));
 	
@@ -46,6 +47,7 @@ AThorn::AThorn()
 	Thorn3->SetupAttachment(Thorn1);
 	Thorn3->SetRelativeLocation(FVector(3, 3, 0));
 	Thorn3->SetGenerateOverlapEvents(true);
+	Thorn3->SetCollisionResponseToAllChannels(ECR_Ignore);
 	Thorn3->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 	Thorn3->SetWorldScale3D(FVector(10, 10, 10));
 
@@ -55,6 +57,7 @@ AThorn::AThorn()
 	Thorn4->SetupAttachment(Thorn1);
 	Thorn4->SetRelativeLocation(FVector(-3, -3, 0));
 	Thorn4->SetGenerateOverlapEvents(true);
+	Thorn4->SetCollisionResponseToAllChannels(ECR_Ignore);
 	Thorn4->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 	Thorn4->SetWorldScale3D(FVector(10, 10, 10));
 
@@ -64,6 +67,7 @@ AThorn::AThorn()
 	Thorn5->SetupAttachment(Thorn1);
 	Thorn5->SetRelativeLocation(FVector(3, -3, 0));
 	Thorn5->SetGenerateOverlapEvents(true);
+	Thorn5->SetCollisionResponseToAllChannels(ECR_Ignore);
 	Thorn5->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 	Thorn5->SetWorldScale3D(FVector(10, 10, 10));
 

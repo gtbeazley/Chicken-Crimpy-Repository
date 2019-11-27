@@ -20,7 +20,9 @@ ASpike::ASpike()
 	SetRootComponent(Cone);
 	Cone->SetStaticMesh(coneAsset.Object);
 	Cone->SetRelativeScale3D(FVector(0.5, 0.5, 0.75));
-	Cone->SetMaterial(0, coneMat.Object);
+	Cone->SetMaterial(0, coneMat.Object); 
+	Cone->SetCollisionResponseToAllChannels(ECR_Ignore);
+	Cone->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 
 	Trigger = CreateDefaultSubobject<UBoxComponent>("Trigger");
 	Trigger->SetupAttachment(Cone);
@@ -35,6 +37,7 @@ ASpike::ASpike()
 	StaticMesh->SetRelativeLocation(FVector(-40, 0, -55));
 	StaticMesh->SetRelativeRotation(FRotator(0, 180, 0));
 	StaticMesh->SetRelativeScale3D(FVector(25, 25, 25));
+	StaticMesh->SetCollisionResponseToAllChannels(ECR_Ignore);
 	StaticMesh->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 }
 
