@@ -367,7 +367,7 @@ void ADejaBrewCharacter::LoadLastCheckpoint()
 			{
 				//Loading Player Stats
 				m_compressionCharge = m_initialCompressionCharge;
-				SetActorLocation(SGInstance->PlayerLoc);
+				SetActorLocation(SGInstance->PlayerLoc,false, nullptr, ETeleportType::ResetPhysics);
 				m_curScore = SGInstance->curScore;
 
 				//Loading all CoffeeBean States
@@ -445,6 +445,7 @@ void ADejaBrewCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 					if (SGInstance->FastestTime < GetCurTime())
 					{
 						SGInstance->FastestTime = GetCurTime();
+						SGInstance->Highscore = GetCurScore();
 						UGameplayStatics::SaveGameToSlot(SGInstance, GMInstance->BestGameSlotName, 0);
 					}
 				}
@@ -453,6 +454,7 @@ void ADejaBrewCharacter::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AAc
 					UBestGameSave* SGInstance = Cast<UBestGameSave>(UGameplayStatics::CreateSaveGameObject(UBestGameSave::StaticClass()));
 					SGInstance->FastestTime = GetCurTime();
 					SGInstance->Highscore = GetCurScore();
+					UGameplayStatics::SaveGameToSlot(SGInstance, GMInstance->BestGameSlotName, 0);
 				}
 
 				UGameplayStatics::OpenLevel(GetWorld(), l_NextLevel);
@@ -508,4 +510,5 @@ void ADejaBrewCharacter::SetControlEnabled(bool a_canControl)
 	bControlJump = a_canControl;
 	bControlMove = a_canControl;
 	bControlShoot = a_canControl;
+	bCanShoot = a_canControl;
 }
