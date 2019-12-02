@@ -76,11 +76,11 @@ AThorn::AThorn()
 	Thorn5->SetWorldScale3D(FVector(10, 10, 10));
 	Thorn5->GetBodyInstance()->bLockXTranslation = true;
 
-	PointLight = CreateDefaultSubobject<UPointLightComponent>("PointLight");
-	PointLight->SetupAttachment(Thorn1);
-	PointLight->SetRelativeLocation(FVector(0, 0, 15));
-	PointLight->Intensity = 2000;
-	PointLight->AttenuationRadius = 15;
+	//PointLight = CreateDefaultSubobject<UPointLightComponent>("PointLight");
+	//PointLight->SetupAttachment(Thorn1);
+	//PointLight->SetRelativeLocation(FVector(0, 0, 15));
+	//PointLight->Intensity = 2000;
+	//PointLight->AttenuationRadius = 15;
 
 	Thorn1->SetSimulatePhysics(true);
 }
